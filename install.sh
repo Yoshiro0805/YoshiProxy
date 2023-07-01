@@ -15,4 +15,4 @@ wget -q https://github.com/Yoshiro0805/YoshiProxy/raw/main/proxy
 sleep 1
 echo -e "${GREEN}Proxy Installed${ENDCOLOR}"
 echo -e "${GREEN}Execute proxy with this command: ./proxy ${ENDCOLOR}"
-chmod +x proxy_linux
+chmod +x proxy
