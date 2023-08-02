@@ -1,0 +1,524 @@
+function itemidlegend()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Legend `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wLegendary Katana - `9ItemID: `e2592|left|2592|
+add_label_with_icon|small|`wLegendary Wing - `9ItemID: `e1784|left|1784|
+add_label_with_icon|small|`wLegendBot-009 - `9ItemID: `e1780|left|1780|
+add_label_with_icon|small|`wLegendary Dragon Knight's Wings - `9ItemID: `e7734|left|7734|
+add_label_with_icon|small|`wLegendary Comet Hair - `9ItemID: `e8306|left|8306|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+return true
+end
+
+function legends(type, packet)
+if packet == ("action|input\n|text|/fleg") then
+itemidlegend()
+return true
+end
+end
+
+AddCallback("Lgiditem_commandsx","OnPacket", legends)
+
+--hand
+function itemidhand()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Hands `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wLegendary Katana - `9ItemID: `e2592|left|2592|
+add_label_with_icon|small|`wPoseidon's Trident - `9ItemID: `e2802|left|2802|
+add_label_with_icon|small|`wPoseidon's Digger's Trident - `9ItemID: `e7434|left|7434|
+add_label_with_icon|small|`wNeptune's Trident - `9ItemID: `e9758|left|9758|
+add_label_with_icon|small|`wCursed Katana - `9ItemID: `e9058|left|9058|
+add_label_with_icon|small|`wGolden Heartstaff - `9ItemID: `e7828|left|7828|
+add_label_with_icon|small|`wHeatbow - `9ItemID: `e4136|left|4136|
+add_label_with_icon|small|`wSilverstar Bow - `9ItemID: `e5456|left|5456|
+add_label_with_icon|small|`wEldritch Crossbow - `9ItemID: `e10052|left|10052|
+add_label_with_icon|small|`wHeartbow - `9ItemID: `e366|left|366|
+add_label_with_icon|small|`wHeartsword - `9ItemID: `e7830|left|7830|
+add_label_with_icon|small|`wElvish Longbow - `9ItemID: `e594|left|594|
+add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
+add_label_with_icon|small|`wCarrot Sword - `9ItemID: `e2908|left|2908|
+add_label_with_icon|small|`wElectric Bow - `9ItemID: `e2720|left|2720|
+add_label_with_icon|small|`wWinter Frost Bow - `9ItemID: `e5424|left|5424|
+add_label_with_icon|small|`wEthereal Rainbow Dragon - `9ItemID: `e7136|left|7136|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+return true
+end
+
+function hand(type, packet)
+if packet == ("action|input\n|text|/fhand") then
+itemidhand()
+return true
+end
+end
+
+AddCallback("trident_commandsx","OnPacket", hand)
+
+--Wing
+function itemidwings()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Wings `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wFairy Wings - `9ItemID: `e156|left|156|
+add_label_with_icon|small|`wAngel Wings - `9ItemID: `e362|left|362|
+add_label_with_icon|small|`wCrimson Eagle Wings - `9ItemID: `e678|left|678|
+add_label_with_icon|small|`wPlay Wings - `9ItemID: `e736|left|736|
+add_label_with_icon|small|`wRipper Wings - `9ItemID: `e818|left|818|
+add_label_with_icon|small|`wDevil Wings - `9ItemID: `e1206|left|1206|
+add_label_with_icon|small|`wGolden Angel Wings - `9ItemID: `e1460|left|1460|
+add_label_with_icon|small|`wBubble Wings - `9ItemID: `e1550|left|1550|
+add_label_with_icon|small|`wParrot Wings - `9ItemID: `e1574|left|1574|
+add_label_with_icon|small|`wWater Wings - `9ItemID: `e1668|left|1668|
+add_label_with_icon|small|`wRainbow Wings - `9ItemID: `e1672|left|1672|
+add_label_with_icon|small|`wPhoenix Wings - `9ItemID: `e1674|left|1674|
+add_label_with_icon|small|`wLegendary Wings - `9ItemID: `e1784|left|1784|
+add_label_with_icon|small|`wAutumn Wings - `9ItemID: `e1824|left|1824|
+add_label_with_icon|small|`wBlazing Electro Wings - `9ItemID: `e1936|left|1936|
+add_label_with_icon|small|`wDiamond Wings - `9ItemID: `e1938|left|1938|
+add_label_with_icon|small|`wNightmare Devil Wings - `9ItemID: `e1970|left|1970|
+add_label_with_icon|small|`wRed Crystal Wings - `9ItemID: `e2254|left|2254|
+add_label_with_icon|small|`wBlue Crystal Wings - `9ItemID: `e2256|left|2256|
+add_label_with_icon|small|`wGreen Crystal Wings - `9ItemID: `e2258|left|2258|
+add_label_with_icon|small|`wPurple Crystal Wings - `9ItemID: `e2260|left|2260|
+add_label_with_icon|small|`wGolden Crystal Wings - `9ItemID: `e2262|left|2262|
+add_label_with_icon|small|`wAqua Crystal Wings - `9ItemID: `e2264|left|2264|
+add_label_with_icon|small|`wTeeny Angel Wings - `9ItemID: `e2390|left|2390|
+add_label_with_icon|small|`wTeeny Golden Wings - `9ItemID: `e2392|left|2392|
+add_label_with_icon|small|`wTeeny Devil Wings - `9ItemID: `e3120|left|3120|
+add_label_with_icon|small|`wSaturday Wings - `9ItemID: `e3512|left|3512|
+add_label_with_icon|small|`wGolden Razor Wings - `9ItemID: `e4534|left|4534|
+add_label_with_icon|small|`wInside-Out Devil Wings - `9ItemID: `e4986|left|4986|
+add_label_with_icon|small|`wDraconic Wings - `9ItemID: `e5754|left|5754|
+add_label_with_icon|small|`wAurora Wings - `9ItemID: `e6144|left|6144|
+add_label_with_icon|small|`wDanieldd's Chimera Wings - `9ItemID: `e6334|left|6334|
+add_label_with_icon|small|`wSuper Utility Wings - `9ItemID: `e6694|left|6694|
+add_label_with_icon|small|`wNightwings - `9ItemID: `e6818|left|6818|
+add_label_with_icon|small|`wRaven Wings - `9ItemID: `e6842|left|6842|
+add_label_with_icon|small|`wDark Aurora Wings - `9ItemID: `e7104|left|7104|
+add_label_with_icon|small|`wStone Gargoyle Wings - `9ItemID: `e7150|left|7150|
+add_label_with_icon|small|`wMonarch Butterfly Wings - `9ItemID: `e7196|left|7196|
+add_label_with_icon|small|`wTurkey Wings - `9ItemID: `e7350|left|7350|
+add_label_with_icon|small|`wSnowflake Wings of Winter - `9ItemID: `e7412|left|7412|
+add_label_with_icon|small|`wOVEROLL's Wings - `9ItemID: `e7502|left|7502|
+add_label_with_icon|small|`wRobotic MK.IV Wings - `9ItemID: `e7582|left|7582|
+add_label_with_icon|small|`wLegendary Dragon Knight's Wings - `9ItemID: `e7734|left|7734|
+add_label_with_icon|small|`wStained Glass Heartwings - `9ItemID: `e7834|left|7834|
+add_label_with_icon|small|`wCondor Wings - `9ItemID: `e7914|left|7914|
+add_label_with_icon|small|`wAirplane Wings - `9ItemID: `e7916|left|7916|
+add_label_with_icon|small|`wDa Vinci Wings - `9ItemID: `e8286|left|8286|
+add_label_with_icon|small|`wSteampunk Wings - `9ItemID: `e8302|left|8302|
+add_label_with_icon|small|`wReg4shi's Archangel Wings - `9ItemID: `e8308|left|8308|
+add_label_with_icon|small|`wAngel of Mercy's Wings - `9ItemID: `e8552|left|8552|
+add_label_with_icon|small|`wMunnin's Unity Wings - `9ItemID: `e8620|left|8620|
+add_label_with_icon|small|`wValkyrie's Wings - `9ItemID: `e8862|left|8862|
+add_label_with_icon|small|`wMosquito King's Wings - `9ItemID: `e8914|left|8914|
+add_label_with_icon|small|`wNightmare Teeny Devil Wings - `9ItemID: `e9114|left|9114|
+add_label_with_icon|small|`wFrosty Wings - `9ItemID: `e9182|left|9182|
+add_label_with_icon|small|`wPink Teeny Angel Wings - `9ItemID: `e9352|left|9352|
+add_label_with_icon|small|`wBalrog Wings - `9ItemID: `e9394|left|9394|
+add_label_with_icon|small|`wShamrock Wings - `9ItemID: `e9422|left|9422|
+add_label_with_icon|small|`wFlamingo Wings - `9ItemID: `e9742|left|9742|
+add_label_with_icon|small|`wPegasus Wings - `9ItemID: `e9760|left|9760|
+add_label_with_icon|small|`wZodiac Wings - `9ItemID: `e10054|left|10054|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+return true
+end
+
+function wing(type, packet)
+if packet == ("action|input\n|text|/fwing") then
+itemidwings()
+return true
+end
+end
+
+AddCallback("wings_commandsx","OnPacket", wing)
+
+--ances
+function itemidances()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Ances `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wAncestral Totem of Wisdom - `9ItemID: `e5078|left|5078|
+add_label_with_icon|small|`wAncestral Tesseract of Dimensions - `9ItemID: `e5080|left|5080|
+add_label_with_icon|small|`wAncestral Seed of Life - `9ItemID: `e5082|left|5082|
+add_label_with_icon|small|`wAncestral Lens of Riches - `9ItemID: `e5084|left|5084|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+return true
+end
+
+function ances(type, packet)
+if packet == ("action|input\n|text|/fances") then
+itemidances()
+return true
+end
+end
+
+AddCallback("ancesiditem_commandsx","OnPacket", ances)
+
+--crown
+function itemidcrown()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Crown `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wFairy Crown - `9ItemID: `e136|left|136|
+add_label_with_icon|small|`wOceanic Crown - `9ItemID: `e2874|left|2874|
+add_label_with_icon|small|`wDried Leaf Crown - `9ItemID: `e3086|left|3086|
+add_label_with_icon|small|`wSuper Logo - Crown - `9ItemID: `e3132|left|3132|
+add_label_with_icon|small|`wChallenge Crown - `9ItemID: `e3138|left|3138|
+add_label_with_icon|small|`wSpring Crown - `9ItemID: `e3444|left|3444|
+add_label_with_icon|small|`wTXMom's Crown - `9ItemID: `e4626|left|4626|
+add_label_with_icon|small|`wPhoenix Crown - `9ItemID: `e4820|left|4820|
+add_label_with_icon|small|`wDancemaster's Crown - `9ItemID: `e6300|left|6300|
+add_label_with_icon|small|`wHeartking's Crown - `9ItemID: `e7818|left|7818|
+add_label_with_icon|small|`wHeartqueen's Crown - `9ItemID: `e7822|left|7822|
+add_label_with_icon|small|`wHowling Pineapple Crown - `9ItemID: `e8516|left|8516|
+add_label_with_icon|small|`wGuild Challenge Crown - `9ItemID: `e9100|left|9100|
+add_label_with_icon|small|`wMedusa's Crown - `9ItemID: `e9348|left|9348|
+add_label_with_icon|small|`wFloatie Crown - `9ItemID: `e9736|left|9736|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+return true
+end
+
+function Crown(type, packet)
+if packet == ("action|input\n|text|/fcrown") then
+itemidcrown()
+return true
+end
+end
+
+AddCallback("legend_commandsx","OnPacket", Crown)
+
+--aura
+function itemidaura()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Aura `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wGolden Aura - `9ItemID: `e2722|left|2722|
+add_label_with_icon|small|`wBlack Aura - `9ItemID: `e3114|left|3114|
+add_label_with_icon|small|`wPink Aura - `9ItemID: `e4970|left|4970|
+add_label_with_icon|small|`wBlue Aura - `9ItemID: `e4972|left|4972|
+add_label_with_icon|small|`wPrismatic Aura - `9ItemID: `e5020|left|5020|
+add_label_with_icon|small|`wFlaming Aura - `9ItemID: `e6284|left|6284|
+add_label_with_icon|small|`wPurple Aura - `9ItemID: `e8024|left|8024aea|
+add_label_with_icon|small|`wGreen Aura - `9ItemID: `e8026|left|8026|
+add_label_with_icon|small|`wWinter Radiance Aura - `9ItemID: `e9210|left|9210|
+add_label_with_icon|small|`wMoney Aura - `9ItemID: `e9428|left|9428|
+add_label_with_icon|small|`wCrystal Aura - `9ItemID: `e9712|left|9712|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+return true
+end
+
+function aura(type, packet)
+if packet == ("action|input\n|text|/faura") then
+itemidaura()
+return true
+end
+end
+
+AddCallback("hairs_commandsx","OnPacket", aura)
+
+--bow
+function itemidbow()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Bows `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wHeatbow - `9ItemID: `e4136|left|4136|
+add_label_with_icon|small|`wSilverstar Bow - `9ItemID: `e5456|left|5456|
+add_label_with_icon|small|`wEldritch Crossbow - `9ItemID: `e10052|left|10052|
+add_label_with_icon|small|`wHeartbow - `9ItemID: `e366|left|366|
+add_label_with_icon|small|`wElvish Longbow - `9ItemID: `e594|left|594|
+add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
+add_label_with_icon|small|`wElectric Bow - `9ItemID: `e2720|left|2720|
+add_label_with_icon|small|`wWinter Frost Bow - `9ItemID: `e5424|left|5424|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+return true
+end
+
+function bow(type, packet)
+if packet == ("action|input\n|text|/fbow") then
+itemidbow()
+return true
+end
+end
+
+AddCallback("bowsiditem_commandsx","OnPacket", bow)
+
+--Golden
+function itemidgolden()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Golden `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wGolden Halo - `9ItemID: `e128|left|128|
+add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
+add_label_with_icon|small|`wGolden Diamond Necklace - `9ItemID: `e1466|left|1466|
+add_label_with_icon|small|`wGolden Diaper - `9ItemID: `e1462|left|1462|
+add_label_with_icon|small|`wGolden Angel Wings - `9ItemID: `e1460|left|1460|
+add_label_with_icon|small|`wGolden Air Robinsons - `9ItemID: `e1822|left|1822|
+add_label_with_icon|small|`wGolden Crystal Wings - `9ItemID: `e2262|left|2262|
+add_label_with_icon|small|`wTeeny Golden Wings - `9ItemID: `e2392|left|2392|
+add_label_with_icon|small|`wGolden Aura - `9ItemID: `e2722|left|2722|
+add_label_with_icon|small|`wGolden Crystal Skirt - `9ItemID: `e2942|left|2942|
+add_label_with_icon|small|`wGolden Razor Wings - `9ItemID: `e4534|left|4534|
+add_label_with_icon|small|`wGolden Heart Shirt - `9ItemID: `e5646|left|5646|
+add_label_with_icon|small|`wGolden Talaria - `9ItemID: `e5650|left|5650|
+add_label_with_icon|small|`wKnight's Great Helm Golden - `9ItemID: `e7276|left|7276|
+add_label_with_icon|small|`wGolden Heartthrob Helm - `9ItemID: `e9326|left|9326|
+add_label_with_icon|small|`wGolden Sword - `9ItemID: `e604|left|604|
+add_label_with_icon|small|`wGolden Heartstaff - `9ItemID: `e7828|left|7828|
+add_label_with_icon|small|`wGolden Midas Masterpants - `9ItemID: `e7302|left|7302|
+add_label_with_icon|small|`wGolden Jet Ski - `9ItemID: `e7530|left|7530|
+add_label_with_icon|small|`wHovernator Drone - Golden - `9ItemID: `e7574|left|7574|
+add_label_with_icon|small|`wGolden Heartsword - `9ItemID: `e7832|left|7832|
+add_label_with_icon|small|`wGolden Sunset Cape - `9ItemID: `e9322|left|9322|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+return true
+end
+
+function golden(type, packet)
+if packet == ("action|input\n|text|/fgold")then
+itemidgolden()
+return true
+end
+end
+
+AddCallback("goldensiditem_commandsx","OnPacket", golden)
+
+function finditem(type, packet)
+if packet == ("action|input\n|text|/find") then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Legend `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wLegendary Katana - `9ItemID: `e2592|left|2592|
+add_label_with_icon|small|`wLegendary Wing - `9ItemID: `e1784|left|1784|
+add_label_with_icon|small|`wLegendBot-009 - `9ItemID: `e1780|left|1780|
+add_label_with_icon|small|`wLegendary Dragon Knight's Wings - `9ItemID: `e7734|left|7734|
+add_label_with_icon|small|`wLegendary Comet Hair - `9ItemID: `e8306|left|8306|
+add_spacer|small|
+add_label_with_icon|big|`e>>> `9Result In Hands `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wLegendary Katana - `9ItemID: `e2592|left|2592|
+add_label_with_icon|small|`wPoseidon's Trident - `9ItemID: `e2802|left|2802|
+add_label_with_icon|small|`wPoseidon's Digger's Trident - `9ItemID: `e7434|left|7434|
+add_label_with_icon|small|`wNeptune's Trident - `9ItemID: `e9758|left|9758|
+add_label_with_icon|small|`wCursed Katana - `9ItemID: `e9058|left|9058|
+add_label_with_icon|small|`wGolden Heartstaff - `9ItemID: `e7828|left|7828|
+add_label_with_icon|small|`wHeatbow - `9ItemID: `e4136|left|4136|
+add_label_with_icon|small|`wSilverstar Bow - `9ItemID: `e5456|left|5456|
+add_label_with_icon|small|`wEldritch Crossbow - `9ItemID: `e10052|left|10052|
+add_label_with_icon|small|`wHeartbow - `9ItemID: `e366|left|366|
+add_label_with_icon|small|`wHeartsword - `9ItemID: `e7830|left|7830|
+add_label_with_icon|small|`wElvish Longbow - `9ItemID: `e594|left|594|
+add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
+add_label_with_icon|small|`wCarrot Sword - `9ItemID: `e2908|left|2908|
+add_label_with_icon|small|`wSonic Buster Sword - `9ItemID: `e7586|left|7586|
+add_label_with_icon|small|`wElectric Bow - `9ItemID: `e2720|left|2720|
+add_label_with_icon|small|`wWinter Frost Bow - `9ItemID: `e5424|left|5424|
+add_label_with_icon|small|`wEthereal Rainbow Dragon - `9ItemID: `e7136|left|7136|
+add_spacer|small|
+add_label_with_icon|big|`e>>> `9Result In Wings `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wFairy Wings - `9ItemID: `e156|left|156|
+add_label_with_icon|small|`wAngel Wings - `9ItemID: `e362|left|362|
+add_label_with_icon|small|`wCrimson Eagle Wings - `9ItemID: `e678|left|678|
+add_label_with_icon|small|`wPlay Wings - `9ItemID: `e736|left|736|
+add_label_with_icon|small|`wRipper Wings - `9ItemID: `e818|left|818|
+add_label_with_icon|small|`wDevil Wings - `9ItemID: `e1206|left|1206|
+add_label_with_icon|small|`wGolden Angel Wings - `9ItemID: `e1460|left|1460|
+add_label_with_icon|small|`wBubble Wings - `9ItemID: `e1550|left|1550|
+add_label_with_icon|small|`wParrot Wings - `9ItemID: `e1574|left|1574|
+add_label_with_icon|small|`wWater Wings - `9ItemID: `e1668|left|1668|
+add_label_with_icon|small|`wRainbow Wings - `9ItemID: `e1672|left|1672|
+add_label_with_icon|small|`wPhoenix Wings - `9ItemID: `e1674|left|1674|
+add_label_with_icon|small|`wLegendary Wings - `9ItemID: `e1784|left|1784|
+add_label_with_icon|small|`wAutumn Wings - `9ItemID: `e1824|left|1824|
+add_label_with_icon|small|`wBlazing Electro Wings - `9ItemID: `e1936|left|1936|
+add_label_with_icon|small|`wDiamond Wings - `9ItemID: `e1938|left|1938|
+add_label_with_icon|small|`wNightmare Devil Wings - `9ItemID: `e1970|left|1970|
+add_label_with_icon|small|`wRed Crystal Wings - `9ItemID: `e2254|left|2254|
+add_label_with_icon|small|`wBlue Crystal Wings - `9ItemID: `e2256|left|2256|
+add_label_with_icon|small|`wGreen Crystal Wings - `9ItemID: `e2258|left|2258|
+add_label_with_icon|small|`wPurple Crystal Wings - `9ItemID: `e2260|left|2260|
+add_label_with_icon|small|`wGolden Crystal Wings - `9ItemID: `e2262|left|2262|
+add_label_with_icon|small|`wAqua Crystal Wings - `9ItemID: `e2264|left|2264|
+add_label_with_icon|small|`wTeeny Angel Wings - `9ItemID: `e2390|left|2390|
+add_label_with_icon|small|`wTeeny Golden Wings - `9ItemID: `e2392|left|2392|
+add_label_with_icon|small|`wTeeny Devil Wings - `9ItemID: `e3120|left|3120|
+add_label_with_icon|small|`wSaturday Wings - `9ItemID: `e3512|left|3512|
+add_label_with_icon|small|`wGolden Razor Wings - `9ItemID: `e4534|left|4534|
+add_label_with_icon|small|`wInside-Out Devil Wings - `9ItemID: `e4986|left|4986|
+add_label_with_icon|small|`wDraconic Wings - `9ItemID: `e5754|left|5754|
+add_label_with_icon|small|`wAurora Wings - `9ItemID: `e6144|left|6144|
+add_label_with_icon|small|`wDanieldd's Chimera Wings - `9ItemID: `e6334|left|6334|
+add_label_with_icon|small|`wSuper Utility Wings - `9ItemID: `e6694|left|6694|
+add_label_with_icon|small|`wNightwings - `9ItemID: `e6818|left|6818|
+add_label_with_icon|small|`wRaven Wings - `9ItemID: `e6842|left|6842|
+add_label_with_icon|small|`wDark Aurora Wings - `9ItemID: `e7104|left|7104|
+add_label_with_icon|small|`wStone Gargoyle Wings - `9ItemID: `e7150|left|7150|
+add_label_with_icon|small|`wMonarch Butterfly Wings - `9ItemID: `e7196|left|7196|
+add_label_with_icon|small|`wTurkey Wings - `9ItemID: `e7350|left|7350|
+add_label_with_icon|small|`wSnowflake Wings of Winter - `9ItemID: `e7412|left|7412|
+add_label_with_icon|small|`wOVEROLL's Wings - `9ItemID: `e7502|left|7502|
+add_label_with_icon|small|`wRobotic MK.IV Wings - `9ItemID: `e7582|left|7582|
+add_label_with_icon|small|`wLegendary Dragon Knight's Wings - `9ItemID: `e7734|left|7734|
+add_label_with_icon|small|`wStained Glass Heartwings - `9ItemID: `e7834|left|7834|
+add_label_with_icon|small|`wCondor Wings - `9ItemID: `e7914|left|7914|
+add_label_with_icon|small|`wAirplane Wings - `9ItemID: `e7916|left|7916|
+add_label_with_icon|small|`wDa Vinci Wings - `9ItemID: `e8286|left|8286|
+add_label_with_icon|small|`wSteampunk Wings - `9ItemID: `e8302|left|8302|
+add_label_with_icon|small|`wReg4shi's Archangel Wings - `9ItemID: `e8308|left|8308|
+add_label_with_icon|small|`wAngel of Mercy's Wings - `9ItemID: `e8552|left|8552|
+add_label_with_icon|small|`wMunnin's Unity Wings - `9ItemID: `e8620|left|8620|
+add_label_with_icon|small|`wValkyrie's Wings - `9ItemID: `e8862|left|8862|
+add_label_with_icon|small|`wMosquito King's Wings - `9ItemID: `e8914|left|8914|
+add_label_with_icon|small|`wNightmare Teeny Devil Wings - `9ItemID: `e9114|left|9114|
+add_label_with_icon|small|`wFrosty Wings - `9ItemID: `e9182|left|9182|
+add_label_with_icon|small|`wPink Teeny Angel Wings - `9ItemID: `e9352|left|9352|
+add_label_with_icon|small|`wBalrog Wings - `9ItemID: `e9394|left|9394|
+add_label_with_icon|small|`wShamrock Wings - `9ItemID: `e9422|left|9422|
+add_label_with_icon|small|`wFlamingo Wings - `9ItemID: `e9742|left|9742|
+add_label_with_icon|small|`wPegasus Wings - `9ItemID: `e9760|left|9760|
+add_label_with_icon|small|`wZodiac Wings - `9ItemID: `e10054|left|10054|
+add_spacer|small|
+add_label_with_icon|big|`e>>> `9Result In Ances `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wAncestral Totem of Wisdom - `9ItemID: `e5078|left|5078|
+add_label_with_icon|small|`wAncestral Tesseract of Dimensions - `9ItemID: `e5080|left|5080|
+add_label_with_icon|small|`wAncestral Seed of Life - `9ItemID: `e5082|left|5082|
+add_label_with_icon|small|`wAncestral Lens of Riches - `9ItemID: `e5084|left|5084|
+add_spacer|small|
+add_label_with_icon|big|`e>>> `9Result In Crown `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wFairy Crown - `9ItemID: `e136|left|136|
+add_label_with_icon|small|`wOceanic Crown - `9ItemID: `e2874|left|2874|
+add_label_with_icon|small|`wDried Leaf Crown - `9ItemID: `e3086|left|3086|
+add_label_with_icon|small|`wSuper Logo - Crown - `9ItemID: `e3132|left|3132|
+add_label_with_icon|small|`wChallenge Crown - `9ItemID: `e3138|left|3138|
+add_label_with_icon|small|`wSpring Crown - `9ItemID: `e3444|left|3444|
+add_label_with_icon|small|`wTXMom's Crown - `9ItemID: `e4626|left|4626|
+add_label_with_icon|small|`wPhoenix Crown - `9ItemID: `e4820|left|4820|
+add_label_with_icon|small|`wDancemaster's Crown - `9ItemID: `e6300|left|6300|
+add_label_with_icon|small|`wHeartking's Crown - `9ItemID: `e7818|left|7818|
+add_label_with_icon|small|`wHeartqueen's Crown - `9ItemID: `e7822|left|7822|
+add_label_with_icon|small|`wHowling Pineapple Crown - `9ItemID: `e8516|left|8516|
+add_label_with_icon|small|`wGuild Challenge Crown - `9ItemID: `e9100|left|9100|
+add_label_with_icon|small|`wMedusa's Crown - `9ItemID: `e9348|left|9348|
+add_label_with_icon|small|`wFloatie Crown - `9ItemID: `e9736|left|9736|
+add_spacer|small|
+add_label_with_icon|big|`e>>> `9Result In Aura `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wGolden Aura - `9ItemID: `e2722|left|2722|
+add_label_with_icon|small|`wBlack Aura - `9ItemID: `e3114|left|3114|
+add_label_with_icon|small|`wPink Aura - `9ItemID: `e4970|left|4970|
+add_label_with_icon|small|`wBlue Aura - `9ItemID: `e4972|left|4972|
+add_label_with_icon|small|`wPrismatic Aura - `9ItemID: `e5020|left|5020|
+add_label_with_icon|small|`wFlaming Aura - `9ItemID: `e6284|left|6284|
+add_label_with_icon|small|`wPurple Aura - `9ItemID: `e8024|left|8024aea|
+add_label_with_icon|small|`wGreen Aura - `9ItemID: `e8026|left|8026|
+add_label_with_icon|small|`wWinter Radiance Aura - `9ItemID: `e9210|left|9210|
+add_label_with_icon|small|`wMoney Aura - `9ItemID: `e9428|left|9428|
+add_label_with_icon|small|`wCrystal Aura - `9ItemID: `e9712|left|9712|
+add_spacer|small|
+add_label_with_icon|big|`e>>> `9Result In Bows `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wHeatbow - `9ItemID: `e4136|left|4136|
+add_label_with_icon|small|`wSilverstar Bow - `9ItemID: `e5456|left|5456|
+add_label_with_icon|small|`wEldritch Crossbow - `9ItemID: `e10052|left|10052|
+add_label_with_icon|small|`wHeartbow - `9ItemID: `e366|left|366|
+add_label_with_icon|small|`wElvish Longbow - `9ItemID: `e594|left|594|
+add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
+add_label_with_icon|small|`wElectric Bow - `9ItemID: `e2720|left|2720|
+add_label_with_icon|small|`wWinter Frost Bow - `9ItemID: `e5424|left|5424|
+add_spacer|small|
+add_label_with_icon|big|`e>>> `9Result In Golden `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wGolden Halo - `9ItemID: `e128|left|128|
+add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
+add_label_with_icon|small|`wGolden Diamond Necklace - `9ItemID: `e1466|left|1466|
+add_label_with_icon|small|`wGolden Diaper - `9ItemID: `e1462|left|1462|
+add_label_with_icon|small|`wGolden Angel Wings - `9ItemID: `e1460|left|1460|
+add_label_with_icon|small|`wGolden Air Robinsons - `9ItemID: `e1822|left|1822|
+add_label_with_icon|small|`wGolden Crystal Wings - `9ItemID: `e2262|left|2262|
+add_label_with_icon|small|`wTeeny Golden Wings - `9ItemID: `e2392|left|2392|
+add_label_with_icon|small|`wGolden Aura - `9ItemID: `e2722|left|2722|
+add_label_with_icon|small|`wGolden Crystal Skirt - `9ItemID: `e2942|left|2942|
+add_label_with_icon|small|`wGolden Razor Wings - `9ItemID: `e4534|left|4534|
+add_label_with_icon|small|`wGolden Heart Shirt - `9ItemID: `e5646|left|5646|
+add_label_with_icon|small|`wGolden Talaria - `9ItemID: `e5650|left|5650|
+add_label_with_icon|small|`wKnight's Great Helm Golden - `9ItemID: `e7276|left|7276|
+add_label_with_icon|small|`wGolden Heartthrob Helm - `9ItemID: `e9326|left|9326|
+add_label_with_icon|small|`wGolden Sword - `9ItemID: `e604|left|604|
+add_label_with_icon|small|`wGolden Heartstaff - `9ItemID: `e7828|left|7828|
+add_label_with_icon|small|`wGolden Midas Masterpants - `9ItemID: `e7302|left|7302|
+add_label_with_icon|small|`wGolden Jet Ski - `9ItemID: `e7530|left|7530|
+add_label_with_icon|small|`wHovernator Drone - Golden - `9ItemID: `e7574|left|7574|
+add_label_with_icon|small|`wGolden Heartsword - `9ItemID: `e7832|left|7832|
+add_label_with_icon|small|`wGolden Sunset Cape - `9ItemID: `e9322|left|9322|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+return true
+end
+end
+AddCallback("finditem", "OnPacket", finditem)
