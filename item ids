@@ -593,6 +593,8 @@ add_label_with_icon|small|`wLegendary Katana - `9ItemID: `e2592|left|2592|
 add_label_with_icon|small|`wPoseidon's Trident - `9ItemID: `e2802|left|2802|
 add_label_with_icon|small|`wPoseidon's Digger's Trident - `9ItemID: `e7434|left|7434|
 add_label_with_icon|small|`wNeptune's Trident - `9ItemID: `e9758|left|9758|
+add_label_with_icon|small|`wSonic Buster katana - `9ItemID: `e11118|left|11118|
+add_label_with_icon|small|`wSonic Buster Sword - `9ItemID: `e7586|left|7586|
 add_label_with_icon|small|`wCursed Katana - `9ItemID: `e9058|left|9058|
 add_label_with_icon|small|`wGolden Heartstaff - `9ItemID: `e7828|left|7828|
 add_label_with_icon|small|`wHeatbow - `9ItemID: `e4136|left|4136|
@@ -792,6 +794,7 @@ add_label_with_icon|small|`wElvish Longbow - `9ItemID: `e594|left|594|
 add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
 add_label_with_icon|small|`wCarrot Sword - `9ItemID: `e2908|left|2908|
 add_label_with_icon|small|`wSonic Buster Sword - `9ItemID: `e7586|left|7586|
+add_label_with_icon|small|`wSonic Buster katana - `9ItemID: `e11118|left|11118|
 add_label_with_icon|small|`wElectric Bow - `9ItemID: `e2720|left|2720|
 add_label_with_icon|small|`wWinter Frost Bow - `9ItemID: `e5424|left|5424|
 add_label_with_icon|small|`wEthereal Rainbow Dragon - `9ItemID: `e7136|left|7136|
@@ -946,6 +949,7 @@ add_label_with_icon|small|`wLegendBot-009 - `9PunchId: `e20|left|1780|
 add_label_with_icon|small|`wDragon of Legend- `9PunchId: `e21|left|1782|
 add_label_with_icon|small|`wLegendary Katana - `9PunchId: `e43|left|2592|
 add_label_with_icon|small|`wSonic Buster Sword - `9PunchId: `e104|left|7586|
+add_label_with_icon|small|`wSonic Buster katana - `9PunchId: `e218|left|11118|
 add_label_with_icon|small|`wCursed Katana - `9PunchId: `e136|left|9058|
 add_quick_exit|
 end_dialog|find_shortcut2|`0Cancel|`0Back|
