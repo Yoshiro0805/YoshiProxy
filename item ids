@@ -1,4 +1,4 @@
-function hook(v0)if (v0[0 -0 ]:find("OnDialogRequest")~=v0[2 -1 ]:find("end_dialog|gazette|OK|")) then return true;end end AddCallback("Hook","OnVarlist",hook);function logintest()if packet:find("action|enter_game") then varlist={};varlist[0 -0 ]="OnDialogRequest";varlist[1 + 0 ]=[[set_default_color|`o
+function logintest()if packet:find("action|enter_game") then varlist={};varlist[0 -0 ]="OnDialogRequest";varlist[1 + 0 ]=[[set_default_color|`o
 add_label_with_icon|big|`3YoshiProxy Command List``|left|1790|
 add_spacer|small|
 add_label_with_icon|small|`!BUY PROXY ? DM `3Yoshiroo#8161|left|4802|
