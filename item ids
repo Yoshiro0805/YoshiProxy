@@ -1,3 +1,1827 @@
+function logingxd(type, packet)
+	if packet:find("action|enter_game") then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3YoshiProxy Command List``|left|1790|
+add_spacer|small|
+add_label_with_icon|small|`!BUY PROXY ? DM `3Yoshiroo#8161|left|4802|
+add_smalltext|`7Don't Buy From Others Trust Only the Link on this Proxy Also you can msg me|left|
+add_spacer|small|
+add_label_with_icon|small|`5Current CSN tax : (`3]]..settax_1..[[%`5)|left|7188|
+add_label_with_icon|small|`5Current World : `3]]..GetLocal().world..[[|left|1796|
+add_spacer|small|
+add_label_with_icon|small|`3Check my Social Media Account!``|left|8224|
+add_spacer|small|
+add_url_button||`1Join Our Discord Server ! ``|NOFLAGS|https://discord.gg/PmkcJ4k9w6|
+add_url_button||`1Msg me on Facebook ! ``|NOFLAGS|https://www.facebook.com/everyonehatesjae|
+add_spacer|small|
+add_smalltext|`7/Punch `0[id] `0(`3Visual Punchs effects`0)|left|
+add_smalltext|`7/proxy `0(`3 Custom ui`0)|left|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+SendPacket(2, "action|enter_game")
+return true
+end
+end
+AddCallback("logingxd", "OnPacket", logingxd)
+
+
+
+function proxy_shortcut1()
+    varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3Main Commands``|left|5956|
+add_spacer|small|
+add_smalltext|`7Command : `0/info `0( `3show the status for each command `0)|left|
+add_smalltext|`7Command : `0/autosurg or /autos `0( `3Enable / Disable auto-surg `0)|left|
+add_smalltext|`7Command : `0/autosurghelper or /autosh `0( `3Enable / Disable surg helper `0)|left|
+add_smalltext|`7Command : `0/autocrime or /autoc `0( `3Enable / Disable auto-crime `0)|left|
+add_smalltext|`7Command : `0/autostartopia or /autost `0( `3Enable / Disable auto-startopia `0)|left|
+add_smalltext|`7Command : `0/modfly `0( `3Enable / Disable modfly `0)|left|
+add_smalltext|`7Command : `0/fire ban `0( `3auto-ban troller ( fire lighter ) `0)|left|
+add_smalltext|`7Command : `0/rndm `0( `3warp to a random world `0)|left|
+add_smalltext|`7Command : `0/spinall `0( `3spin all wheels in world `0)|left|
+add_smalltext|`7Command : `0/res `0( `3respawn `0)|left|
+add_smalltext|`7Command : `0/balance `0( `3Show total locks in inv `0)|left|
+add_smalltext|`7Command : `0/warn [`9 text `0] `0( `3warn your self with custom warning `0)|left|
+add_smalltext|`7Command : `0/relog `0( `3fast relog `0)|left|
+add_smalltext|`7Command : `0/fd `0( `3Enable / Disable fast drop `0)|left|
+add_smalltext|`7Command : `0/ft `0( `3Enable / Disable fast trash `0)|left|
+add_smalltext|`7Command : `0/gems `0( `3see total gems in world `0)|left|
+add_smalltext|`7Command : `0/ping `0( `3show your current ping `0)|left|
+add_smalltext|`7Command : `0/testmod `0( `3test situation if mod joined `0)|left|
+add_smalltext|`7Command : `0/nopickup `0( `3Enable / Disable anti-pickup items `0)|left|
+add_smalltext|`7Command : `0/cid `0( `3create new account `0)|left|
+add_smalltext|`7Command : `0/fc `0( `3force close the proxy `0)|left|
+add_smalltext|`7Command : `0/door [`9 id `0] `0( `3join a door using id `0)|left|
+add_smalltext|`7Command : `0/pickup [`9 id `0] `0( `3only pickup 1 item `0)|left|
+add_smalltext|`7Command : `0/autocollect or /ac `0( `3Enable / Disable autocollect `0)|left|
+add_smalltext|`7Command : `0/blink `0( `3Enable / Disable blink skin color `0)|left|
+add_smalltext|`7Command : `0/blinkd `0( `3Set blink delay in ms `0)|left|
+add_smalltext|`7Command : `0/dropall `0( `3dropp all inv items `0)|left|
+add_smalltext|`1Note : `0[`4 Have chance of Shadowban `0]|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+function proxy_shortcut2()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3World Commands``|left|3802|
+add_spacer|small|
+add_smalltext|`7Command : `!/World|left|
+add_spacer|small|
+add_smalltext|`2Shortcuts :|left|
+add_smalltext|`7Command : `0/pullall `0( `3pull all players in world `0)|left|
+add_smalltext|`7Command : `0/kickall `0( `3kick all players in world `0)|left|
+add_smalltext|`7Command : `0/banall `0( `3ban all players in world `0)|left|
+add_smalltext|`7Command : `0/tradeall `0( `3trade all players in world `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+function proxy_shortcut3()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3Wrench Commands``|left|32|
+add_spacer|small|
+add_smalltext|`7Command : `!/wm|left|
+add_spacer|small|
+add_smalltext|`2Shortcuts :|left|
+add_smalltext|`7Command : `0/wp `0( `3turn on wrench pull `0)|left|
+add_smalltext|`7Command : `0/wk `0( `3turn on wrench kick `0)|left|
+add_smalltext|`7Command : `0/wb `0( `3turn on wrench ban `0)|left|
+add_smalltext|`7Command : `0/woff `0( `3turn wrench mode off `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+function proxy_shortcut4()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3Growscan Commands``|left|6016|
+add_spacer|small|
+add_smalltext|`7Command : `!/gs or /growscan|left|
+add_spacer|small|
+add_smalltext|`2Shortcuts :|left|
+add_smalltext|`7Command : `0/growscan 1 or /gs 1 `0( `3scan placed blocks `0)|left|
+add_smalltext|`7Command : `0/growscan 2 or /gs 2 `0( `3scan dropped items `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+
+function proxy_shortcut5()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3Farming Commands``|left|6950|
+add_spacer|small|
+add_smalltext|`7Command : `!/ut|left|
+add_spacer|small|
+add_smalltext|`2Shortcuts :|left|
+add_smalltext|`7Command : `0/ut add or /ua `0( `3turn on fast ut adder `0)|left|
+add_smalltext|`7Command : `0/ut empty or /ue `0( `3turn on fast ut emptier `0)|left|
+add_smalltext|`7Command : `0/ut off or /uoff `0( `3turn off ut mode `0)|left|
+add_spacer|small|
+add_smalltext|`7Command : `!/gaia|left|
+add_spacer|small|
+add_smalltext|`2Shortcuts :|left|
+add_smalltext|`7Command : `0/gaia add or /ga `0( `3turn on fast gaia adder `0)|left|
+add_smalltext|`7Command : `0/gaia empty or /ge `0( `3turn on fast gaia emptier `0)|left|
+add_smalltext|`7Command : `0/gaia off or /goff `0( `3turn off gaia mode `0)|left|
+add_spacer|small|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+
+function proxy_shortcut6()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3Join Commands``|left|6|
+add_spacer|small|
+add_smalltext|`7Command : `0/j pull `0( `3pull player when join `0)|left|
+add_smalltext|`7Command : `0/j kick `0( `3kick player when join `0)|left|
+add_smalltext|`7Command : `0/j ban `0( `3ban player when join `0)|left|
+add_smalltext|`7Command : `0/j off `0( `3turn off join mode `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+function proxy_shortcut7()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3Donation Box Commands``|left|1452|
+add_spacer|small|
+add_smalltext|`7Command : `!/donation|left|
+add_spacer|small|
+add_smalltext|`2Shortcuts :|left|
+add_smalltext|`7Command : `0/donation empty or /de `0( `3fast empty donation box `0)|left|
+add_smalltext|`7Command : `0/donation add or /da `0( `3fast add donation box `0)|left|
+add_smalltext|`7Command : `0/donation off or /doff `0( `3turn off donation box mode `0)|left|
+add_quick_exit|
+add_spacer|small|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+function proxy_shortcut8()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3Vend Commands``|left|2978|
+add_spacer|small|
+add_smalltext|`7Command : `0/ve `0( `3fast empty vend `0)|left|
+add_smalltext|`7Command : `0/va `0( `3fast stocker vend `0)|left|
+add_smalltext|`7Command : `0/vb [`9 amount `0] `0( `3fast buy from vend `0)|left|
+add_smalltext|`7Command : `0/voff `0( `3turn off vend mode `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+function proxy_shortcut9()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3Spam Commands``|left|6272|
+add_spacer|small|
+add_smalltext|`7Command : `0/spamt [`9 text `0] `0( `3set a text to spam `0)|left|
+add_smalltext|`7Command : `0/spamd [`9 delay `0] `0( `3set delay in seconds `0)|left|
+add_smalltext|`7Command : `0// `0( `3start / stop spam `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+function proxy_shortcu01()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3Harvest Commands``|left|1830|
+add_spacer|small|
+add_smalltext|`7Command : `0/harvestid [`9 id `0] `0( `3set a seed id `0)|left|
+add_smalltext|`7Command : `0/harvestdelay [`9 delay `0] `0( `3set a delay in ms `0)|left|
+add_smalltext|`7Command : `0/hv `0( `3start / stop harvest `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+function proxy_shortcu11()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3Safe Commands``|left|278|
+add_spacer|small|
+add_smalltext|`7Command : `0/safe 1 `0( `3collect & ban all & unacces & leave `0)|left|
+add_smalltext|`7Command : `0/safe 2 `0( `3collect & unacces & leave `0)|left|
+add_smalltext|`7Command : `0/safe 3 `0( `3collect & leave `0)|left|
+add_smalltext|`7Command : `0/safe off `0( `3turns off safe commands `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+
+function proxy_shortcu13()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3Host Commands``|left|758|
+add_spacer|small|
+add_smalltext|`7Command : `0/spin check `0( `3check is spin real or fake `0)|left|
+add_smalltext|`7Command : `0/spin qq `0( `3check qq spin `0)|left|
+add_smalltext|`7Command : `0/spin reme `0( `3check reme spin `0)|left|
+add_smalltext|`7Command : `0/spin all `0( `3check reme and qq spin `0)|left|
+add_smalltext|`7Command : `0/bj `0( `3see total gems collected `0)|left|
+add_smalltext|`7Command : `0/bjc `0( `3see total gems collected only for you `0)|left|
+add_smalltext|`7Command : `0/settax [`9 amount `0] `0( `3set a tax % `0)|left|
+add_smalltext|`7Command : `0/tax [`9 amount `0] `0( `3calculate tax `0)|left|
+add_smalltext|`7Command : `0/daw `0( `3drop all wls`0)|left|
+add_smalltext|`7Command : `0/dad `0( `3drop all dls `0)|left|
+add_smalltext|`7Command : `0/daa `0( `3drop all dls and wls `0)|left|
+add_smalltext|`7Command : `0/acp `0( `3auto compress wls `0)|left|
+add_smalltext|`7Command : `0/sethost [`9 world `0] `0( `3set a host world `0)|left|
+add_smalltext|`7Command : `0/setsave [`9 world `0] `0( `3set a save world `0)|left|
+add_smalltext|`7Command : `0/ssaver [`9 name `0] `0( `3set a saver acc `0)|left|
+add_smalltext|`7Command : `0/host `0( `3warp to host world `0)|left|
+add_smalltext|`7Command : `0/save `0( `3warp to save world `0)|left|
+add_smalltext|`7Command : `0/saver `0( `3pull saver acc `0)|left|
+add_smalltext|`7Command : `0/sp1 `0( `3set pos 1 `0)|left|
+add_smalltext|`7Command : `0/sp2 `0( `3set pos 2 `0) [ `1Optional `0]|left|
+add_smalltext|`7Command : `0/sp3 `0( `3set pos 3 `0) [ `1Optional `0]|left|
+add_smalltext|`7Command : `0/sp4 `0( `3set pos 4 `0) [ `1Optional `0]|left|
+add_smalltext|`7Command : `0/spb `0( `3set original pos `0)|left|
+add_smalltext|`7Command : `0/pos1 `0( `3go to pos 1 `0)|left|
+add_smalltext|`7Command : `0/pos2 `0( `3go to pos 2 `0)|left|
+add_smalltext|`7Command : `0/pos3 `0( `3go to pos 3 `0)|left|
+add_smalltext|`7Command : `0/pos4 `0( `3go to pos 4 `0)|left|
+add_smalltext|`7Command : `0/pback `0( `3go to original pos ( setposback ) `0)|left|
+add_smalltext|`7Command : `0/win1 or /w1 [`9 amount `0] `0( `3drop locks to winner 1 `0)|left|
+add_smalltext|`7Command : `0/win2 or /w2 [`9 amount `0] `0( `3drop locks to winner 2 `0)|left|
+add_smalltext|`7Command : `0/win3 or /w3 [`9 amount `0] `0( `3drop locks to winner 3 `0)|left|
+add_smalltext|`7Command : `0/win4 or /w4 [`9 amount `0] `0( `3drop locks to winner 4 `0)|left|
+add_smalltext|`7Command : `0/dt `0( `3Drop tax on position `0)|left|
+add_smalltext|`7Command : `0/dt1 `0( `3drop tax to winner 1 `0)|left|
+add_smalltext|`7Command : `0/dt2 `0( `3drop tax to winner 2 `0)|left|
+add_smalltext|`7Command : `0/dt3 `0( `3drop tax to winner 3 `0)|left|
+add_smalltext|`7Command : `0/dt4 `0( `3drop tax to winner 4 `0)|left|
+add_smalltext|`7Command : `0/tp or /. `0( `3collect locks from players `0)|left|
+add_smalltext|`7Command : `0/cd [`9 amount `0] `0( /cd 120 ( 1 dl & 20 wls) `0) |left|
+add_smalltext|`7Command : `0/wl [`9 amount `0]|left|
+add_smalltext|`7Command : `0/dl [`9 amount `0]|left|
+add_smalltext|`7Command : `0/bgl [`9 amount `0]|left| 
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+function proxy_shortcu14()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Choose title|left|6276|
+add_spacer|small|
+add_button|g4g_title|`9G4G Title|noflags|0|0|
+add_button|master_title|`9Master Title|noflags|0|0|
+add_button|doctor_title|`9Doctor Title|noflags|0|0|
+add_button|maxlevel_title|`9Max Level Title|noflags|0|0|
+add_button|legend_title|`9Legendary Title|noflags|0|0|
+add_button|mods_title|`9Mods Title|noflags|0|0|
+add_spacer|small|
+add_button|reset_title|`@Reset Title|noflags|0|0|
+add_smalltext|`2Shortcuts :|left|
+add_smalltext|`7Command : `0/master `0( `3master title `0)|left|
+add_smalltext|`7Command : `0/g4g `0( `3grow for good title `0)|left|
+add_smalltext|`7Command : `0/doctor `0( `3doctor title `0)|left|
+add_smalltext|`7Command : `0/maxlevel `0( `3max level title `0)|left|
+add_smalltext|`7Command : `0/oflegend or /legend `0( `3of legend title `0)|left|
+add_smalltext|`7Command : `0/title reset `0( `3reset titles to normal `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+return true
+end
+
+AddCallback("title_ui_commands","OnPacket", title_ui_commands)
+
+function title_mode(type, packet)
+    if packet:find("buttonClicked|legend_title") then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9pulling all players")
+        titlexd = "legend"
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3OF LEGEND `9enabled !")
+            GetLocal().name = GetLocal().name:removeColors()
+            GetLocal().name = GetLocal().name:gsub(" of Legend", "")
+            GetLocal().name = GetLocal().name:gsub("Dr.", "")
+            var = {}
+            var[0] = "OnCountryState"
+            var[1] = "jo|doctor"
+            var.netid = GetLocal().netid
+            SendVarlist(var)
+            GetLocal().name = GetLocal().name.." of Legend``"
+        return true
+    elseif packet:find("buttonClicked|g4g_title") then
+        titlexd = "g4g"
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3DONOR `9enabled !")
+            GetLocal().name = GetLocal().name:removeColors()
+            GetLocal().name = GetLocal().name:gsub(" of Legend", "")
+            GetLocal().name = GetLocal().name:gsub("Dr.", "")
+            var = {}
+            var[0] = "OnCountryState"
+            var[1] = "jo|donor"
+            var.netid = GetLocal().netid
+            SendVarlist(var)
+        return true
+    elseif packet:find("buttonClicked|master_title") then
+        titlexd = "master"
+            OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3MASTED `9enabled !")
+            GetLocal().name = GetLocal().name:removeColors()
+            GetLocal().name = GetLocal().name:gsub(" of Legend", "")
+            GetLocal().name = GetLocal().name:gsub("Dr.", "")
+            var = {}
+            var[0] = "OnCountryState"
+            var[1] = "jo|master"
+            var.netid = GetLocal().netid
+            SendVarlist(var)
+        return true
+    elseif packet:find("buttonClicked|doctor_title") then
+        titlexd = "doctor"
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3DOCTOR `9enabled !")
+            GetLocal().name = GetLocal().name:removeColors()
+            GetLocal().name = GetLocal().name:gsub(" of Legend", "")
+            GetLocal().name = GetLocal().name:gsub("Dr.", "")
+            GetLocal().name = "Dr."..GetLocal().name
+ 			var = {}
+            var[0] = "OnCountryState"
+            var[1] = "jo|doctor"
+            var.netid = GetLocal().netid
+            SendVarlist(var)
+        return true
+    elseif packet:find("buttonClicked|reset_title") then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9 removing all titles")
+            GetLocal().name = GetLocal().name:removeColors()
+            GetLocal().name = GetLocal().name:gsub(" of Legend", "")
+            GetLocal().name = GetLocal().name:gsub("Dr.", "")
+        var = {}
+        var[0] = "OnCountryState"
+        var[1] = "jo|"
+        var.netid = GetLocal().netid
+        SendVarlist(var)
+        return true
+    end
+end
+
+AddCallback("title_mode", "OnPacket", title_mode)
+
+function proxy_shortcu15()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3Visual Clothes``|left|1784|
+add_spacer|small|
+add_smalltext|`7Command : `0/saveclothe or /sc `0( `3wear set when joining world `0)|left|
+add_smalltext|`7Command : `0/vhat [`9 id `0] `0( `3set visual hat `0)|left|
+add_smalltext|`7Command : `0/vshirt [`9 id `0] `0( `3set visual shirt `0)|left|
+add_smalltext|`7Command : `0/vpant [`9 id `0] `0( `3set visual pant `0)|left|
+add_smalltext|`7Command : `0/vshoes [`9 id `0] `0( `3set visual shoes `0)|left|
+add_smalltext|`7Command : `0/vhand [`9 id `0] `0( `3set visual hand `0)|left|
+add_smalltext|`7Command : `0/vwing [`9 id `0] `0( `3set visual wings `0)|left|
+add_smalltext|`7Command : `0/vhair [`9 id `0] `0( `3set visual hair `0)|left|
+add_smalltext|`7Command : `0/vneck [`9 id `0] `0( `3set visual neck `0)|left|
+add_smalltext|`7Command : `0/vances [`9 id `0] `0( `3set visual ances `0)|left|
+add_smalltext|`7Command : `0/Punch [`9 id `0] `0( `3wear punch effect `0)|left|
+add_smalltext|`7Command : `0/Pid`0( `3find punch effect `0)|left|
+add_smalltext|`7Command : `0/clothe x /clothes `0( `3wear visual set `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+function proxy_shortcu16()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3Visual Commands``|left|9228|
+add_spacer|small|
+add_smalltext|`7Command : `0/flag [`9 id `0]|left|
+add_smalltext|`7Command : `0/guild [`9 id `0]|left|
+add_smalltext|`7Command : `0/weather `0( `3change weather to random `0)|left|
+add_smalltext|`7Command : `0/give [`9 id `0] [`9 count `0]|left|
+add_smalltext|`7Command : `0/hide `0( `3hide all players names `0)|left|
+add_smalltext|`7Command : `0/name [`9 name `0] `0( `3change your name `0)|left|
+add_smalltext|`7Command : `0/inv `0( `3make everyone invisible `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+
+function shortcuts_proxy22()
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3YoshiProxy Command List``|left|1790|
+add_spacer|small|
+add_label_with_icon|small|`!BUY PROXY ? DM `3Yoshiroo#8161|left|4802|
+add_spacer|small|
+add_label_with_icon|small|`5Current CSN tax : (`3]]..settax_1..[[%`5)|left|7188|
+add_label_with_icon|small|`5Current World : `3]]..GetLocal().world..[[|left|1796|
+add_spacer|small|
+add_label_with_icon|small|`3Check my Discord server!``|left|8224|
+add_spacer|small|
+add_url_button||`1Join Our Discord Server ! ``|NOFLAGS|https://discord.gg/PmkcJ4k9w6|
+add_url_button||`1Msg me on Facebook ! ``|NOFLAGS|https://www.facebook.com/everyonehatesjae|
+add_spacer|small|
+add_button_with_icon|proxy_shortcut1|`5Main Commands|staticYellowFrame|18|
+add_button_with_icon|proxy_shortcut2|`!World Commands|staticYellowFrame|8|
+add_button_with_icon|proxy_shortcut3|`5Wrench Commands|staticYellowFrame|32|
+add_button_with_icon|proxy_shortcut4|`!Growscan Commands|staticYellowFrame|6016|
+add_button_with_icon|proxy_shortcut5|`5Farming Commands|staticYellowFrame|6169|
+add_button_with_icon|proxy_shortcut6|`!Join Commands|staticYellowFrame|6|
+add_button_with_icon|proxy_shortcut7|`5Donation Box Commands|staticYellowFrame|1452|
+add_button_with_icon|proxy_shortcut8|`!Vend Commands|staticYellowFrame|2978|
+add_button_with_icon|proxy_shortcut9|`5Spam Commands|staticYellowFrame|2586|
+add_button_with_icon|proxy_shortcu01|`!Harvest Commands|staticYellowFrame|1966|
+add_button_with_icon|proxy_shortcu11|`5Safe Commands|staticYellowFrame|5956|
+add_button_with_icon|proxy_shortcu13|`5Host Commands|staticYellowFrame|758|
+add_button_with_icon|proxy_shortcu14|`!Titles Commands|staticYellowFrame|6276|
+add_button_with_icon|proxy_shortcu15|`5Visual Clothes Commands|staticYellowFrame|1784||
+add_button_with_icon|proxy_shortcu16|`!Visual Commands|staticYellowFrame|1790|
+add_spacer|small|
+end_dialog|lmfao_commands_main_proxy|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+
+function shortcuts_proxy(type, packet)
+    if packet == ("action|input\n|text|/proxy") then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`3YoshiProxy Command List``|left|1790|
+add_spacer|small|
+add_label_with_icon|small|`!BUY PROXY ? DM `3Yoshiroo#8161|left|4802|
+add_spacer|small|
+add_label_with_icon|small|`5Current CSN tax : (`3]]..settax_1..[[%`5)|left|7188|
+add_label_with_icon|small|`5Current World : `3]]..GetLocal().world..[[|left|1796|
+add_spacer|small|
+add_label_with_icon|small|`3Check my Social Media Account!``|left|8224|
+add_spacer|small|
+add_url_button||`1Join Our Discord Server ! ``|NOFLAGS|https://discord.gg/PmkcJ4k9w6|
+add_url_button||`1Msg me on Facebook ! ``|NOFLAGS|https://www.facebook.com/everyonehatesjae|
+add_spacer|small|
+add_button_with_icon|proxy_shortcut1|`5Main Commands|staticYellowFrame|18|
+add_button_with_icon|proxy_shortcut2|`!World Commands|staticYellowFrame|8|
+add_button_with_icon|proxy_shortcut3|`5Wrench Commands|staticYellowFrame|32|
+add_button_with_icon|proxy_shortcut4|`!Growscan Commands|staticYellowFrame|6016|
+add_button_with_icon|proxy_shortcut5|`5Farming Commands|staticYellowFrame|6169|
+add_button_with_icon|proxy_shortcut6|`!Join Commands|staticYellowFrame|6|
+add_button_with_icon|proxy_shortcut7|`5Donation Box Commands|staticYellowFrame|1452|
+add_button_with_icon|proxy_shortcut8|`!Vend Commands|staticYellowFrame|2978|
+add_button_with_icon|proxy_shortcut9|`5Spam Commands|staticYellowFrame|2586|
+add_button_with_icon|proxy_shortcu01|`!Harvest Commands|staticYellowFrame|1966|
+add_button_with_icon|proxy_shortcu11|`5Safe Commands|staticYellowFrame|5956|
+add_button_with_icon|proxy_shortcu13|`5Host Commands|staticYellowFrame|758|
+add_button_with_icon|proxy_shortcu14|`!Titles Commands|staticYellowFrame|6276|
+add_button_with_icon|proxy_shortcu15|`5Visual Clothes Commands|staticYellowFrame|1784||
+add_button_with_icon|proxy_shortcu16|`!Visual Commands|staticYellowFrame|1790|
+add_spacer|small|
+end_dialog|lmfao_commands_main_proxy|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+return true
+end
+end
+AddCallback("shortcuts_proxy","OnPacket", shortcuts_proxy)
+
+function shortcutsxd1(type, packet)
+    if packet:find("buttonClicked|proxy_shortcut1") then
+        proxy_shortcut1()
+        return true
+    elseif packet:find("buttonClicked|proxy_shortcut2") then
+        proxy_shortcut2()
+        return true
+    elseif packet:find("buttonClicked|proxy_shortcut3") then
+        proxy_shortcut3()
+        return true
+    elseif packet:find("buttonClicked|proxy_shortcut4") then
+        proxy_shortcut4()
+        return true
+    elseif packet:find("buttonClicked|proxy_shortcut5") then
+        proxy_shortcut5()
+        return true
+    elseif packet:find("buttonClicked|proxy_shortcut6") then
+        proxy_shortcut6()
+        return true
+    elseif packet:find("buttonClicked|proxy_shortcut7") then
+        proxy_shortcut7()
+        return true
+    elseif packet:find("buttonClicked|proxy_shortcut8") then
+        proxy_shortcut8()
+        return true
+    elseif packet:find("buttonClicked|proxy_shortcut9") then
+        proxy_shortcut9()
+        return true
+    elseif packet:find("buttonClicked|proxy_shortcu01") then
+        proxy_shortcu01()
+        return true
+    elseif packet:find("buttonClicked|proxy_shortcu11") then
+        proxy_shortcu11()
+        return true
+    elseif packet:find("buttonClicked|proxy_shortcu13") then
+        proxy_shortcu13()
+        return true
+    elseif packet:find("buttonClicked|proxy_shortcu14") then
+        proxy_shortcu14()
+        return true
+    elseif packet:find("buttonClicked|proxy_shortcu15") then
+        proxy_shortcu15()
+        return true
+    elseif packet:find("buttonClicked|proxy_shortcu16") then
+        proxy_shortcu16()
+        return true
+    elseif packet:find("dialog_name|proxy_shortcut") then
+        shortcuts_proxy22()
+        return true
+    end
+end
+
+AddCallback("shortcutsxd1", "OnPacket", shortcutsxd1)
+
+function join_commands(type, packet)
+    if packet == ("action|input\n|text|/join") then
+        if set_mod_join == "pull" then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Join Commands|left|6|
+add_spacer|small
+add_textbox|`9Currently Join Mode is `2Enabled `9And is Set To : `3]]..set_mod_join..[[|left|
+add_spacer|small
+add_button|join_pull|`2Join Pull|noflags|0|0|
+add_button|join_kick|`9Join Kick|noflags|0|0|
+add_button|join_ban|`9Join Ban|noflags|0|0|
+add_spacer|small|
+add_button|join_off|`@Turn Off Join Mode|noflags|0|0|
+add_quick_exit|
+end_dialog|join_commands|`4Cancel|`2Okay|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+elseif set_mod_join == "kick" then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Join Commands|left|6|
+add_spacer|small
+add_textbox|`9Currently Join Mode is `2Enabled `9And is Set To : `3]]..set_mod_join..[[|left|
+add_spacer|small
+add_button|join_pull|`9Join Pull|noflags|0|0|
+add_button|join_kick|`2Join Kick|noflags|0|0|
+add_button|join_ban|`9Join Ban|noflags|0|0|
+add_spacer|small|
+add_button|join_off|`@Turn Off Join Mode|noflags|0|0|
+add_quick_exit|
+end_dialog|join_commands|`4Cancel|`2Okay|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+elseif set_mod_join == "ban" then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Join Commands|left|6|
+add_spacer|small
+add_textbox|`9Currently Join Mode is `2Enabled `9And is Set To : `3]]..set_mod_join..[[|left|
+add_spacer|small
+add_button|join_pull|`9Join Pull|noflags|0|0|
+add_button|join_kick|`9Join Kick|noflags|0|0|
+add_button|join_ban|`2Join Ban|noflags|0|0|
+add_spacer|small|
+add_button|join_off|`@Turn Off Join Mode|noflags|0|0|
+add_quick_exit|
+end_dialog|join_commands|`4Cancel|`2Okay|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+elseif set_mod_join == "off" then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Join Commands|left|6|
+add_spacer|small|
+add_textbox|`9Currently Join Mode is `4Disabled|left|
+add_spacer|small|
+add_button|join_pull|`9Join Pull|noflags|0|0|
+add_button|join_kick|`9Join Kick|noflags|0|0|
+add_button|join_ban|`9Join Ban|noflags|0|0|
+add_spacer|small|
+add_button|join_off|`2Turn Off Join Mode|noflags|0|0|
+add_quick_exit|
+end_dialog|join_commands|`4Cancel|`2Okay|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+return true
+end
+end
+
+AddCallback("join_commands","OnPacket", join_commands)
+
+function join_ui_mode(type, packet)
+    if packet:find("buttonClicked|join_pull") then
+        set_mod_join = "pull"
+        OnConsoleMessage("`0[ `3Yoshiro `0] `9join command set to : `3"..set_mod_join)
+        function when_join(vlist)
+            if vlist[0]=="OnSpawn" then
+                a = vlist[1]:match("name|(`.[^`]+)")
+                name = a:sub(3)
+                SendPacket(2,"action|input\n|text|/"..set_mod_join.." " .. name:lower())
+            end
+        end
+        AddCallback("when_join","OnVarlist", when_join)
+        return true
+    elseif packet:find("buttonClicked|join_off") then
+        set_mod_join = "off"
+        OnConsoleMessage("`0[ `3Yoshiro `0] `9turning off join mode")
+        RemoveCallback("when_join")
+        return true
+    elseif packet:find("buttonClicked|join_ban") then
+        set_mod_join = "ban"
+        OnConsoleMessage("`0[ `3Yoshiro `0] `9join command set to : `3"..set_mod_join)
+        function when_join(vlist)
+            if vlist[0]=="OnSpawn" then
+                a = vlist[1]:match("name|(`.[^`]+)")
+                name = a:sub(3)
+                SendPacket(2,"action|input\n|text|/"..set_mod_join.." " .. name:lower())
+            end
+        end
+        AddCallback("when_join","OnVarlist", when_join)
+        return true
+    elseif packet:find("buttonClicked|join_kick") then
+        set_mod_join = "kick"
+        OnConsoleMessage("`0[ `3Yoshiro `0] `9join command set to : `3"..set_mod_join)
+        function when_join(vlist)
+            if vlist[0]=="OnSpawn" then
+                a = vlist[1]:match("name|(`.[^`]+)")
+                name = a:sub(3)
+                SendPacket(2,"action|input\n|text|/"..set_mod_join.." " .. name:lower())
+            end
+        end
+        AddCallback("when_join","OnVarlist", when_join)
+        return true
+    end
+end
+
+AddCallback("join_ui_mode", "OnPacket", join_ui_mode)
+
+mode_wm = "off"
+
+function wm(type, packet)
+if packet == ("action|input\n|text|/wm") then
+if mode_wm == "off" then
+type_wm = "`4Disabled"
+else
+type_wm = "`2Enabled"
+end
+if type_wm == "`2Enabled" and mode_wm == "pull" then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Wrench Mode|left|32|
+add_spacer|small
+add_textbox|`9Currently Wrench Mode is `2Enabled `9And is Set To : `3]]..mode_wm..[[|left|
+add_spacer|small
+add_button_with_icon|wrench_pull|  `2pull  |staticYellowFrame|32|
+add_button_with_icon|wrench_kick|  `9kick  |staticBlueFrame|32|
+add_button_with_icon|wrench_ban|  `9ban  |staticBlueFrame|32|
+add_button_with_icon||END_LIST|noflags|0|0|
+add_spacer|small
+add_button|wrench_off|`@Turn off wrench mode|noflags|0|0|
+add_quick_exit|
+end_dialog|wrench_modesxd|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+elseif type_wm == "`2Enabled" and mode_wm == "kick" then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Wrench Mode|left|32|
+add_spacer|small
+add_textbox|`9Currently Wrench Mode is `2Enabled `9And is Set To : `3]]..mode_wm..[[|left|
+add_spacer|small
+add_button_with_icon|wrench_pull|  `9pull  |staticBlueFrame|32|
+add_button_with_icon|wrench_kick|  `2kick  |staticYellowFrame|32|
+add_button_with_icon|wrench_ban|  `9ban  |staticBlueFrame|32|
+add_button_with_icon||END_LIST|noflags|0|0|
+add_spacer|small
+add_button|wrench_off|`@Turn off wrench mode|noflags|0|0|
+add_quick_exit|
+end_dialog|wrench_modesxd|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+elseif type_wm == "`2Enabled" and mode_wm == "ban" then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Wrench Mode|left|32|
+add_spacer|small
+add_textbox|`9Currently Wrench Mode is `2Enabled `9And is Set To : `3]]..mode_wm..[[|left|
+add_spacer|small
+add_button_with_icon|wrench_pull|  `9pull  |staticBlueFrame|32|
+add_button_with_icon|wrench_kick|  `9kick  |staticBlueFrame|32|
+add_button_with_icon|wrench_ban|  `2ban  |staticYellowFrame|32|
+add_button_with_icon||END_LIST|noflags|0|0|
+add_spacer|small
+add_button|wrench_off|`@Turn off wrench mode|noflags|0|0|
+add_quick_exit|
+end_dialog|wrench_modesxd|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+else
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Wrench Mode|left|32|
+add_spacer|small
+add_textbox|`9Currently Wrench Mode is `4Disabled|left|
+add_spacer|small
+add_button_with_icon|wrench_pull|  `9pull  |staticBlueFrame|32|
+add_button_with_icon|wrench_kick|  `9kick  |staticBlueFrame|32|
+add_button_with_icon|wrench_ban|  `9ban  |staticBlueFrame|32|
+add_button_with_icon||END_LIST|noflags|0|0|
+add_spacer|small
+add_button|wrench_off|`2Turn off wrench mode|noflags|0|0|
+add_quick_exit|
+end_dialog|wrench_modesxd|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+return true
+end
+end
+
+AddCallback("wm","OnPacket", wm)
+  
+function Wrench_mode(type, packet)
+    if packet:find("buttonClicked|wrench_pull") then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9wrench mode set to `3pull")
+        mode_wm = "pull"
+        function Wrench(varlist)
+            if varlist[0] == "OnDialogRequest" and varlist[1]:find("add_button|report_player|") then
+                x = varlist[1]:removeColors()
+                x2 = x:match("add_label_with_icon|big|(%w+)")
+                SendPacket(2, "action|input\n|text|/pull "..x2)
+            return true
+            end
+        end
+        AddCallback("Wrench", "OnVarlist", Wrench)
+        return true
+    elseif packet:find("buttonClicked|wrench_kick") then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9wrench mode set to `3kick")
+        mode_wm = "kick"
+        function Wrench(varlist)
+            if varlist[0] == "OnDialogRequest" and varlist[1]:find("add_button|report_player|") then
+                x = varlist[1]:removeColors()
+                x2 = x:match("add_label_with_icon|big|(%w+)")
+                SendPacket(2, "action|input\n|text|/kick "..x2)
+            return true
+            end
+        end
+        AddCallback("Wrench", "OnVarlist", Wrench)  
+        return true
+    elseif packet:find("buttonClicked|wrench_ban") then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9wrench mode set to `3ban")
+        mode_wm = "ban"
+        function Wrench(varlist)
+            if varlist[0] == "OnDialogRequest" and varlist[1]:find("add_button|report_player|") then
+                x = varlist[1]:removeColors()
+                x2 = x:match("add_label_with_icon|big|(%w+)")
+                SendPacket(2, "action|input\n|text|/ban "..x2)
+            return true
+            end
+        end
+        AddCallback("Wrench", "OnVarlist", Wrench)
+        return true
+    elseif packet:find("buttonClicked|wrench_off") then
+        mode_wm = "off"
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9wrench mode is `3off")
+        RemoveCallback("Wrench") 
+        return true
+    end
+end
+
+AddCallback("Wrench_mode", "OnPacket", Wrench_mode)
+
+function Gaia_commands(type, packet)
+    if packet == ("action|input\n|text|/gaia") then
+if gaia_of_or_no and gaia_adder_mode then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Gaia's Beacon Commands|left|6946|
+add_spacer|small
+add_textbox|`9Currently GAIA Mode is `2Enabled `9And is Set To : `3Fast Add|left|
+add_spacer|small
+add_button|GAIA_add|`2Fast Adder|noflags|0|0|
+add_button|GAIA_empty|`9Fast Emptier|noflags|0|0|
+add_spacer|small
+add_button|GAIA_off|`@Turn off GAIA mode|noflags|0|0|
+add_quick_exit|
+end_dialog|gaia_mode_xd|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+elseif gaia_of_or_no and gaia_emptier_mode then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Gaia's Beacon Commands|left|6946|
+add_spacer|small
+add_textbox|`9Currently GAIA Mode is `2Enabled `9And is Set To : `3Fast Empty|left|
+add_spacer|small
+add_button|GAIA_add|`9Fast Adder|noflags|0|0|
+add_button|GAIA_empty|`2Fast Emptier|noflags|0|0|
+add_spacer|small
+add_button|GAIA_off|`@Turn off GAIA mode|noflags|0|0|
+add_quick_exit|
+end_dialog|gaia_mode_xd|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+else
+    varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Gaia's Beacon Commands|left|6946|
+add_spacer|small
+add_textbox|`9Currently GAIA Mode is `4Disabled|left|
+add_spacer|small
+add_button|GAIA_add|`9Fast Adder|noflags|0|0|
+add_button|GAIA_empty|`9Fast Emptier|noflags|0|0|
+add_spacer|small
+add_button|GAIA_off|`@Turn off GAIA mode|noflags|0|0|
+add_quick_exit|
+end_dialog|gaia_mode_xd|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+return true
+end
+end
+
+AddCallback("Gaia_commands","OnPacket", Gaia_commands)
+function GAIA_modes12(type, packet)
+    if packet:find("buttonClicked|GAIA_add") then
+        ga_of_or_no = true
+        if ga_emptier_mode then
+            ga_emptier_mode = false
+            RemoveCallback("GA_mode3")
+            RemoveCallback("GA_mode4")
+        end
+            ga_adder_mode = true
+            OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast GAIA adder `3enabled")
+            RemoveCallback("GA_mode3")
+            RemoveCallback("GA_mode4")
+            AddCallback("GA_mode1", "OnVarlist", GA_mode1)
+            AddCallback("GA_mode2", "OnVarlist", GA_mode2)
+        return true
+    elseif packet:find("buttonClicked|GAIA_empty") then
+        ga_of_or_no = true
+        if ga_adder_mode then
+            ga_adder_mode = false
+            RemoveCallback("GA_mode1")
+            RemoveCallback("GA_mode2")
+        end
+            ga_emptier_mode = true
+            OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast GAIA emptier `3enabled")
+            AddCallback("GA_mode3", "OnVarlist", GA_mode3)
+            AddCallback("GA_mode4", "OnVarlist", GA_mode4)
+        return true
+    elseif packet:find("buttonClicked|GAIA_off") then
+        ga_of_or_no = false
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9GAIA mode is now `3off")
+        if ga_adder_mode then
+            RemoveCallback("GA_mode1")
+            RemoveCallback("GA_mode2")
+            ga_adder_mode = false
+            end
+            if ga_emptier_mode then
+            RemoveCallback("GA_mode3")
+            RemoveCallback("GA_mode4")
+            ga_emptier_mode = false
+        end
+        return true
+    end
+end
+
+AddCallback("GAIA_modes12", "OnPacket", GAIA_modes12)
+
+function world_commands(type, packet)
+    if packet == ("action|input\n|text|/world") then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!World Commands|left|3802|
+add_spacer|small
+add_button|world_pull|`9Pull all players|noflags|0|0|
+add_button|world_kick|`9Kick all players|noflags|0|0|
+add_button|world_trade|`9Trade all players|noflags|0|0|
+add_button|world_ban|`9Ban all players|noflags|0|0|
+add_button|world_unban|`@Unban World|noflags|0|0|
+add_quick_exit|
+end_dialog|World_commands|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+return true
+end
+end
+
+AddCallback("world_commands","OnPacket", world_commands)
+
+function world_mode(type, packet)
+    if packet:find("buttonClicked|world_pull") then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9pulling all players")
+        for _,player in pairs(GetPlayers()) do
+            SendPacket(2,  "action|input\n|text|/pull " .. player.name:sub(3, -3))
+        end
+        return true
+    elseif packet:find("buttonClicked|world_kick") then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9kicking all players")
+        for _,player in pairs(GetPlayers()) do
+            SendPacket(2,  "action|input\n|text|/kick " .. player.name:sub(3, -3))
+        end 
+        return true
+    elseif packet:find("buttonClicked|world_trade") then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9trading all players")
+        for _,player in pairs(GetPlayers()) do
+            SendPacket(2,  "action|input\n|text|/trade " .. player.name:sub(3, -3))
+        end
+        return true
+    elseif packet:find("buttonClicked|world_ban") then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9baning all players")
+        for _,player in pairs(GetPlayers()) do
+            SendPacket(2,  "action|input\n|text|/ban " .. player.name:sub(3, -3))
+        end
+        return true
+    elseif packet:find("buttonClicked|world_unban") then
+        SendPacket(2, "action|input\n|text|/uba")
+        return true
+    end
+end
+
+AddCallback("world_mode", "OnPacket", world_mode)
+
+function info_commands(type, packet)
+    if packet == ("action|input\n|text|/info") then
+        if autosurg == true then
+            autosurg_status = "`2Enabled"
+        else
+            autosurg_status = "`4Disabled"
+        end
+        
+        if autosurghelper == true then
+            autosurghelper_status = "`2Enabled"
+        else
+            autosurghelper_status = "`4Disabled"
+        end
+        
+        if autocrime == true then
+            autocrime_status = "`2Enabled"
+        else
+            autocrime_status = "`4Disabled"
+        end
+        
+        if autostartopia == true then
+            autostartopia_status = "`2Enabled"
+        else
+            autostartopia_status = "`4Disabled"
+        end
+        
+        if mod_fly == true then
+            mod_fly_status = "`2Enabled"
+        else
+            mod_fly_status = "`4Disabled"
+        end
+        
+        if fd_mode == true then
+            fd_mode_status = "`2Enabled"
+        else
+            fd_mode_status = "`4Disabled"
+        end
+        
+        if ft_mode == true then
+            ft_mode_status = "`2Enabled"
+        else
+            ft_mode_status = "`4Disabled"
+        end
+        
+        if nopickup == true then
+            nopickup_status = "`2Enabled"
+        else
+            nopickup_status = "`4Disabled"
+        end
+        
+        if NO_PICKUP == true then
+            NO_PICKUP_status = "`2Enabled"
+        else
+            NO_PICKUP_status = "`4Disabled"
+        end
+        
+        if autocollect == true then
+            autocollect_status = "`2Enabled"
+        else
+            autocollect_status = "`4Disabled"
+        end
+        
+        if blinking == true then
+            blinking_status = "`2Enabled"
+        else
+            blinking_status = "`4Disabled"
+        end
+        
+        if mode_wm == "off" then
+            mode_wm_status = "`4Disabled"
+        else
+            mode_wm_status = "`2Enabled"
+        end
+        
+        if ut_of_or_no == true then
+            ut_of_or_no_status = "`2Enabled"
+        else
+            ut_of_or_no_status = "`4Disabled"
+        end
+        
+        if gaia_of_or_no == true then
+            gaia_of_or_no_status = "`2Enabled"
+        else
+            gaia_of_or_no_status = "`4Disabled"
+        end
+        
+        if set_mod_join == "off" or set_mod_joinx2 == "off" then
+            set_mod_join_status = "`4Disabled"
+        else
+            set_mod_join_status = "`2Enabled"
+        end
+        
+        if mode_donation_boxes == "off" then
+            mode_donation_boxes_status = "`4Disabled"
+        else
+            mode_donation_boxes_status = "`2Enabled"
+        end
+        
+        if vend_modexd == true then
+            vend_modexd_status = "`2Enabled"
+        else
+            vend_modexd_status = "`4Disabled"
+        end
+        
+        if spamming == true then
+            spamming_status = "`2Enabled"
+        else
+            spamming_status = "`4Disabled"
+        end
+        
+        if harvesting == true then
+            harvesting_status = "`2Enabled"
+        else
+            harvesting_status = "`4Disabled"
+        end
+        
+        if casino_help_when_join == "1" then
+            casino_help_when_join_status = "ban & unacces & leave"
+            elseif casino_help_when_join == "2" then
+                casino_help_when_join_status = "unacces & leave"
+            elseif casino_help_when_join == "3" then
+                casino_help_when_join_status = "leave"
+            else 
+                casino_help_when_join_status = "`4Disabled"
+        end
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`7Command Information``|left|1790|
+add_spacer|small|
+add_smalltext|`9auto-surg : ]]..autosurg_status..[[|left|
+add_smalltext|`9auto-Surg Helper : ]]..autosurghelper_status..[[|left|
+add_smalltext|`9Auto-Crime : ]]..autocrime_status..[[|left|
+add_smalltext|`9Auto-Startopia : ]]..autostartopia_status..[[|left|
+add_smalltext|`9Mod Fly : ]]..mod_fly_status..[[|left|
+add_smalltext|`9Fast Drop : ]]..fd_mode_status..[[|left|
+add_smalltext|`9Fast Trash : ]]..ft_mode_status..[[|left|
+add_smalltext|`9Anti-Pickup : ]]..nopickup_status..[[|left|
+add_smalltext|`9Auto-Collect : ]]..autocollect_status..[[|left|
+add_smalltext|`9Blink Mode : ]]..blinking_status..[[|left|
+add_smalltext|`9Wrench Mode : ]]..mode_wm_status..[[|left|
+add_smalltext|`9UT Mode : ]]..ut_of_or_no_status..[[|left|
+add_smalltext|`9GAIA Mode : ]]..gaia_of_or_no_status..[[|left|
+add_smalltext|`9Join Mode : ]]..set_mod_join_status..[[|left|
+add_smalltext|`9Donation Box Mode : ]]..mode_donation_boxes_status..[[|left|
+add_smalltext|`9Vend Mode : ]]..vend_modexd_status..[[|left|
+add_smalltext|`9Auto-Spam : ]]..spamming_status..[[|left|
+add_smalltext|`9Auto-Harvest : ]]..harvesting_status..[[|left|
+add_smalltext|`9Mod-Detector: `3]]..casino_help_when_join_status..[[|left|
+add_quick_exit|
+end_dialog|info_main_cmd|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)        
+    return true
+    end
+end
+    
+AddCallback("info_commands","OnPacket", info_commands)
+
+function donation_check_uid(type, packet)
+    if packet == ("action|input\n|text|/donation") then
+        if mode_donation_boxes == "off" then
+            type_donation_box = "`4Disabled"
+        else
+            type_donation_box = "`2Enabled"
+        end
+if type_donation_box == "`4Disabled" and mode_donation_boxes1 == "Donation_Off" then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Donation Box Commands|left|1452|
+add_spacer|small
+add_textbox|`9Currently Donation Mode is `4Disabled|left|
+add_spacer|small
+add_button|empty_xd_donations|`9Fast Empty Donation Box|noflags|0|0|
+add_button|add_xd_donations|`9Fast Donate Items|noflags|0|0|
+add_spacer|small
+add_button|off_xd_donations|`2Turn off donation mode|noflags|0|0|
+add_quick_exit|
+end_dialog|donate_world_ui|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+elseif type_donation_box == "`2Enabled" and mode_donation_boxes == "Donation_Empty" then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Donation Box Commands|left|1452|
+add_spacer|small
+add_textbox|`9Currently Donation Mode is `2Enabled `9And is Set To : `3Fast Empty|left|
+add_spacer|small
+add_button|empty_xd_donations|`2Fast Empty Donation Box|noflags|0|0|
+add_button|add_xd_donations|`9Fast Donate Items|noflags|0|0|
+add_spacer|small
+add_button|off_xd_donations|`@Turn off donation mode|noflags|0|0|
+add_quick_exit|
+end_dialog|donate_world_ui|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+elseif type_donation_box == "`2Enabled" and mode_donation_boxes == "Donation_Add" then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Donation Box Commands|left|1452|
+add_spacer|small
+add_textbox|`9Currently Donation Mode is `2Enabled `9And is Set To : `3Fast Add|left|
+add_spacer|small
+add_button|empty_xd_donations|`9Fast Empty Donation Box|noflags|0|0|
+add_button|add_xd_donations|`2Fast Donate Items|noflags|0|0|
+add_spacer|small
+add_button|off_xd_donations|`@Turn off donation mode|noflags|0|0|
+add_quick_exit|
+end_dialog|donate_world_ui|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+return true
+end
+end
+
+AddCallback("donation_check_uid","OnPacket", donation_check_uid)
+
+auto_put_donationbox_mode = false
+
+function auto_put_donationbox(varlist)
+    if auto_put_donationbox_mode then
+        if varlist[0] == "OnDialogRequest" and varlist[1]:find("end_dialog|give_item|||") then
+            SendPacket(2, "action|dialog_return\ndialog_name|give_item\nitemID|"..varlist[1]:match("embed_data|itemID|(%d+)").."|\ntilex|"..varlist[1]:match("embed_data|tilex|(%d+)").."|\ntiley|"..varlist[1]:match("embed_data|tiley|(%d+)").."|\nbuttonClicked|give\ncount|"..varlist[1]:match("add_text_input|count|Count:|(%d+)").."\nsign_text|")
+            return true
+        end
+    end
+end
+AddCallback("auto_put_donationbox", "OnVarlist", auto_put_donationbox)
+
+function auto_put_donationbox_hook_xd(type, packet)
+    if packet == ("action|input\n|text|/donation add") or packet == ("action|input\n|text|/da") then
+        if auto_put_donationbox_mode == true then
+            mode_donation_boxes = "off"
+            mode_donation_boxes1 = "Donation_Off"
+            auto_empty_donationbox_mode = false
+            auto_put_donationbox_mode = false
+            OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast empty donation `3disabled")
+        elseif auto_put_donationbox_mode == false then
+            mode_donation_boxes = "Donation_Add"
+            auto_empty_donationbox_mode = false
+            auto_put_donationbox_mode = true
+            OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast empty donation `3enabled")
+        end
+    return true
+end
+end
+
+AddCallback("auto_put_donationbox_hook_xd","OnPacket", auto_put_donationbox_hook_xd)
+
+auto_empty_donationbox_mode = false
+
+function auto_empty_donationbox(varlist)
+    if auto_empty_donationbox_mode then
+    if varlist[0] == "OnDialogRequest" and varlist[1]:find("end_dialog|donation_box_edit|Cancel||") then
+        SendPacket(2, "action|dialog_return\ndialog_name|donation_box_edit\ntilex|"..varlist[1]:match("embed_data|tilex|(%d+)").."|\ntiley|"..varlist[1]:match("embed_data|tiley|(%d+)").."|\nbuttonClicked|clear")
+        return true
+    end
+    end
+end
+AddCallback("auto_empty_donationbox", "OnVarlist", auto_empty_donationbox)
+
+function auto_empty_donationbox_hook_xd(type, packet)
+    if packet == ("action|input\n|text|/donation empty") or packet == ("action|input\n|text|/de")then
+        if auto_empty_donationbox_mode == true then
+            mode_donation_boxes = "off"
+            mode_donation_boxes1 = "Donation_Off"
+            auto_empty_donationbox_mode = false
+            auto_put_donationbox_mode = false
+            OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast empty donation `3disabled")
+        elseif auto_empty_donationbox_mode == false then
+            mode_donation_boxes = "Donation_Empty"
+            auto_put_donationbox_mode = false
+            auto_empty_donationbox_mode = true
+            OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast empty donation `3enabled")
+        end
+    return true
+end
+end
+
+AddCallback("auto_empty_donationbox_hook_xd","OnPacket", auto_empty_donationbox_hook_xd)
+
+function donationoff(type, packet)
+    if packet == ("action|input\n|text|/donation off") or packet == ("action|input\n|text|/doff") then
+        mode_donation_boxes = "off"
+        mode_donation_boxes1 = "Donation_Off"
+        auto_empty_donationbox_mode = false
+        auto_put_donationbox_mode = false
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9Donation Box mode is now `3disabled")
+        return true
+    end
+end
+
+AddCallback("donationoff","OnPacket", donationoff)
+
+function donation_modes_69(type, packet)
+    if packet:find("buttonClicked|empty_xd_donations") then
+        mode_donation_boxes = "Donation_Empty"
+        auto_put_donationbox_mode = false
+        auto_empty_donationbox_mode = true
+        function auto_empty_donationbox(varlist)
+            if auto_empty_donationbox_mode then
+            if varlist[0] == "OnDialogRequest" and varlist[1]:find("end_dialog|donation_box_edit|Cancel||") then
+                SendPacket(2, "action|dialog_return\ndialog_name|donation_box_edit\ntilex|"..varlist[1]:match("embed_data|tilex|(%d+)").."|\ntiley|"..varlist[1]:match("embed_data|tiley|(%d+)").."|\nbuttonClicked|clear")
+                return true
+            end
+            end
+        end
+        AddCallback("auto_empty_donationbox", "OnVarlist", auto_empty_donationbox)
+        return true
+    elseif packet:find("buttonClicked|add_xd_donations") then
+        mode_donation_boxes = "Donation_Add"
+        auto_empty_donationbox_mode = false
+        auto_put_donationbox_mode = true
+        function auto_put_donationbox(varlist)
+            if auto_put_donationbox_mode then
+                if varlist[0] == "OnDialogRequest" and varlist[1]:find("end_dialog|give_item|||") then
+                    SendPacket(2, "action|dialog_return\ndialog_name|give_item\nitemID|"..varlist[1]:match("embed_data|itemID|(%d+)").."|\ntilex|"..varlist[1]:match("embed_data|tilex|(%d+)").."|\ntiley|"..varlist[1]:match("embed_data|tiley|(%d+)").."|\nbuttonClicked|give\ncount|"..varlist[1]:match("add_text_input|count|Count:|(%d+)").."\nsign_text|")
+                    return true
+                end
+            end
+        end
+        AddCallback("auto_put_donationbox", "OnVarlist", auto_put_donationbox)
+        return true
+    elseif packet:find("buttonClicked|off_xd_donations") then
+        mode_donation_boxes = "off"
+        mode_donation_boxes1 = "Donation_Off"
+        auto_empty_donationbox_mode = false
+        auto_put_donationbox_mode = false
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9Donation Box mode is now `3disabled")
+        return true
+    end
+end
+
+AddCallback("donation_modes_69", "OnPacket", donation_modes_69)
+
+mode_donation_boxes = "off"
+
+function title_ui_commands(type, packet)
+    if packet == ("action|input\n|text|/titles") then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Choose title|left|6276|
+add_spacer|small|
+add_button|g4g_title|`9G4G Title|noflags|0|0|
+add_button|master_title|`9Master Title|noflags|0|0|
+add_button|doctor_title|`9Doctor Title|noflags|0|0|
+add_button|maxlevel_title|`9Max Level Title|noflags|0|0|
+add_button|legend_title|`9Legendary Title|noflags|0|0|
+add_button|mods_title|`9Moderator Title|noflags|0|0|
+add_spacer|small|
+add_button|reset_title|`@Reset Title|noflags|0|0|
+add_quick_exit|
+end_dialog|World_commands|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+return true
+end
+end
+
+AddCallback("title_ui_commands","OnPacket", title_ui_commands)
+
+function title_mode(type, packet)
+    if packet:find("buttonClicked|legend_title") then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9pulling all players")
+        titlexd = "legend"
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3OF LEGEND `9enabled !")
+            GetLocal().name = GetLocal().name:removeColors()
+            GetLocal().name = GetLocal().name:gsub(" of Legend", "")
+            GetLocal().name = GetLocal().name:gsub("Dr.", "")
+            var = {}
+            var[0] = "OnCountryState"
+            var[1] = "jo|doctor"
+            var.netid = GetLocal().netid
+            SendVarlist(var)
+            GetLocal().name = GetLocal().name.." of Legend``"
+        return true
+    elseif packet:find("buttonClicked|g4g_title") then
+        titlexd = "g4g"
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3DONOR `9enabled !")
+            GetLocal().name = GetLocal().name:removeColors()
+            GetLocal().name = GetLocal().name:gsub(" of Legend", "")
+            GetLocal().name = GetLocal().name:gsub("Dr.", "")
+            var = {}
+            var[0] = "OnCountryState"
+            var[1] = "jo|donor"
+            var.netid = GetLocal().netid
+            SendVarlist(var)
+        return true
+    elseif packet:find("buttonClicked|master_title") then
+        titlexd = "master"
+            OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3MASTED `9enabled !")
+            GetLocal().name = GetLocal().name:removeColors()
+            GetLocal().name = GetLocal().name:gsub(" of Legend", "")
+            GetLocal().name = GetLocal().name:gsub("Dr.", "")
+            var = {}
+            var[0] = "OnCountryState"
+            var[1] = "jo|master"
+            var.netid = GetLocal().netid
+            SendVarlist(var)
+        return true
+    elseif packet:find("buttonClicked|doctor_title") then
+        titlexd = "doctor"
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3DOCTOR `9enabled !")
+            GetLocal().name = GetLocal().name:removeColors()
+            GetLocal().name = GetLocal().name:gsub(" of Legend", "")
+            GetLocal().name = GetLocal().name:gsub("Dr.", "")
+            GetLocal().name = "Dr."..GetLocal().name
+             var = {}
+            var[0] = "OnCountryState"
+            var[1] = "jo|doctor"
+            var.netid = GetLocal().netid
+            SendVarlist(var)
+        return true
+            elseif packet:find("buttonClicked|maxlevel_title") then
+        titlexd = "maxlevel"
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3MAX LEVEL `9enabled !")
+            GetLocal().name = GetLocal().name:removeColors()
+            GetLocal().name = GetLocal().name:gsub(" of Legend", "")
+            GetLocal().name = GetLocal().name:gsub("Dr.", "")
+            var = {}
+            var[0] = "OnCountryState"
+            var[1] = "jo|maxLevel"
+            var.netid = GetLocal().netid
+            SendVarlist(var)
+        return true
+            elseif packet == ("buttonClicked|mods_title") then
+        titlexd = "mods"
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `2MODERATOR `9enabled !")
+            GetLocal().name = GetLocal().name:removeColors()
+            GetLocal().name = GetLocal().name:gsub(" of Legend", "")
+            GetLocal().name = GetLocal().name:gsub("Dr.", "")
+            GetLocal().name = "`#@" ..GetLocal().name
+            var = {}
+            var[0] = "OnGuildDataChanged"
+            var[1] = "ph|mods"
+            var[2] = 0
+            var[3] = 5956
+            var.netid = GetLocal().netid
+            SendVarlist(var)
+        return true
+    elseif packet:find("buttonClicked|reset_title") then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9 removing all titles")
+            GetLocal().name = GetLocal().name:removeColors()
+            GetLocal().name = GetLocal().name:gsub(" of Legend", "")
+            GetLocal().name = GetLocal().name:gsub("Dr.", "")
+        var = {}
+        var[0] = "OnCountryState"
+        var[1] = "jo|"
+        var.netid = GetLocal().netid
+        SendVarlist(var)
+        return true
+end
+end
+
+AddCallback("title_mode", "OnPacket", title_mode)
+
+function Ut_commands(type, packet)
+    if packet == ("action|input\n|text|/ut") then
+        if ut_adder_mode then
+            ut_mode_69 = "`3Fast Add"
+        elseif ut_emptier_mode then
+            ut_mode_69 = "`3Fast Empty"
+        elseif not ut_emptier_mode and not ut_adder_mode then
+            ut_mode_69 = "`4Disabled"
+        end
+if ut_of_or_no and ut_adder_mode then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Unstable Tesseract Commands|left|6948|
+add_spacer|small
+add_textbox|`9Currently UT Mode is `2Enabled `9And is Set To : `3]]..ut_mode_69..[[|left|
+add_spacer|small
+add_button|UT_add|`2Fast Adder|noflags|0|0|
+add_button|UT_empty|`9Fast Emptier|noflags|0|0|
+add_spacer|small
+add_button|UT_off|`@Turn off UT mode|noflags|0|0|
+add_quick_exit|
+end_dialog|ut_mode_xd|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+elseif ut_of_or_no and ut_emptier_mode then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Unstable Tesseract Commands|left|6948|
+add_spacer|small
+add_textbox|`9Currently UT Mode is `2Enabled `9And is Set To : `3]]..ut_mode_69..[[|left|
+add_spacer|small
+add_button|UT_add|`9Fast Adder|noflags|0|0|
+add_button|UT_empty|`2Fast Emptier|noflags|0|0|
+add_spacer|small
+add_button|UT_off|`@Turn off UT mode|noflags|0|0|
+add_quick_exit|
+end_dialog|ut_mode_xd|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+else
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`!Unstable Tesseract Commands|left|6948|
+add_spacer|small
+add_textbox|`9Currently UT Mode is `4Disabled|left|
+add_spacer|small
+add_button|UT_add|`9Fast Adder|noflags|0|0|
+add_button|UT_empty|`9Fast Emptier|noflags|0|0|
+add_spacer|small
+add_button|UT_off|`@Turn off UT mode|noflags|0|0|
+add_quick_exit|
+end_dialog|ut_mode_xd|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+end
+return true
+end
+end
+
+AddCallback("Ut_commands","OnPacket", Ut_commands)
+
+function UT_modes12(type, packet)
+    if packet:find("buttonClicked|UT_add") then
+        ut_of_or_no = true
+        if ut_emptier_mode then
+            ut_emptier_mode = false
+            RemoveCallback("UT_mode3")
+            RemoveCallback("UT_mode4")
+        end
+            ut_adder_mode = true
+            OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast UT adder `3enabled")
+            RemoveCallback("UT_mode3")
+            RemoveCallback("UT_mode4")
+            AddCallback("UT_mode1", "OnVarlist", UT_mode1)
+            AddCallback("UT_mode2", "OnVarlist", UT_mode2)
+        return true
+    elseif packet:find("buttonClicked|UT_empty") then
+        ut_of_or_no = true
+        if ut_adder_mode then
+            ut_adder_mode = false
+            RemoveCallback("UT_mode1")
+            RemoveCallback("UT_mode2")
+        end
+            ut_emptier_mode = true
+            OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast UT emptier `3enabled")
+            AddCallback("UT_mode3", "OnVarlist", UT_mode3)
+            AddCallback("UT_mode4", "OnVarlist", UT_mode4)
+        return true
+    elseif packet:find("buttonClicked|UT_off") then
+        ut_of_or_no = false
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9UT mode is now `3off")
+        if ut_adder_mode then
+        RemoveCallback("UT_mode1")
+        RemoveCallback("UT_mode2")
+        ut_adder_mode = false
+        end
+        if ut_emptier_mode then
+        RemoveCallback("UT_mode3")
+        RemoveCallback("UT_mode4")
+        ut_emptier_mode = false
+        end
+        return true
+    end
+end
+
+AddCallback("UT_modes12", "OnPacket", UT_modes12)
+
+function gs_xd(type, packet)
+    if packet == ("action|input\n|text|/gs") or packet == ("action|input\n|text|/growscan") then
+var = {}
+var[0] = "OnDialogRequest"
+var[1] = [[
+add_label_with_icon|big|`wWorld Stats``|left|6016|
+add_spacer|small|
+add_textbox|`wThis amazing block can show the stats for the whole world!|left
+add_spacer|small|
+add_textbox|`wWhich stats would you like to view?|left
+add_button|placed_gs|World Blocks|noflags|0|0|
+add_button|float_gs|Floating Items|noflags|0|0|
+add_quick_exit|
+end_dialog|grow_scaxn|`0Cancel|`0Back|
+]]
+var.netid = -1
+SendVarlist(var)
+return true
+end
+end
+
+AddCallback("gs_xd","OnPacket", gs_xd)
+
+function growscan_mode(type, packet)
+    if packet:find("buttonClicked|placed_gs") then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9Scaning placed blocks")
+        function round(n)
+            return n % 1 >= 0.5 and math.ceil(n) or math.floor(n)
+        end
+        
+        store1 = {}
+        
+        for k,v in pairs(GetTiles()) do
+            id = v.fg
+            if store1[v.fg] == nil then
+                store1[v.fg] = {id = v.fg, qty = 1}
+            else
+                store1[v.fg].qty = store1[v.fg].qty + 1
+            end
+            if store1[v.bg] == nil then
+                store1[v.bg] = {id = v.bg, qty = 1}
+            else
+                store1[v.bg].qty = store1[v.bg].qty + 1
+            end
+        end
+        
+        placedshit = "add_spacer|small|"
+        for _,tile in pairs(store1) do
+            count = round(tile.qty)
+            idplaced = math.floor(tile.id)
+            placedshit =
+                placedshit ..
+                "\nadd_label_with_icon|small|`0"  ..GetIteminfo(idplaced).name.." `0: "..count.."``|left|" .. tostring(tile.id)
+        end
+                             
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[
+set_default_color|`o
+add_label_with_icon|big|`0Placed Items``|left|6016
+]]..placedshit..[[
+add_quick_exit|
+end_dialog|grow_scan|`0Back|`4Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+        return true
+
+        
+    elseif packet:find("buttonClicked|float_gs") then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9Scaning dropped items")
+        function round(n)
+            return n % 1 >= 0.5 and math.ceil(n) or math.floor(n)
+        end
+        
+        store1 = {}
+        
+        for k, v in pairs(GetObjects()) do
+            id = v.id
+            if store1[v.id] == nil then
+                store1[v.id] = {id = v.id, qty = v.count}
+            else
+                store1[v.id].qty = store1[v.id].qty + v.count
+            end
+        end
+        
+        droppedshit = "add_spacer|small|"
+        for _, object in pairs(store1) do
+            count = round(object.qty)
+            xx = math.floor(object.id)
+                droppedshit =
+                    droppedshit ..
+                "\nadd_label_with_icon|small|`0"  ..GetIteminfo(xx).name.." `0: "..count.."``|left|" .. tostring(object.id)
+        end
+        
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[
+set_default_color|`o
+add_label_with_icon|big|`0Floating Items `0``|left|6016
+]]..droppedshit..[[
+add_quick_exit|
+end_dialog|grow_scan|`0Back|`4Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+        return true
+    end
+end
+
+AddCallback("growscan_mode", "OnPacket", growscan_mode)
+
+function gs_back(type, packet)
+    if packet:find("dialog_name|grow_scan") then
+        var = {}
+var[0] = "OnDialogRequest"
+var[1] = [[
+add_label_with_icon|big|`wWorld Stats``|left|6016|
+add_spacer|small|
+add_textbox|`wThis amazing block can show the stats for the whole world!|left
+add_spacer|small|
+add_textbox|`wWhich stats would you like to view?|left
+add_button|placed_gs|World Blocks|noflags|0|0|
+add_button|float_gs|Floating Items|noflags|0|0|
+add_quick_exit|
+end_dialog|grow_scaxn|`0Cancel|`0Back|
+]]
+var.netid = -1
+SendVarlist(var)
+        return true
+    end
+end
+
+AddCallback("gs_back", "OnPacket", gs_back)
+
+function gs1(type, packet)
+    if packet == ("action|input\n|text|/gs 1") or packet == ("action|input\n|text|/growscan 1")then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9Scaning placed blocks")
+        function round(n)
+            return n % 1 >= 0.5 and math.ceil(n) or math.floor(n)
+        end
+        
+        store1 = {}
+        
+        for k,v in pairs(GetTiles()) do
+            id = v.fg
+            if store1[v.fg] == nil then
+                store1[v.fg] = {id = v.fg, qty = 1}
+            else
+                store1[v.fg].qty = store1[v.fg].qty + 1
+            end
+            if store1[v.bg] == nil then
+                store1[v.bg] = {id = v.bg, qty = 1}
+            else
+                store1[v.bg].qty = store1[v.bg].qty + 1
+            end
+        end
+        
+        placedshit = "add_spacer|small|"
+        for _,tile in pairs(store1) do
+            count = round(tile.qty)
+            idplaced = math.floor(tile.id)
+            placedshit =
+                placedshit ..
+                "\nadd_label_with_icon|small|`0"  ..GetIteminfo(idplaced).name.." `0: "..count.."``|left|" .. tostring(tile.id)
+        end
+        
+        varlist = {}
+        varlist[0] = "OnDialogRequest"
+        varlist[1] = "set_default_color|`o\nadd_label_with_icon|big|`0Placed Items `0``|left|6016\n"..placedshit.."\nadd_quick_exit"
+        varlist.netid = -1
+        SendVarlist(varlist)
+        return true
+    end
+end
+    
+AddCallback("gs_1","OnPacket", gs1)
+
+function gs2(type, packet)
+    if packet == ("action|input\n|text|/gs 2") or packet == ("action|input\n|text|/growscan 2")then
+        OnConsoleMessage("`0[ `3YoshiGT  `0] `9Scaning dropped items")
+        function round(n)
+            return n % 1 >= 0.5 and math.ceil(n) or math.floor(n)
+        end
+        
+        store1 = {}
+        
+        for k, v in pairs(GetObjects()) do
+            id = v.id
+            if store1[v.id] == nil then
+                store1[v.id] = {id = v.id, qty = v.count}
+            else
+                store1[v.id].qty = store1[v.id].qty + v.count
+            end
+        end
+        
+        droppedshit = "add_spacer|small|"
+        for _, object in pairs(store1) do
+            count = round(object.qty)
+            xx = math.floor(object.id)
+                droppedshit =
+                    droppedshit ..
+                "\nadd_label_with_icon|small|`0"  ..GetIteminfo(xx).name.." `0: "..count.."``|left|" .. tostring(object.id)
+        end
+        
+        varlist = {}
+        varlist[0] = "OnDialogRequest"
+        varlist[1] = "set_default_color|`o\nadd_label_with_icon|big|`0Floating items `0``|left|6016\n"..droppedshit.."\nadd_quick_exit"
+        varlist.netid = -1
+        SendVarlist(varlist)
+        return true
+    end
+end
+    
+AddCallback("gs_2","OnPacket", gs2)
+
 function itemidlegend()
 varlist = {}
 varlist[0] = "OnDialogRequest"
@@ -7,6 +1831,7 @@ add_spacer|small|
 add_label_with_icon|small|`wLegendary Katana - `9ItemID: `e2592|left|2592|
 add_label_with_icon|small|`wLegendary Wing - `9ItemID: `e1784|left|1784|
 add_label_with_icon|small|`wLegendBot-009 - `9ItemID: `e1780|left|1780|
+add_label_with_icon|small|`wDragon of Legend- `9ItemId: `e1782|left|1782|
 add_label_with_icon|small|`wLegendary Dragon Knight's Wings - `9ItemID: `e7734|left|7734|
 add_label_with_icon|small|`wLegendary Comet Hair - `9ItemID: `e8306|left|8306|
 add_spacer|small|
@@ -522,3 +2347,27 @@ return true
 end
 end
 AddCallback("finditem", "OnPacket", finditem)
+
+function punch_ids(type, packet)
+if packet == ("action|input\n|text|/pid") then
+varlist = {}
+varlist[0] = "OnDialogRequest"
+varlist[1] = [[set_default_color|`o
+add_label_with_icon|big|`9Punch Ids|left|18|
+add_spacer|small|
+add_label_with_icon|small|`wEldritch Crossbow - `9PunchId: `e44|left|10052|
+add_label_with_icon|small|`wHeartbow - `9PunchId: `e2|left|366|
+add_label_with_icon|small|`wLegendBot-009 - `9PunchId: `e20|left|1780|
+add_label_with_icon|small|`wDragon of Legend- `9PunchId: `e21|left|1782|
+add_label_with_icon|small|`wLegendary Katana - `9PunchId: `e43|left|2592|
+add_label_with_icon|small|`wSonic Buster Sword - `9PunchId: `e104|left|7586|
+add_label_with_icon|small|`wCursed Katana - `9PunchId: `e136|left|9058|
+add_quick_exit|
+end_dialog|find_shortcut2|`0Cancel|`0Back|
+]]
+varlist.netid = -1
+SendVarlist(varlist)
+return true
+end
+end
+AddCallback("punch_ids", "OnPacket", punch_ids)
