@@ -604,7 +604,7 @@ add_label_with_icon|small|`wElvish Longbow - `9ItemID: `e594|left|594|
 add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
 add_label_with_icon|small|`wCarrot Sword - `9ItemID: `e2908|left|2908|
 add_label_with_icon|small|`wSonic Buster Sword - `9ItemID: `e7586|left|7586|
-add_label_with_icon|small|`wSonic Buster Katana - `9ItemID: `e11118|left|7586|
+add_label_with_icon|small|`wSonic Buster Katana - `9ItemID: `e11118|left|11118|
 add_label_with_icon|small|`wElectric Bow - `9ItemID: `e2720|left|2720|
 add_label_with_icon|small|`wWinter Frost Bow - `9ItemID: `e5424|left|5424|
 add_label_with_icon|small|`wEthereal Rainbow Dragon - `9ItemID: `e7136|left|7136|
@@ -796,7 +796,7 @@ add_label_with_icon|small|`wElvish Longbow - `9ItemID: `e594|left|594|
 add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
 add_label_with_icon|small|`wCarrot Sword - `9ItemID: `e2908|left|2908|
 add_label_with_icon|small|`wSonic Buster Sword - `9ItemID: `e7586|left|7586|
-add_label_with_icon|small|`wSonic Buster Katana - `9ItemID: `e11118|left|7586|
+add_label_with_icon|small|`wSonic Buster Katana - `9ItemID: `e11118|left|11118|
 add_label_with_icon|small|`wElectric Bow - `9ItemID: `e2720|left|2720|
 add_label_with_icon|small|`wWinter Frost Bow - `9ItemID: `e5424|left|5424|
 add_label_with_icon|small|`wEthereal Rainbow Dragon - `9ItemID: `e7136|left|7136|
@@ -955,7 +955,8 @@ add_label_with_icon|small|`wWinter Frost Bow - `9ItemID: `e4|left|5424|
 add_label_with_icon|small|`wLegendBot-009 - `9PunchId: `e20|left|1780|
 add_label_with_icon|small|`wDragon of Legend- `9PunchId: `e21|left|1782|
 add_label_with_icon|small|`wLegendary Katana - `9PunchId: `e43|left|2592|
-add_label_with_icon|small|`wSonic Buster Sword - `9PunchId: `e104|left|7586|
+add_label_with_icon|small|`wSonic Buster Sword - `9ItemID: `e7586|left|7586|
+add_label_with_icon|small|`wSonic Buster Katana - `9ItemID: `e11118|left|11118|
 add_label_with_icon|small|`wCursed Katana - `9PunchId: `e136|left|9058|
 add_label_with_icon|small|`wRayman's Fist - `9PunchId: `e12|left|5480|
 add_quick_exit|
