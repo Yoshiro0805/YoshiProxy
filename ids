@@ -1,1 +1,964 @@
-""
+function proxy_shortcut1()local v0=0 -0 ;while true do if (v0==0) then varlist={};varlist[114 -(4 + 110) ]="OnDialogRequest";v0=585 -(57 + 527) ;end if (v0==(1428 -(41 + 1386))) then varlist[104 -(17 + 86) ]=[[set_default_color|`o
+add_label_with_icon|big|`3Main Commands``|left|5956|
+add_spacer|small|
+add_smalltext|`7Command : `0/info `0( `3show the status for each command `0)|left|
+add_smalltext|`7Command : `0/autosurg or /autos `0( `3Enable / Disable auto-surg `0)|left|
+add_smalltext|`7Command : `0/autosurghelper or /autosh `0( `3Enable / Disable surg helper `0)|left|
+add_smalltext|`7Command : `0/autocrime or /autoc `0( `3Enable / Disable auto-crime `0)|left|
+add_smalltext|`7Command : `0/autostartopia or /autost `0( `3Enable / Disable auto-startopia `0)|left|
+add_smalltext|`7Command : `0/modfly `0( `3Enable / Disable modfly `0)|left|
+add_smalltext|`7Command : `0/fire ban `0( `3auto-ban troller ( fire lighter ) `0)|left|
+add_smalltext|`7Command : `0/rndm `0( `3warp to a random world `0)|left|
+add_smalltext|`7Command : `0/spinall `0( `3spin all wheels in world `0)|left|
+add_smalltext|`7Command : `0/res `0( `3respawn `0)|left|
+add_smalltext|`7Command : `0/balance `0( `3Show total locks in inv `0)|left|
+add_smalltext|`7Command : `0/warn [`9 text `0] `0( `3warn your self with custom warning `0)|left|
+add_smalltext|`7Command : `0/relog `0( `3fast relog `0)|left|
+add_smalltext|`7Command : `0/fd `0( `3Enable / Disable fast drop `0)|left|
+add_smalltext|`7Command : `0/ft `0( `3Enable / Disable fast trash `0)|left|
+add_smalltext|`7Command : `0/gems `0( `3see total gems in world `0)|left|
+add_smalltext|`7Command : `0/ping `0( `3show your current ping `0)|left|
+add_smalltext|`7Command : `0/testmod `0( `3test situation if mod joined `0)|left|
+add_smalltext|`7Command : `0/nopickup `0( `3Enable / Disable anti-pickup items `0)|left|
+add_smalltext|`7Command : `0/cid `0( `3create new account `0)|left|
+add_smalltext|`7Command : `0/fc `0( `3force close the proxy `0)|left|
+add_smalltext|`7Command : `0/door [`9 id `0] `0( `3join a door using id `0)|left|
+add_smalltext|`7Command : `0/pickup [`9 id `0] `0( `3only pickup 1 item `0)|left|
+add_smalltext|`7Command : `0/autocollect or /ac `0( `3Enable / Disable autocollect `0)|left|
+add_smalltext|`7Command : `0/blink `0( `3Enable / Disable blink skin color `0)|left|
+add_smalltext|`7Command : `0/blinkd `0( `3Set blink delay in ms `0)|left|
+add_smalltext|`7Command : `0/dropall `0( `3dropp all inv items `0)|left|
+add_smalltext|`1Note : `0[`4 Have chance of Shadowban `0]|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -(1 + 0);v0=3 -1 ;end if (v0==(5 -3)) then SendVarlist(varlist);break;end end end function proxy_shortcut2()varlist={};varlist[166 -(122 + 44) ]="OnDialogRequest";varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`3World Commands``|left|3802|
+add_spacer|small|
+add_smalltext|`7Command : `!/World|left|
+add_spacer|small|
+add_smalltext|`2Shortcuts :|left|
+add_smalltext|`7Command : `0/pullall `0( `3pull all players in world `0)|left|
+add_smalltext|`7Command : `0/kickall `0( `3kick all players in world `0)|left|
+add_smalltext|`7Command : `0/banall `0( `3ban all players in world `0)|left|
+add_smalltext|`7Command : `0/tradeall `0( `3trade all players in world `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -1;SendVarlist(varlist);end function proxy_shortcut3()local v4=0 -0 ;while true do if (v4==2) then SendVarlist(varlist);break;end if (v4==(3 -2)) then varlist[1 + 0 ]=[[set_default_color|`o
+add_label_with_icon|big|`3Wrench Commands``|left|32|
+add_spacer|small|
+add_smalltext|`7Command : `!/wm|left|
+add_spacer|small|
+add_smalltext|`2Shortcuts :|left|
+add_smalltext|`7Command : `0/wp `0( `3turn on wrench pull `0)|left|
+add_smalltext|`7Command : `0/wk `0( `3turn on wrench kick `0)|left|
+add_smalltext|`7Command : `0/wb `0( `3turn on wrench ban `0)|left|
+add_smalltext|`7Command : `0/woff `0( `3turn wrench mode off `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -1;v4=2;end if (v4==(0 + 0)) then varlist={};varlist[0 -0 ]="OnDialogRequest";v4=66 -(30 + 35) ;end end end function proxy_shortcut4()varlist={};varlist[0 + 0 ]="OnDialogRequest";varlist[1258 -(1043 + 214) ]=[[set_default_color|`o
+add_label_with_icon|big|`3Growscan Commands``|left|6016|
+add_spacer|small|
+add_smalltext|`7Command : `!/gs or /growscan|left|
+add_spacer|small|
+add_smalltext|`2Shortcuts :|left|
+add_smalltext|`7Command : `0/growscan 1 or /gs 1 `0( `3scan placed blocks `0)|left|
+add_smalltext|`7Command : `0/growscan 2 or /gs 2 `0( `3scan dropped items `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -(3 -2);SendVarlist(varlist);end function proxy_shortcut5()varlist={};varlist[1212 -(323 + 889) ]="OnDialogRequest";varlist[2 -1 ]=[[set_default_color|`o
+add_label_with_icon|big|`3Farming Commands``|left|6950|
+add_spacer|small|
+add_smalltext|`7Command : `!/ut|left|
+add_spacer|small|
+add_smalltext|`2Shortcuts :|left|
+add_smalltext|`7Command : `0/ut add or /ua `0( `3turn on fast ut adder `0)|left|
+add_smalltext|`7Command : `0/ut empty or /ue `0( `3turn on fast ut emptier `0)|left|
+add_smalltext|`7Command : `0/ut off or /uoff `0( `3turn off ut mode `0)|left|
+add_spacer|small|
+add_smalltext|`7Command : `!/gaia|left|
+add_spacer|small|
+add_smalltext|`2Shortcuts :|left|
+add_smalltext|`7Command : `0/gaia add or /ga `0( `3turn on fast gaia adder `0)|left|
+add_smalltext|`7Command : `0/gaia empty or /ge `0( `3turn on fast gaia emptier `0)|left|
+add_smalltext|`7Command : `0/gaia off or /goff `0( `3turn off gaia mode `0)|left|
+add_spacer|small|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -1;SendVarlist(varlist);end function proxy_shortcut6()varlist={};varlist[0]="OnDialogRequest";varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`3Join Commands``|left|6|
+add_spacer|small|
+add_smalltext|`7Command : `0/j pull `0( `3pull player when join `0)|left|
+add_smalltext|`7Command : `0/j kick `0( `3kick player when join `0)|left|
+add_smalltext|`7Command : `0/j ban `0( `3ban player when join `0)|left|
+add_smalltext|`7Command : `0/j off `0( `3turn off join mode `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -(581 -(361 + 219));SendVarlist(varlist);end function proxy_shortcut7()varlist={};varlist[320 -(53 + 267) ]="OnDialogRequest";varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`3Donation Box Commands``|left|1452|
+add_spacer|small|
+add_smalltext|`7Command : `!/donation|left|
+add_spacer|small|
+add_smalltext|`2Shortcuts :|left|
+add_smalltext|`7Command : `0/donation empty or /de `0( `3fast empty donation box `0)|left|
+add_smalltext|`7Command : `0/donation add or /da `0( `3fast add donation box `0)|left|
+add_smalltext|`7Command : `0/donation off or /doff `0( `3turn off donation box mode `0)|left|
+add_quick_exit|
+add_spacer|small|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -(1 + 0);SendVarlist(varlist);end function proxy_shortcut8()local v17=0;while true do if (v17==(414 -(15 + 398))) then varlist[983 -(18 + 964) ]=[[set_default_color|`o
+add_label_with_icon|big|`3Vend Commands``|left|2978|
+add_spacer|small|
+add_smalltext|`7Command : `0/ve `0( `3fast empty vend `0)|left|
+add_smalltext|`7Command : `0/va `0( `3fast stocker vend `0)|left|
+add_smalltext|`7Command : `0/vb [`9 amount `0] `0( `3fast buy from vend `0)|left|
+add_smalltext|`7Command : `0/voff `0( `3turn off vend mode `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -1;v17=7 -5 ;end if (v17==(2 + 0)) then SendVarlist(varlist);break;end if (v17==0) then varlist={};varlist[0 + 0 ]="OnDialogRequest";v17=1;end end end function proxy_shortcut9()local v18=850 -(20 + 830) ;while true do if (v18==(0 + 0)) then varlist={};varlist[126 -(116 + 10) ]="OnDialogRequest";v18=1;end if (v18==1) then varlist[1 + 0 ]=[[set_default_color|`o
+add_label_with_icon|big|`3Spam Commands``|left|6272|
+add_spacer|small|
+add_smalltext|`7Command : `0/spamt [`9 text `0] `0( `3set a text to spam `0)|left|
+add_smalltext|`7Command : `0/spamd [`9 delay `0] `0( `3set delay in seconds `0)|left|
+add_smalltext|`7Command : `0// `0( `3start / stop spam `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -(739 -(542 + 196));v18=2;end if (v18==(3 -1)) then SendVarlist(varlist);break;end end end function proxy_shortcu01()varlist={};varlist[0 + 0 ]="OnDialogRequest";varlist[1 + 0 ]=[[set_default_color|`o
+add_label_with_icon|big|`3Harvest Commands``|left|1830|
+add_spacer|small|
+add_smalltext|`7Command : `0/harvestid [`9 id `0] `0( `3set a seed id `0)|left|
+add_smalltext|`7Command : `0/harvestdelay [`9 delay `0] `0( `3set a delay in ms `0)|left|
+add_smalltext|`7Command : `0/hv `0( `3start / stop harvest `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -1;SendVarlist(varlist);end function proxy_shortcu11()varlist={};varlist[0]="OnDialogRequest";varlist[1 + 0 ]=[[set_default_color|`o
+add_label_with_icon|big|`3Safe Commands``|left|278|
+add_spacer|small|
+add_smalltext|`7Command : `0/safe 1 `0( `3collect & ban all & unacces & leave `0)|left|
+add_smalltext|`7Command : `0/safe 2 `0( `3collect & unacces & leave `0)|left|
+add_smalltext|`7Command : `0/safe 3 `0( `3collect & leave `0)|left|
+add_smalltext|`7Command : `0/safe off `0( `3turns off safe commands `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -1;SendVarlist(varlist);end function proxy_shortcu13()varlist={};varlist[0 -0 ]="OnDialogRequest";varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`3Host Commands``|left|758|
+add_spacer|small|
+add_smalltext|`7Command : `0/spin check `0( `3check is spin real or fake `0)|left|
+add_smalltext|`7Command : `0/spin qq `0( `3check qq spin `0)|left|
+add_smalltext|`7Command : `0/spin reme `0( `3check reme spin `0)|left|
+add_smalltext|`7Command : `0/spin all `0( `3check reme and qq spin `0)|left|
+add_smalltext|`7Command : `0/bj `0( `3see total gems collected `0)|left|
+add_smalltext|`7Command : `0/bjc `0( `3see total gems collected only for you `0)|left|
+add_smalltext|`7Command : `0/settax [`9 amount `0] `0( `3set a tax % `0)|left|
+add_smalltext|`7Command : `0/tax [`9 amount `0] `0( `3calculate tax `0)|left|
+add_smalltext|`7Command : `0/daw `0( `3drop all wls`0)|left|
+add_smalltext|`7Command : `0/dad `0( `3drop all dls `0)|left|
+add_smalltext|`7Command : `0/daa `0( `3drop all dls and wls `0)|left|
+add_smalltext|`7Command : `0/acp `0( `3auto compress wls `0)|left|
+add_smalltext|`7Command : `0/sethost [`9 world `0] `0( `3set a host world `0)|left|
+add_smalltext|`7Command : `0/setsave [`9 world `0] `0( `3set a save world `0)|left|
+add_smalltext|`7Command : `0/ssaver [`9 name `0] `0( `3set a saver acc `0)|left|
+add_smalltext|`7Command : `0/host `0( `3warp to host world `0)|left|
+add_smalltext|`7Command : `0/save `0( `3warp to save world `0)|left|
+add_smalltext|`7Command : `0/saver `0( `3pull saver acc `0)|left|
+add_smalltext|`7Command : `0/sp1 `0( `3set pos 1 `0)|left|
+add_smalltext|`7Command : `0/sp2 `0( `3set pos 2 `0) [ `1Optional `0]|left|
+add_smalltext|`7Command : `0/sp3 `0( `3set pos 3 `0) [ `1Optional `0]|left|
+add_smalltext|`7Command : `0/sp4 `0( `3set pos 4 `0) [ `1Optional `0]|left|
+add_smalltext|`7Command : `0/spb `0( `3set original pos `0)|left|
+add_smalltext|`7Command : `0/pos1 `0( `3go to pos 1 `0)|left|
+add_smalltext|`7Command : `0/pos2 `0( `3go to pos 2 `0)|left|
+add_smalltext|`7Command : `0/pos3 `0( `3go to pos 3 `0)|left|
+add_smalltext|`7Command : `0/pos4 `0( `3go to pos 4 `0)|left|
+add_smalltext|`7Command : `0/pback `0( `3go to original pos ( setposback ) `0)|left|
+add_smalltext|`7Command : `0/win1 or /w1 [`9 amount `0] `0( `3drop locks to winner 1 `0)|left|
+add_smalltext|`7Command : `0/win2 or /w2 [`9 amount `0] `0( `3drop locks to winner 2 `0)|left|
+add_smalltext|`7Command : `0/win3 or /w3 [`9 amount `0] `0( `3drop locks to winner 3 `0)|left|
+add_smalltext|`7Command : `0/win4 or /w4 [`9 amount `0] `0( `3drop locks to winner 4 `0)|left|
+add_smalltext|`7Command : `0/dt `0( `3Drop tax on position `0)|left|
+add_smalltext|`7Command : `0/dt1 `0( `3drop tax to winner 1 `0)|left|
+add_smalltext|`7Command : `0/dt2 `0( `3drop tax to winner 2 `0)|left|
+add_smalltext|`7Command : `0/dt3 `0( `3drop tax to winner 3 `0)|left|
+add_smalltext|`7Command : `0/dt4 `0( `3drop tax to winner 4 `0)|left|
+add_smalltext|`7Command : `0/tp or /. `0( `3collect locks from players `0)|left|
+add_smalltext|`7Command : `0/cd [`9 amount `0] `0( /cd 120 ( 1 dl & 20 wls) `0) |left|
+add_smalltext|`7Command : `0/wl [`9 amount `0]|left|
+add_smalltext|`7Command : `0/dl [`9 amount `0]|left|
+add_smalltext|`7Command : `0/bgl [`9 amount `0]|left| 
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -(2 -1);SendVarlist(varlist);end function proxy_shortcu14()local v28=1551 -(1126 + 425) ;while true do if ((407 -(118 + 287))==v28) then SendVarlist(varlist);return true;end if (1==v28) then varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`!Choose title|left|6276|
+add_spacer|small|
+add_button|g4g_title|`9G4G Title|noflags|0|0|
+add_button|master_title|`9Master Title|noflags|0|0|
+add_button|doctor_title|`9Doctor Title|noflags|0|0|
+add_button|maxlevel_title|`9Max Level Title|noflags|0|0|
+add_button|legend_title|`9Legendary Title|noflags|0|0|
+add_button|mods_title|`9Mods Title|noflags|0|0|
+add_spacer|small|
+add_button|reset_title|`@Reset Title|noflags|0|0|
+add_smalltext|`2Shortcuts :|left|
+add_smalltext|`7Command : `0/master `0( `3master title `0)|left|
+add_smalltext|`7Command : `0/g4g `0( `3grow for good title `0)|left|
+add_smalltext|`7Command : `0/doctor `0( `3doctor title `0)|left|
+add_smalltext|`7Command : `0/maxlevel `0( `3max level title `0)|left|
+add_smalltext|`7Command : `0/oflegend or /legend `0( `3of legend title `0)|left|
+add_smalltext|`7Command : `0/title reset `0( `3reset titles to normal `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -1;v28=2;end if (v28==(0 -0)) then varlist={};varlist[0]="OnDialogRequest";v28=1122 -(118 + 1003) ;end end end AddCallback("title_ui_commands","OnPacket",title_ui_commands);function title_mode(v29,v30)if v30:find("buttonClicked|legend_title") then local v124=0 -0 ;while true do if ((378 -(142 + 235))==v124) then GetLocal().name=GetLocal().name:gsub(" of Legend","");GetLocal().name=GetLocal().name:gsub("Dr.","");var={};var[0 -0 ]="OnCountryState";v124=2;end if (v124==(1 + 1)) then var[978 -(553 + 424) ]="jo|doctor";var.netid=GetLocal().netid;SendVarlist(var);GetLocal().name=GetLocal().name   .. " of Legend``" ;v124=5 -2 ;end if (v124==(0 + 0)) then OnConsoleMessage("`0[ `3YoshiGT  `0] `9pulling all players");titlexd="legend";OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3OF LEGEND `9enabled !");GetLocal().name=GetLocal().name:removeColors();v124=1;end if (v124==3) then return true;end end elseif v30:find("buttonClicked|g4g_title") then local v210=0;while true do if (v210==(0 + 0)) then titlexd="g4g";OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3DONOR `9enabled !");GetLocal().name=GetLocal().name:removeColors();GetLocal().name=GetLocal().name:gsub(" of Legend","");v210=1 + 0 ;end if (v210==1) then GetLocal().name=GetLocal().name:gsub("Dr.","");var={};var[0]="OnCountryState";var[1]="jo|donor";v210=1 + 1 ;end if (v210==(2 + 0)) then var.netid=GetLocal().netid;SendVarlist(var);return true;end end elseif v30:find("buttonClicked|master_title") then local v271=0 -0 ;while true do if (v271==(2 -1)) then GetLocal().name=GetLocal().name:gsub(" of Legend","");GetLocal().name=GetLocal().name:gsub("Dr.","");var={};v271=4 -2 ;end if (v271==0) then titlexd="master";OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3MASTED `9enabled !");GetLocal().name=GetLocal().name:removeColors();v271=1 + 0 ;end if (v271==3) then SendVarlist(var);return true;end if (v271==(9 -7)) then var[0]="OnCountryState";var[1]="jo|master";var.netid=GetLocal().netid;v271=756 -(239 + 514) ;end end elseif v30:find("buttonClicked|doctor_title") then titlexd="doctor";OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3DOCTOR `9enabled !");GetLocal().name=GetLocal().name:removeColors();GetLocal().name=GetLocal().name:gsub(" of Legend","");GetLocal().name=GetLocal().name:gsub("Dr.","");GetLocal().name="Dr."   .. GetLocal().name ;var={};var[0]="OnCountryState";var[1 + 0 ]="jo|doctor";var.netid=GetLocal().netid;SendVarlist(var);return true;elseif v30:find("buttonClicked|reset_title") then OnConsoleMessage("`0[ `3YoshiGT  `0] `9 removing all titles");GetLocal().name=GetLocal().name:removeColors();GetLocal().name=GetLocal().name:gsub(" of Legend","");GetLocal().name=GetLocal().name:gsub("Dr.","");var={};var[1329 -(797 + 532) ]="OnCountryState";var[1 + 0 ]="jo|";var.netid=GetLocal().netid;SendVarlist(var);return true;end end AddCallback("title_mode","OnPacket",title_mode);function proxy_shortcu15()local v31=0 + 0 ;while true do if (v31==0) then varlist={};varlist[0 -0 ]="OnDialogRequest";v31=1;end if (v31==(1203 -(373 + 829))) then varlist[732 -(476 + 255) ]=[[set_default_color|`o
+add_label_with_icon|big|`3Visual Clothes``|left|1784|
+add_spacer|small|
+add_smalltext|`7Command : `0/saveclothe or /sc `0( `3wear set when joining world `0)|left|
+add_smalltext|`7Command : `0/vhat [`9 id `0] `0( `3set visual hat `0)|left|
+add_smalltext|`7Command : `0/vshirt [`9 id `0] `0( `3set visual shirt `0)|left|
+add_smalltext|`7Command : `0/vpant [`9 id `0] `0( `3set visual pant `0)|left|
+add_smalltext|`7Command : `0/vshoes [`9 id `0] `0( `3set visual shoes `0)|left|
+add_smalltext|`7Command : `0/vhand [`9 id `0] `0( `3set visual hand `0)|left|
+add_smalltext|`7Command : `0/vwing [`9 id `0] `0( `3set visual wings `0)|left|
+add_smalltext|`7Command : `0/vhair [`9 id `0] `0( `3set visual hair `0)|left|
+add_smalltext|`7Command : `0/vneck [`9 id `0] `0( `3set visual neck `0)|left|
+add_smalltext|`7Command : `0/vances [`9 id `0] `0( `3set visual ances `0)|left|
+add_smalltext|`7Command : `0/Punch [`9 id `0] `0( `3wear punch effect `0)|left|
+add_smalltext|`7Command : `0/Pid`0( `3find punch effect `0)|left|
+add_smalltext|`7Command : `0/clothe x /clothes `0( `3wear visual set `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -(1131 -(369 + 761));v31=2 + 0 ;end if (v31==(2 -0)) then SendVarlist(varlist);break;end end end function proxy_shortcu16()local v32=0 -0 ;while true do if (v32==(239 -(64 + 174))) then varlist[1 + 0 ]=[[set_default_color|`o
+add_label_with_icon|big|`3Visual Commands``|left|9228|
+add_spacer|small|
+add_smalltext|`7Command : `0/flag [`9 id `0]|left|
+add_smalltext|`7Command : `0/guild [`9 id `0]|left|
+add_smalltext|`7Command : `0/weather `0( `3change weather to random `0)|left|
+add_smalltext|`7Command : `0/give [`9 id `0] [`9 count `0]|left|
+add_smalltext|`7Command : `0/hide `0( `3hide all players names `0)|left|
+add_smalltext|`7Command : `0/name [`9 name `0] `0( `3change your name `0)|left|
+add_smalltext|`7Command : `0/inv `0( `3make everyone invisible `0)|left|
+add_quick_exit|
+end_dialog|proxy_shortcut|`0Cancel|`0Back|
+]];varlist.netid= -1;v32=2;end if (v32==(2 -0)) then SendVarlist(varlist);break;end if (v32==0) then varlist={};varlist[0]="OnDialogRequest";v32=1;end end end function shortcuts_proxy22()varlist={};varlist[0]="OnDialogRequest";varlist[337 -(144 + 192) ]=[[set_default_color|`o
+add_label_with_icon|big|`3YoshiProxy Command List``|left|1790|
+add_spacer|small|
+add_label_with_icon|small|`!BUY PROXY ? DM `3Yoshiroo#8161|left|4802|
+add_spacer|small|
+add_label_with_icon|small|`5Current CSN tax : (`3]]   .. settax_1   .. [[%`5)|left|7188|
+add_label_with_icon|small|`5Current World : `3]]   .. GetLocal().world   .. [[|left|1796|
+add_spacer|small|
+add_label_with_icon|small|`3Check my Discord server!``|left|8224|
+add_spacer|small|
+add_url_button||`1Join Our Discord Server ! ``|NOFLAGS|https://discord.gg/PmkcJ4k9w6|
+add_url_button||`1Msg me on Facebook ! ``|NOFLAGS|https://www.facebook.com/everyonehatesjae|
+add_spacer|small|
+add_button_with_icon|proxy_shortcut1|`5Main Commands|staticYellowFrame|18|
+add_button_with_icon|proxy_shortcut2|`!World Commands|staticYellowFrame|8|
+add_button_with_icon|proxy_shortcut3|`5Wrench Commands|staticYellowFrame|32|
+add_button_with_icon|proxy_shortcut4|`!Growscan Commands|staticYellowFrame|6016|
+add_button_with_icon|proxy_shortcut5|`5Farming Commands|staticYellowFrame|6169|
+add_button_with_icon|proxy_shortcut6|`!Join Commands|staticYellowFrame|6|
+add_button_with_icon|proxy_shortcut7|`5Donation Box Commands|staticYellowFrame|1452|
+add_button_with_icon|proxy_shortcut8|`!Vend Commands|staticYellowFrame|2978|
+add_button_with_icon|proxy_shortcut9|`5Spam Commands|staticYellowFrame|2586|
+add_button_with_icon|proxy_shortcu01|`!Harvest Commands|staticYellowFrame|1966|
+add_button_with_icon|proxy_shortcu11|`5Safe Commands|staticYellowFrame|5956|
+add_button_with_icon|proxy_shortcu13|`5Host Commands|staticYellowFrame|758|
+add_button_with_icon|proxy_shortcu14|`!Titles Commands|staticYellowFrame|6276|
+add_button_with_icon|proxy_shortcu15|`5Visual Clothes Commands|staticYellowFrame|1784||
+add_button_with_icon|proxy_shortcu16|`!Visual Commands|staticYellowFrame|1790|
+add_spacer|small|
+end_dialog|lmfao_commands_main_proxy|`0Cancel|`0Back|
+]] ;varlist.netid= -1;SendVarlist(varlist);end function shortcuts_proxy(v36,v37)if (v37=="action|input\n|text|/proxy") then varlist={};varlist[0]="OnDialogRequest";varlist[217 -(42 + 174) ]=[[set_default_color|`o
+add_label_with_icon|big|`3YoshiProxy Command List``|left|1790|
+add_spacer|small|
+add_label_with_icon|small|`!BUY PROXY ? DM `3Yoshiroo#8161|left|4802|
+add_spacer|small|
+add_label_with_icon|small|`5Current CSN tax : (`3]]   .. settax_1   .. [[%`5)|left|7188|
+add_label_with_icon|small|`5Current World : `3]]   .. GetLocal().world   .. [[|left|1796|
+add_spacer|small|
+add_label_with_icon|small|`3Check my Social Media Account!``|left|8224|
+add_spacer|small|
+add_url_button||`1Join Our Discord Server ! ``|NOFLAGS|https://discord.gg/PmkcJ4k9w6|
+add_url_button||`1Msg me on Facebook ! ``|NOFLAGS|https://www.facebook.com/everyonehatesjae|
+add_spacer|small|
+add_button_with_icon|proxy_shortcut1|`5Main Commands|staticYellowFrame|18|
+add_button_with_icon|proxy_shortcut2|`!World Commands|staticYellowFrame|8|
+add_button_with_icon|proxy_shortcut3|`5Wrench Commands|staticYellowFrame|32|
+add_button_with_icon|proxy_shortcut4|`!Growscan Commands|staticYellowFrame|6016|
+add_button_with_icon|proxy_shortcut5|`5Farming Commands|staticYellowFrame|6169|
+add_button_with_icon|proxy_shortcut6|`!Join Commands|staticYellowFrame|6|
+add_button_with_icon|proxy_shortcut7|`5Donation Box Commands|staticYellowFrame|1452|
+add_button_with_icon|proxy_shortcut8|`!Vend Commands|staticYellowFrame|2978|
+add_button_with_icon|proxy_shortcut9|`5Spam Commands|staticYellowFrame|2586|
+add_button_with_icon|proxy_shortcu01|`!Harvest Commands|staticYellowFrame|1966|
+add_button_with_icon|proxy_shortcu11|`5Safe Commands|staticYellowFrame|5956|
+add_button_with_icon|proxy_shortcu13|`5Host Commands|staticYellowFrame|758|
+add_button_with_icon|proxy_shortcu14|`!Titles Commands|staticYellowFrame|6276|
+add_button_with_icon|proxy_shortcu15|`5Visual Clothes Commands|staticYellowFrame|1784||
+add_button_with_icon|proxy_shortcu16|`!Visual Commands|staticYellowFrame|1790|
+add_spacer|small|
+end_dialog|lmfao_commands_main_proxy|`0Cancel|`0Back|
+]] ;varlist.netid= -(1 + 0);SendVarlist(varlist);return true;end end AddCallback("shortcuts_proxy","OnPacket",shortcuts_proxy);function shortcutsxd1(v38,v39)if v39:find("buttonClicked|proxy_shortcut1") then local v128=0 + 0 ;while true do if ((0 + 0)==v128) then proxy_shortcut1();return true;end end elseif v39:find("buttonClicked|proxy_shortcut2") then local v211=0;while true do if (v211==0) then proxy_shortcut2();return true;end end elseif v39:find("buttonClicked|proxy_shortcut3") then proxy_shortcut3();return true;elseif v39:find("buttonClicked|proxy_shortcut4") then local v325=1504 -(363 + 1141) ;while true do if ((1580 -(1183 + 397))==v325) then proxy_shortcut4();return true;end end elseif v39:find("buttonClicked|proxy_shortcut5") then local v363=0 -0 ;while true do if (v363==(0 + 0)) then proxy_shortcut5();return true;end end elseif v39:find("buttonClicked|proxy_shortcut6") then local v398=0 + 0 ;while true do if (v398==(1975 -(1913 + 62))) then proxy_shortcut6();return true;end end elseif v39:find("buttonClicked|proxy_shortcut7") then local v412=0;while true do if (v412==(0 + 0)) then proxy_shortcut7();return true;end end elseif v39:find("buttonClicked|proxy_shortcut8") then proxy_shortcut8();return true;elseif v39:find("buttonClicked|proxy_shortcut9") then proxy_shortcut9();return true;elseif v39:find("buttonClicked|proxy_shortcu01") then local v431=0;while true do if (v431==(0 -0)) then proxy_shortcu01();return true;end end elseif v39:find("buttonClicked|proxy_shortcu11") then local v432=0;while true do if (v432==(1933 -(565 + 1368))) then proxy_shortcu11();return true;end end elseif v39:find("buttonClicked|proxy_shortcu13") then local v433=0 -0 ;while true do if (v433==0) then proxy_shortcu13();return true;end end elseif v39:find("buttonClicked|proxy_shortcu14") then proxy_shortcu14();return true;elseif v39:find("buttonClicked|proxy_shortcu15") then local v434=1661 -(1477 + 184) ;while true do if (0==v434) then proxy_shortcu15();return true;end end elseif v39:find("buttonClicked|proxy_shortcu16") then proxy_shortcu16();return true;elseif v39:find("dialog_name|proxy_shortcut") then local v435=0 -0 ;while true do if (v435==(0 + 0)) then shortcuts_proxy22();return true;end end end end AddCallback("shortcutsxd1","OnPacket",shortcutsxd1);function join_commands(v40,v41)if (v41=="action|input\n|text|/join") then if (set_mod_join=="pull") then local v212=856 -(564 + 292) ;while true do if (v212==0) then varlist={};varlist[0]="OnDialogRequest";v212=1 -0 ;end if (v212==(5 -3)) then SendVarlist(varlist);break;end if (v212==(305 -(244 + 60))) then varlist[1 + 0 ]=[[set_default_color|`o
+add_label_with_icon|big|`!Join Commands|left|6|
+add_spacer|small
+add_textbox|`9Currently Join Mode is `2Enabled `9And is Set To : `3]]   .. set_mod_join   .. [[|left|
+add_spacer|small
+add_button|join_pull|`2Join Pull|noflags|0|0|
+add_button|join_kick|`9Join Kick|noflags|0|0|
+add_button|join_ban|`9Join Ban|noflags|0|0|
+add_spacer|small|
+add_button|join_off|`@Turn Off Join Mode|noflags|0|0|
+add_quick_exit|
+end_dialog|join_commands|`4Cancel|`2Okay|
+]] ;varlist.netid= -(477 -(41 + 435));v212=2;end end elseif (set_mod_join=="kick") then varlist={};varlist[0]="OnDialogRequest";varlist[1002 -(938 + 63) ]=[[set_default_color|`o
+add_label_with_icon|big|`!Join Commands|left|6|
+add_spacer|small
+add_textbox|`9Currently Join Mode is `2Enabled `9And is Set To : `3]]   .. set_mod_join   .. [[|left|
+add_spacer|small
+add_button|join_pull|`9Join Pull|noflags|0|0|
+add_button|join_kick|`2Join Kick|noflags|0|0|
+add_button|join_ban|`9Join Ban|noflags|0|0|
+add_spacer|small|
+add_button|join_off|`@Turn Off Join Mode|noflags|0|0|
+add_quick_exit|
+end_dialog|join_commands|`4Cancel|`2Okay|
+]] ;varlist.netid= -1;SendVarlist(varlist);elseif (set_mod_join=="ban") then local v326=0 + 0 ;while true do if (v326==1) then varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`!Join Commands|left|6|
+add_spacer|small
+add_textbox|`9Currently Join Mode is `2Enabled `9And is Set To : `3]]   .. set_mod_join   .. [[|left|
+add_spacer|small
+add_button|join_pull|`9Join Pull|noflags|0|0|
+add_button|join_kick|`9Join Kick|noflags|0|0|
+add_button|join_ban|`2Join Ban|noflags|0|0|
+add_spacer|small|
+add_button|join_off|`@Turn Off Join Mode|noflags|0|0|
+add_quick_exit|
+end_dialog|join_commands|`4Cancel|`2Okay|
+]] ;varlist.netid= -1;v326=2;end if (v326==(1127 -(936 + 189))) then SendVarlist(varlist);break;end if (v326==0) then varlist={};varlist[0 + 0 ]="OnDialogRequest";v326=1614 -(1565 + 48) ;end end elseif (set_mod_join=="off") then varlist={};varlist[0]="OnDialogRequest";varlist[1 + 0 ]=[[set_default_color|`o
+add_label_with_icon|big|`!Join Commands|left|6|
+add_spacer|small|
+add_textbox|`9Currently Join Mode is `4Disabled|left|
+add_spacer|small|
+add_button|join_pull|`9Join Pull|noflags|0|0|
+add_button|join_kick|`9Join Kick|noflags|0|0|
+add_button|join_ban|`9Join Ban|noflags|0|0|
+add_spacer|small|
+add_button|join_off|`2Turn Off Join Mode|noflags|0|0|
+add_quick_exit|
+end_dialog|join_commands|`4Cancel|`2Okay|
+]];varlist.netid= -(1139 -(782 + 356));SendVarlist(varlist);end return true;end end AddCallback("join_commands","OnPacket",join_commands);function join_ui_mode(v42,v43)if v43:find("buttonClicked|join_pull") then set_mod_join="pull";OnConsoleMessage("`0[ `3Yoshiro `0] `9join command set to : `3"   .. set_mod_join );function when_join(v175)if (v175[267 -(176 + 91) ]=="OnSpawn") then local v230=0 -0 ;while true do if (v230==1) then SendPacket(2 -0 ,"action|input\n|text|/"   .. set_mod_join   .. " "   .. name:lower() );break;end if (v230==(1092 -(975 + 117))) then a=v175[1]:match("name|(`.[^`]+)");name=a:sub(1878 -(157 + 1718) );v230=1;end end end end AddCallback("when_join","OnVarlist",when_join);return true;elseif v43:find("buttonClicked|join_off") then local v213=0 + 0 ;while true do if (v213==(0 -0)) then set_mod_join="off";OnConsoleMessage("`0[ `3Yoshiro `0] `9turning off join mode");v213=1;end if (v213==(3 -2)) then RemoveCallback("when_join");return true;end end elseif v43:find("buttonClicked|join_ban") then local v275=1018 -(697 + 321) ;while true do if (v275==(0 -0)) then set_mod_join="ban";OnConsoleMessage("`0[ `3Yoshiro `0] `9join command set to : `3"   .. set_mod_join );v275=1 -0 ;end if (v275==1) then function when_join(v367)if (v367[0 -0 ]=="OnSpawn") then local v399=0 + 0 ;while true do if (v399==(0 -0)) then a=v367[1]:match("name|(`.[^`]+)");name=a:sub(7 -4 );v399=1;end if (v399==1) then SendPacket(1229 -(322 + 905) ,"action|input\n|text|/"   .. set_mod_join   .. " "   .. name:lower() );break;end end end end AddCallback("when_join","OnVarlist",when_join);v275=613 -(602 + 9) ;end if (v275==2) then return true;end end elseif v43:find("buttonClicked|join_kick") then local v327=1189 -(449 + 740) ;while true do if (v327==(874 -(826 + 46))) then return true;end if (v327==(947 -(245 + 702))) then set_mod_join="kick";OnConsoleMessage("`0[ `3Yoshiro `0] `9join command set to : `3"   .. set_mod_join );v327=3 -2 ;end if (v327==(1 + 0)) then function when_join(v400)if (v400[1898 -(260 + 1638) ]=="OnSpawn") then a=v400[441 -(382 + 58) ]:match("name|(`.[^`]+)");name=a:sub(9 -6 );SendPacket(2 + 0 ,"action|input\n|text|/"   .. set_mod_join   .. " "   .. name:lower() );end end AddCallback("when_join","OnVarlist",when_join);v327=2;end end end end AddCallback("join_ui_mode","OnPacket",join_ui_mode);mode_wm="off";function wm(v44,v45)if (v45=="action|input\n|text|/wm") then local v129=0 -0 ;while true do if (v129==(0 -0)) then if (mode_wm=="off") then type_wm="`4Disabled";else type_wm="`2Enabled";end if ((type_wm=="`2Enabled") and (mode_wm=="pull")) then local v300=0;while true do if (v300==0) then varlist={};varlist[0]="OnDialogRequest";v300=1206 -(902 + 303) ;end if (v300==(1 -0)) then varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`!Wrench Mode|left|32|
+add_spacer|small
+add_textbox|`9Currently Wrench Mode is `2Enabled `9And is Set To : `3]]   .. mode_wm   .. [[|left|
+add_spacer|small
+add_button_with_icon|wrench_pull|  `2pull  |staticYellowFrame|32|
+add_button_with_icon|wrench_kick|  `9kick  |staticBlueFrame|32|
+add_button_with_icon|wrench_ban|  `9ban  |staticBlueFrame|32|
+add_button_with_icon||END_LIST|noflags|0|0|
+add_spacer|small
+add_button|wrench_off|`@Turn off wrench mode|noflags|0|0|
+add_quick_exit|
+end_dialog|wrench_modesxd|`0Cancel|`0Back|
+]] ;varlist.netid= -(2 -1);v300=1 + 1 ;end if ((1692 -(1121 + 569))==v300) then SendVarlist(varlist);break;end end elseif ((type_wm=="`2Enabled") and (mode_wm=="kick")) then local v347=214 -(22 + 192) ;while true do if (v347==(684 -(483 + 200))) then varlist[1464 -(1404 + 59) ]=[[set_default_color|`o
+add_label_with_icon|big|`!Wrench Mode|left|32|
+add_spacer|small
+add_textbox|`9Currently Wrench Mode is `2Enabled `9And is Set To : `3]]   .. mode_wm   .. [[|left|
+add_spacer|small
+add_button_with_icon|wrench_pull|  `9pull  |staticBlueFrame|32|
+add_button_with_icon|wrench_kick|  `2kick  |staticYellowFrame|32|
+add_button_with_icon|wrench_ban|  `9ban  |staticBlueFrame|32|
+add_button_with_icon||END_LIST|noflags|0|0|
+add_spacer|small
+add_button|wrench_off|`@Turn off wrench mode|noflags|0|0|
+add_quick_exit|
+end_dialog|wrench_modesxd|`0Cancel|`0Back|
+]] ;varlist.netid= -1;v347=5 -3 ;end if ((0 -0)==v347) then varlist={};varlist[765 -(468 + 297) ]="OnDialogRequest";v347=1;end if ((564 -(334 + 228))==v347) then SendVarlist(varlist);break;end end elseif ((type_wm=="`2Enabled") and (mode_wm=="ban")) then local v382=0 -0 ;while true do if (v382==(0 -0)) then varlist={};varlist[0]="OnDialogRequest";v382=1 -0 ;end if (v382==(1 + 0)) then varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`!Wrench Mode|left|32|
+add_spacer|small
+add_textbox|`9Currently Wrench Mode is `2Enabled `9And is Set To : `3]]   .. mode_wm   .. [[|left|
+add_spacer|small
+add_button_with_icon|wrench_pull|  `9pull  |staticBlueFrame|32|
+add_button_with_icon|wrench_kick|  `9kick  |staticBlueFrame|32|
+add_button_with_icon|wrench_ban|  `2ban  |staticYellowFrame|32|
+add_button_with_icon||END_LIST|noflags|0|0|
+add_spacer|small
+add_button|wrench_off|`@Turn off wrench mode|noflags|0|0|
+add_quick_exit|
+end_dialog|wrench_modesxd|`0Cancel|`0Back|
+]] ;varlist.netid= -(237 -(141 + 95));v382=2;end if (v382==2) then SendVarlist(varlist);break;end end else varlist={};varlist[0 + 0 ]="OnDialogRequest";varlist[2 -1 ]=[[set_default_color|`o
+add_label_with_icon|big|`!Wrench Mode|left|32|
+add_spacer|small
+add_textbox|`9Currently Wrench Mode is `4Disabled|left|
+add_spacer|small
+add_button_with_icon|wrench_pull|  `9pull  |staticBlueFrame|32|
+add_button_with_icon|wrench_kick|  `9kick  |staticBlueFrame|32|
+add_button_with_icon|wrench_ban|  `9ban  |staticBlueFrame|32|
+add_button_with_icon||END_LIST|noflags|0|0|
+add_spacer|small
+add_button|wrench_off|`2Turn off wrench mode|noflags|0|0|
+add_quick_exit|
+end_dialog|wrench_modesxd|`0Cancel|`0Back|
+]];varlist.netid= -1;SendVarlist(varlist);end v129=2 -1 ;end if (v129==(1 + 0)) then return true;end end end end AddCallback("wm","OnPacket",wm);function Wrench_mode(v46,v47)if v47:find("buttonClicked|wrench_pull") then local v130=0 -0 ;while true do if (v130==2) then return true;end if (0==v130) then OnConsoleMessage("`0[ `3YoshiGT  `0] `9wrench mode set to `3pull");mode_wm="pull";v130=1;end if (v130==(1 + 0)) then function Wrench(v276)if ((v276[0]=="OnDialogRequest") and v276[1]:find("add_button|report_player|")) then local v328=0 + 0 ;while true do if (v328==(0 -0)) then x=v276[1 + 0 ]:removeColors();x2=x:match("add_label_with_icon|big|(%w+)");v328=164 -(92 + 71) ;end if ((1 + 0)==v328) then SendPacket(2,"action|input\n|text|/pull "   .. x2 );return true;end end end end AddCallback("Wrench","OnVarlist",Wrench);v130=2;end end elseif v47:find("buttonClicked|wrench_kick") then OnConsoleMessage("`0[ `3YoshiGT  `0] `9wrench mode set to `3kick");mode_wm="kick";function Wrench(v231)if ((v231[0 -0 ]=="OnDialogRequest") and v231[766 -(574 + 191) ]:find("add_button|report_player|")) then x=v231[1 + 0 ]:removeColors();x2=x:match("add_label_with_icon|big|(%w+)");SendPacket(4 -2 ,"action|input\n|text|/kick "   .. x2 );return true;end end AddCallback("Wrench","OnVarlist",Wrench);return true;elseif v47:find("buttonClicked|wrench_ban") then OnConsoleMessage("`0[ `3YoshiGT  `0] `9wrench mode set to `3ban");mode_wm="ban";function Wrench(v301)if ((v301[0]=="OnDialogRequest") and v301[1 + 0 ]:find("add_button|report_player|")) then local v348=0;while true do if (v348==(850 -(254 + 595))) then SendPacket(128 -(55 + 71) ,"action|input\n|text|/ban "   .. x2 );return true;end if (v348==0) then x=v301[1]:removeColors();x2=x:match("add_label_with_icon|big|(%w+)");v348=1 -0 ;end end end end AddCallback("Wrench","OnVarlist",Wrench);return true;elseif v47:find("buttonClicked|wrench_off") then mode_wm="off";OnConsoleMessage("`0[ `3YoshiGT  `0] `9wrench mode is `3off");RemoveCallback("Wrench");return true;end end AddCallback("Wrench_mode","OnPacket",Wrench_mode);function Gaia_commands(v48,v49)if (v49=="action|input\n|text|/gaia") then local v131=1790 -(573 + 1217) ;while true do if (v131==(0 -0)) then if (gaia_of_or_no and gaia_adder_mode) then local v302=0;while true do if ((0 + 0)==v302) then varlist={};varlist[0 -0 ]="OnDialogRequest";v302=1;end if (v302==1) then varlist[940 -(714 + 225) ]=[[set_default_color|`o
+add_label_with_icon|big|`!Gaia's Beacon Commands|left|6946|
+add_spacer|small
+add_textbox|`9Currently GAIA Mode is `2Enabled `9And is Set To : `3Fast Add|left|
+add_spacer|small
+add_button|GAIA_add|`2Fast Adder|noflags|0|0|
+add_button|GAIA_empty|`9Fast Emptier|noflags|0|0|
+add_spacer|small
+add_button|GAIA_off|`@Turn off GAIA mode|noflags|0|0|
+add_quick_exit|
+end_dialog|gaia_mode_xd|`0Cancel|`0Back|
+]];varlist.netid= -(2 -1);v302=2 -0 ;end if (v302==2) then SendVarlist(varlist);break;end end elseif (gaia_of_or_no and gaia_emptier_mode) then varlist={};varlist[0 + 0 ]="OnDialogRequest";varlist[1 -0 ]=[[set_default_color|`o
+add_label_with_icon|big|`!Gaia's Beacon Commands|left|6946|
+add_spacer|small
+add_textbox|`9Currently GAIA Mode is `2Enabled `9And is Set To : `3Fast Empty|left|
+add_spacer|small
+add_button|GAIA_add|`9Fast Adder|noflags|0|0|
+add_button|GAIA_empty|`2Fast Emptier|noflags|0|0|
+add_spacer|small
+add_button|GAIA_off|`@Turn off GAIA mode|noflags|0|0|
+add_quick_exit|
+end_dialog|gaia_mode_xd|`0Cancel|`0Back|
+]];varlist.netid= -(807 -(118 + 688));SendVarlist(varlist);else local v352=0;while true do if (v352==(49 -(25 + 23))) then varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`!Gaia's Beacon Commands|left|6946|
+add_spacer|small
+add_textbox|`9Currently GAIA Mode is `4Disabled|left|
+add_spacer|small
+add_button|GAIA_add|`9Fast Adder|noflags|0|0|
+add_button|GAIA_empty|`9Fast Emptier|noflags|0|0|
+add_spacer|small
+add_button|GAIA_off|`@Turn off GAIA mode|noflags|0|0|
+add_quick_exit|
+end_dialog|gaia_mode_xd|`0Cancel|`0Back|
+]];varlist.netid= -(1 + 0);v352=2;end if (v352==(1886 -(927 + 959))) then varlist={};varlist[0 -0 ]="OnDialogRequest";v352=733 -(16 + 716) ;end if (v352==(3 -1)) then SendVarlist(varlist);break;end end end return true;end end end end AddCallback("Gaia_commands","OnPacket",Gaia_commands);function GAIA_modes12(v50,v51)if v51:find("buttonClicked|GAIA_add") then local v132=97 -(11 + 86) ;while true do if (v132==(6 -3)) then AddCallback("GA_mode1","OnVarlist",GA_mode1);AddCallback("GA_mode2","OnVarlist",GA_mode2);v132=4;end if ((286 -(175 + 110))==v132) then ga_adder_mode=true;OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast GAIA adder `3enabled");v132=2;end if (v132==(4 -2)) then RemoveCallback("GA_mode3");RemoveCallback("GA_mode4");v132=3;end if (0==v132) then ga_of_or_no=true;if ga_emptier_mode then local v303=0;while true do if (v303==(4 -3)) then RemoveCallback("GA_mode4");break;end if (v303==(1796 -(503 + 1293))) then ga_emptier_mode=false;RemoveCallback("GA_mode3");v303=1;end end end v132=1;end if (v132==(11 -7)) then return true;end end elseif v51:find("buttonClicked|GAIA_empty") then local v214=0 + 0 ;while true do if (v214==(1061 -(810 + 251))) then ga_of_or_no=true;if ga_adder_mode then ga_adder_mode=false;RemoveCallback("GA_mode1");RemoveCallback("GA_mode2");end v214=1 + 0 ;end if (v214==(1 + 0)) then ga_emptier_mode=true;OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast GAIA emptier `3enabled");v214=2 + 0 ;end if (v214==(536 -(43 + 490))) then return true;end if (v214==(735 -(711 + 22))) then AddCallback("GA_mode3","OnVarlist",GA_mode3);AddCallback("GA_mode4","OnVarlist",GA_mode4);v214=11 -8 ;end end elseif v51:find("buttonClicked|GAIA_off") then ga_of_or_no=false;OnConsoleMessage("`0[ `3YoshiGT  `0] `9GAIA mode is now `3off");if ga_adder_mode then RemoveCallback("GA_mode1");RemoveCallback("GA_mode2");ga_adder_mode=false;end if ga_emptier_mode then RemoveCallback("GA_mode3");RemoveCallback("GA_mode4");ga_emptier_mode=false;end return true;end end AddCallback("GAIA_modes12","OnPacket",GAIA_modes12);function world_commands(v52,v53)if (v53=="action|input\n|text|/world") then local v133=859 -(240 + 619) ;while true do if (2==v133) then SendVarlist(varlist);return true;end if ((0 + 0)==v133) then varlist={};varlist[0 -0 ]="OnDialogRequest";v133=1;end if (v133==(1 + 0)) then varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`!World Commands|left|3802|
+add_spacer|small
+add_button|world_pull|`9Pull all players|noflags|0|0|
+add_button|world_kick|`9Kick all players|noflags|0|0|
+add_button|world_trade|`9Trade all players|noflags|0|0|
+add_button|world_ban|`9Ban all players|noflags|0|0|
+add_button|world_unban|`@Unban World|noflags|0|0|
+add_quick_exit|
+end_dialog|World_commands|`0Cancel|`0Back|
+]];varlist.netid= -(1745 -(1344 + 400));v133=2;end end end end AddCallback("world_commands","OnPacket",world_commands);function world_mode(v54,v55)if v55:find("buttonClicked|world_pull") then OnConsoleMessage("`0[ `3YoshiGT  `0] `9pulling all players");for v176,v177 in pairs(GetPlayers()) do SendPacket(407 -(255 + 150) ,"action|input\n|text|/pull "   .. v177.name:sub(3 + 0 , -(2 + 1)) );end return true;elseif v55:find("buttonClicked|world_kick") then local v215=0 -0 ;while true do if (v215==1) then return true;end if (v215==(0 -0)) then OnConsoleMessage("`0[ `3YoshiGT  `0] `9kicking all players");for v329,v330 in pairs(GetPlayers()) do SendPacket(1741 -(404 + 1335) ,"action|input\n|text|/kick "   .. v330.name:sub(3, -(409 -(183 + 223))) );end v215=1;end end elseif v55:find("buttonClicked|world_trade") then OnConsoleMessage("`0[ `3YoshiGT  `0] `9trading all players");for v304,v305 in pairs(GetPlayers()) do SendPacket(2 -0 ,"action|input\n|text|/trade "   .. v305.name:sub(2 + 1 , -(2 + 1)) );end return true;elseif v55:find("buttonClicked|world_ban") then local v331=337 -(10 + 327) ;while true do if (v331==(0 + 0)) then OnConsoleMessage("`0[ `3YoshiGT  `0] `9baning all players");for v407,v408 in pairs(GetPlayers()) do SendPacket(340 -(118 + 220) ,"action|input\n|text|/ban "   .. v408.name:sub(3, -(1 + 2)) );end v331=1;end if (v331==(450 -(108 + 341))) then return true;end end elseif v55:find("buttonClicked|world_unban") then SendPacket(1 + 1 ,"action|input\n|text|/uba");return true;end end AddCallback("world_mode","OnPacket",world_mode);function info_commands(v56,v57)if (v57=="action|input\n|text|/info") then local v134=0 -0 ;while true do if (v134==1) then if (mod_fly==true) then mod_fly_status="`2Enabled";else mod_fly_status="`4Disabled";end if (fd_mode==true) then fd_mode_status="`2Enabled";else fd_mode_status="`4Disabled";end if (ft_mode==true) then ft_mode_status="`2Enabled";else ft_mode_status="`4Disabled";end if (nopickup==true) then nopickup_status="`2Enabled";else nopickup_status="`4Disabled";end v134=1495 -(711 + 782) ;end if ((7 -3)==v134) then if (vend_modexd==true) then vend_modexd_status="`2Enabled";else vend_modexd_status="`4Disabled";end if (spamming==true) then spamming_status="`2Enabled";else spamming_status="`4Disabled";end if (harvesting==true) then harvesting_status="`2Enabled";else harvesting_status="`4Disabled";end if (casino_help_when_join=="1") then casino_help_when_join_status="ban & unacces & leave";elseif (casino_help_when_join=="2") then casino_help_when_join_status="unacces & leave";elseif (casino_help_when_join=="3") then casino_help_when_join_status="leave";else casino_help_when_join_status="`4Disabled";end v134=5;end if (v134==6) then SendVarlist(varlist);return true;end if ((474 -(270 + 199))==v134) then varlist={};varlist[0]="OnDialogRequest";varlist[1 + 0 ]=[[set_default_color|`o
+add_label_with_icon|big|`7Command Information``|left|1790|
+add_spacer|small|
+add_smalltext|`9auto-surg : ]]   .. autosurg_status   .. [[|left|
+add_smalltext|`9auto-Surg Helper : ]]   .. autosurghelper_status   .. [[|left|
+add_smalltext|`9Auto-Crime : ]]   .. autocrime_status   .. [[|left|
+add_smalltext|`9Auto-Startopia : ]]   .. autostartopia_status   .. [[|left|
+add_smalltext|`9Mod Fly : ]]   .. mod_fly_status   .. [[|left|
+add_smalltext|`9Fast Drop : ]]   .. fd_mode_status   .. [[|left|
+add_smalltext|`9Fast Trash : ]]   .. ft_mode_status   .. [[|left|
+add_smalltext|`9Anti-Pickup : ]]   .. nopickup_status   .. [[|left|
+add_smalltext|`9Auto-Collect : ]]   .. autocollect_status   .. [[|left|
+add_smalltext|`9Blink Mode : ]]   .. blinking_status   .. [[|left|
+add_smalltext|`9Wrench Mode : ]]   .. mode_wm_status   .. [[|left|
+add_smalltext|`9UT Mode : ]]   .. ut_of_or_no_status   .. [[|left|
+add_smalltext|`9GAIA Mode : ]]   .. gaia_of_or_no_status   .. [[|left|
+add_smalltext|`9Join Mode : ]]   .. set_mod_join_status   .. [[|left|
+add_smalltext|`9Donation Box Mode : ]]   .. mode_donation_boxes_status   .. [[|left|
+add_smalltext|`9Vend Mode : ]]   .. vend_modexd_status   .. [[|left|
+add_smalltext|`9Auto-Spam : ]]   .. spamming_status   .. [[|left|
+add_smalltext|`9Auto-Harvest : ]]   .. harvesting_status   .. [[|left|
+add_smalltext|`9Mod-Detector: `3]]   .. casino_help_when_join_status   .. [[|left|
+add_quick_exit|
+end_dialog|info_main_cmd|`0Cancel|`0Back|
+]] ;varlist.netid= -(1820 -(580 + 1239));v134=17 -11 ;end if (v134==2) then if (NO_PICKUP==true) then NO_PICKUP_status="`2Enabled";else NO_PICKUP_status="`4Disabled";end if (autocollect==true) then autocollect_status="`2Enabled";else autocollect_status="`4Disabled";end if (blinking==true) then blinking_status="`2Enabled";else blinking_status="`4Disabled";end if (mode_wm=="off") then mode_wm_status="`4Disabled";else mode_wm_status="`2Enabled";end v134=3 + 0 ;end if (v134==(1 + 2)) then if (ut_of_or_no==true) then ut_of_or_no_status="`2Enabled";else ut_of_or_no_status="`4Disabled";end if (gaia_of_or_no==true) then gaia_of_or_no_status="`2Enabled";else gaia_of_or_no_status="`4Disabled";end if ((set_mod_join=="off") or (set_mod_joinx2=="off")) then set_mod_join_status="`4Disabled";else set_mod_join_status="`2Enabled";end if (mode_donation_boxes=="off") then mode_donation_boxes_status="`4Disabled";else mode_donation_boxes_status="`2Enabled";end v134=2 + 2 ;end if ((0 -0)==v134) then if (autosurg==true) then autosurg_status="`2Enabled";else autosurg_status="`4Disabled";end if (autosurghelper==true) then autosurghelper_status="`2Enabled";else autosurghelper_status="`4Disabled";end if (autocrime==true) then autocrime_status="`2Enabled";else autocrime_status="`4Disabled";end if (autostartopia==true) then autostartopia_status="`2Enabled";else autostartopia_status="`4Disabled";end v134=1 + 0 ;end end end end AddCallback("info_commands","OnPacket",info_commands);function donation_check_uid(v58,v59)if (v59=="action|input\n|text|/donation") then if (mode_donation_boxes=="off") then type_donation_box="`4Disabled";else type_donation_box="`2Enabled";end if ((type_donation_box=="`4Disabled") and (mode_donation_boxes1=="Donation_Off")) then varlist={};varlist[1167 -(645 + 522) ]="OnDialogRequest";varlist[1791 -(1010 + 780) ]=[[set_default_color|`o
+add_label_with_icon|big|`!Donation Box Commands|left|1452|
+add_spacer|small
+add_textbox|`9Currently Donation Mode is `4Disabled|left|
+add_spacer|small
+add_button|empty_xd_donations|`9Fast Empty Donation Box|noflags|0|0|
+add_button|add_xd_donations|`9Fast Donate Items|noflags|0|0|
+add_spacer|small
+add_button|off_xd_donations|`2Turn off donation mode|noflags|0|0|
+add_quick_exit|
+end_dialog|donate_world_ui|`0Cancel|`0Back|
+]];varlist.netid= -1;SendVarlist(varlist);elseif ((type_donation_box=="`2Enabled") and (mode_donation_boxes=="Donation_Empty")) then local v277=0 + 0 ;while true do if (0==v277) then varlist={};varlist[0]="OnDialogRequest";v277=4 -3 ;end if ((2 -1)==v277) then varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`!Donation Box Commands|left|1452|
+add_spacer|small
+add_textbox|`9Currently Donation Mode is `2Enabled `9And is Set To : `3Fast Empty|left|
+add_spacer|small
+add_button|empty_xd_donations|`2Fast Empty Donation Box|noflags|0|0|
+add_button|add_xd_donations|`9Fast Donate Items|noflags|0|0|
+add_spacer|small
+add_button|off_xd_donations|`@Turn off donation mode|noflags|0|0|
+add_quick_exit|
+end_dialog|donate_world_ui|`0Cancel|`0Back|
+]];varlist.netid= -(1837 -(1045 + 791));v277=4 -2 ;end if (v277==(2 -0)) then SendVarlist(varlist);break;end end elseif ((type_donation_box=="`2Enabled") and (mode_donation_boxes=="Donation_Add")) then local v332=0;while true do if (v332==1) then varlist[506 -(351 + 154) ]=[[set_default_color|`o
+add_label_with_icon|big|`!Donation Box Commands|left|1452|
+add_spacer|small
+add_textbox|`9Currently Donation Mode is `2Enabled `9And is Set To : `3Fast Add|left|
+add_spacer|small
+add_button|empty_xd_donations|`9Fast Empty Donation Box|noflags|0|0|
+add_button|add_xd_donations|`2Fast Donate Items|noflags|0|0|
+add_spacer|small
+add_button|off_xd_donations|`@Turn off donation mode|noflags|0|0|
+add_quick_exit|
+end_dialog|donate_world_ui|`0Cancel|`0Back|
+]];varlist.netid= -(1575 -(1281 + 293));v332=268 -(28 + 238) ;end if (v332==(0 -0)) then varlist={};varlist[0]="OnDialogRequest";v332=1;end if (v332==(1561 -(1381 + 178))) then SendVarlist(varlist);break;end end end return true;end end AddCallback("donation_check_uid","OnPacket",donation_check_uid);auto_put_donationbox_mode=false;function auto_put_donationbox(v60)if auto_put_donationbox_mode then if ((v60[0]=="OnDialogRequest") and v60[1]:find("end_dialog|give_item|||")) then SendPacket(2,"action|dialog_return\ndialog_name|give_item\nitemID|"   .. v60[1]:match("embed_data|itemID|(%d+)")   .. "|\ntilex|"   .. v60[1]:match("embed_data|tilex|(%d+)")   .. "|\ntiley|"   .. v60[1 + 0 ]:match("embed_data|tiley|(%d+)")   .. "|\nbuttonClicked|give\ncount|"   .. v60[1 + 0 ]:match("add_text_input|count|Count:|(%d+)")   .. "\nsign_text|" );return true;end end end AddCallback("auto_put_donationbox","OnVarlist",auto_put_donationbox);function auto_put_donationbox_hook_xd(v61,v62)if ((v62=="action|input\n|text|/donation add") or (v62=="action|input\n|text|/da")) then local v135=0;while true do if (v135==(0 + 0)) then if (auto_put_donationbox_mode==true) then mode_donation_boxes="off";mode_donation_boxes1="Donation_Off";auto_empty_donationbox_mode=false;auto_put_donationbox_mode=false;OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast empty donation `3disabled");elseif (auto_put_donationbox_mode==false) then local v356=0 -0 ;while true do if (v356==(0 + 0)) then mode_donation_boxes="Donation_Add";auto_empty_donationbox_mode=false;v356=471 -(381 + 89) ;end if (v356==1) then auto_put_donationbox_mode=true;OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast empty donation `3enabled");break;end end end return true;end end end end AddCallback("auto_put_donationbox_hook_xd","OnPacket",auto_put_donationbox_hook_xd);auto_empty_donationbox_mode=false;function auto_empty_donationbox(v63)if auto_empty_donationbox_mode then if ((v63[0 + 0 ]=="OnDialogRequest") and v63[1 + 0 ]:find("end_dialog|donation_box_edit|Cancel||")) then local v219=0 -0 ;while true do if (v219==(1156 -(1074 + 82))) then SendPacket(3 -1 ,"action|dialog_return\ndialog_name|donation_box_edit\ntilex|"   .. v63[1785 -(214 + 1570) ]:match("embed_data|tilex|(%d+)")   .. "|\ntiley|"   .. v63[1]:match("embed_data|tiley|(%d+)")   .. "|\nbuttonClicked|clear" );return true;end end end end end AddCallback("auto_empty_donationbox","OnVarlist",auto_empty_donationbox);function auto_empty_donationbox_hook_xd(v64,v65)if ((v65=="action|input\n|text|/donation empty") or (v65=="action|input\n|text|/de")) then local v136=0;while true do if (v136==0) then if (auto_empty_donationbox_mode==true) then local v306=1455 -(990 + 465) ;while true do if ((1 + 0)==v306) then auto_empty_donationbox_mode=false;auto_put_donationbox_mode=false;v306=1 + 1 ;end if (v306==(0 + 0)) then mode_donation_boxes="off";mode_donation_boxes1="Donation_Off";v306=3 -2 ;end if (v306==(1728 -(1668 + 58))) then OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast empty donation `3disabled");break;end end elseif (auto_empty_donationbox_mode==false) then local v357=626 -(512 + 114) ;while true do if ((2 -1)==v357) then auto_empty_donationbox_mode=true;OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast empty donation `3enabled");break;end if (v357==(0 -0)) then mode_donation_boxes="Donation_Empty";auto_put_donationbox_mode=false;v357=3 -2 ;end end end return true;end end end end AddCallback("auto_empty_donationbox_hook_xd","OnPacket",auto_empty_donationbox_hook_xd);function donationoff(v66,v67)if ((v67=="action|input\n|text|/donation off") or (v67=="action|input\n|text|/doff")) then mode_donation_boxes="off";mode_donation_boxes1="Donation_Off";auto_empty_donationbox_mode=false;auto_put_donationbox_mode=false;OnConsoleMessage("`0[ `3YoshiGT  `0] `9Donation Box mode is now `3disabled");return true;end end AddCallback("donationoff","OnPacket",donationoff);function donation_modes_69(v68,v69)if v69:find("buttonClicked|empty_xd_donations") then mode_donation_boxes="Donation_Empty";auto_put_donationbox_mode=false;auto_empty_donationbox_mode=true;function auto_empty_donationbox(v178)if auto_empty_donationbox_mode then if ((v178[0 + 0 ]=="OnDialogRequest") and v178[1]:find("end_dialog|donation_box_edit|Cancel||")) then local v307=0 + 0 ;while true do if (v307==(0 + 0)) then SendPacket(2,"action|dialog_return\ndialog_name|donation_box_edit\ntilex|"   .. v178[1]:match("embed_data|tilex|(%d+)")   .. "|\ntiley|"   .. v178[1]:match("embed_data|tiley|(%d+)")   .. "|\nbuttonClicked|clear" );return true;end end end end end AddCallback("auto_empty_donationbox","OnVarlist",auto_empty_donationbox);return true;elseif v69:find("buttonClicked|add_xd_donations") then mode_donation_boxes="Donation_Add";auto_empty_donationbox_mode=false;auto_put_donationbox_mode=true;function auto_put_donationbox(v238)if auto_put_donationbox_mode then if ((v238[0 -0 ]=="OnDialogRequest") and v238[1]:find("end_dialog|give_item|||")) then SendPacket(1996 -(109 + 1885) ,"action|dialog_return\ndialog_name|give_item\nitemID|"   .. v238[1]:match("embed_data|itemID|(%d+)")   .. "|\ntilex|"   .. v238[1470 -(1269 + 200) ]:match("embed_data|tilex|(%d+)")   .. "|\ntiley|"   .. v238[1 -0 ]:match("embed_data|tiley|(%d+)")   .. "|\nbuttonClicked|give\ncount|"   .. v238[816 -(98 + 717) ]:match("add_text_input|count|Count:|(%d+)")   .. "\nsign_text|" );return true;end end end AddCallback("auto_put_donationbox","OnVarlist",auto_put_donationbox);return true;elseif v69:find("buttonClicked|off_xd_donations") then mode_donation_boxes="off";mode_donation_boxes1="Donation_Off";auto_empty_donationbox_mode=false;auto_put_donationbox_mode=false;OnConsoleMessage("`0[ `3YoshiGT  `0] `9Donation Box mode is now `3disabled");return true;end end AddCallback("donation_modes_69","OnPacket",donation_modes_69);mode_donation_boxes="off";function title_ui_commands(v70,v71)if (v71=="action|input\n|text|/titles") then local v137=0;while true do if (v137==(828 -(802 + 24))) then SendVarlist(varlist);return true;end if (v137==(0 -0)) then varlist={};varlist[0 -0 ]="OnDialogRequest";v137=1 + 0 ;end if (v137==(1 + 0)) then varlist[1 + 0 ]=[[set_default_color|`o
+add_label_with_icon|big|`!Choose title|left|6276|
+add_spacer|small|
+add_button|g4g_title|`9G4G Title|noflags|0|0|
+add_button|master_title|`9Master Title|noflags|0|0|
+add_button|doctor_title|`9Doctor Title|noflags|0|0|
+add_button|maxlevel_title|`9Max Level Title|noflags|0|0|
+add_button|legend_title|`9Legendary Title|noflags|0|0|
+add_button|mods_title|`9Moderator Title|noflags|0|0|
+add_spacer|small|
+add_button|reset_title|`@Reset Title|noflags|0|0|
+add_quick_exit|
+end_dialog|World_commands|`0Cancel|`0Back|
+]];varlist.netid= -(1 + 0);v137=5 -3 ;end end end end AddCallback("title_ui_commands","OnPacket",title_ui_commands);function title_mode(v72,v73)if v73:find("buttonClicked|legend_title") then local v138=0 -0 ;while true do if (v138==(1 + 0)) then GetLocal().name=GetLocal().name:gsub(" of Legend","");GetLocal().name=GetLocal().name:gsub("Dr.","");var={};var[0 + 0 ]="OnCountryState";v138=2;end if (v138==(3 + 0)) then return true;end if (0==v138) then OnConsoleMessage("`0[ `3YoshiGT  `0] `9pulling all players");titlexd="legend";OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3OF LEGEND `9enabled !");GetLocal().name=GetLocal().name:removeColors();v138=1 + 0 ;end if (v138==(1 + 1)) then var[1434 -(797 + 636) ]="jo|doctor";var.netid=GetLocal().netid;SendVarlist(var);GetLocal().name=GetLocal().name   .. " of Legend``" ;v138=14 -11 ;end end elseif v73:find("buttonClicked|g4g_title") then local v220=1619 -(1427 + 192) ;while true do if (v220==(1 + 0)) then GetLocal().name=GetLocal().name:gsub("Dr.","");var={};var[0 -0 ]="OnCountryState";var[1 + 0 ]="jo|donor";v220=1 + 1 ;end if ((328 -(192 + 134))==v220) then var.netid=GetLocal().netid;SendVarlist(var);return true;end if ((1276 -(316 + 960))==v220) then titlexd="g4g";OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3DONOR `9enabled !");GetLocal().name=GetLocal().name:removeColors();GetLocal().name=GetLocal().name:gsub(" of Legend","");v220=1 + 0 ;end end elseif v73:find("buttonClicked|master_title") then titlexd="master";OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3MASTED `9enabled !");GetLocal().name=GetLocal().name:removeColors();GetLocal().name=GetLocal().name:gsub(" of Legend","");GetLocal().name=GetLocal().name:gsub("Dr.","");var={};var[0 + 0 ]="OnCountryState";var[1 + 0 ]="jo|master";var.netid=GetLocal().netid;SendVarlist(var);return true;elseif v73:find("buttonClicked|doctor_title") then local v333=0 -0 ;while true do if (v333==(552 -(83 + 468))) then GetLocal().name=GetLocal().name:gsub("Dr.","");GetLocal().name="Dr."   .. GetLocal().name ;var={};var[1806 -(1202 + 604) ]="OnCountryState";v333=9 -7 ;end if (0==v333) then titlexd="doctor";OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3DOCTOR `9enabled !");GetLocal().name=GetLocal().name:removeColors();GetLocal().name=GetLocal().name:gsub(" of Legend","");v333=1;end if (v333==(2 -0)) then var[2 -1 ]="jo|doctor";var.netid=GetLocal().netid;SendVarlist(var);return true;end end elseif v73:find("buttonClicked|maxlevel_title") then titlexd="maxlevel";OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `3MAX LEVEL `9enabled !");GetLocal().name=GetLocal().name:removeColors();GetLocal().name=GetLocal().name:gsub(" of Legend","");GetLocal().name=GetLocal().name:gsub("Dr.","");var={};var[325 -(45 + 280) ]="OnCountryState";var[1 + 0 ]="jo|maxLevel";var.netid=GetLocal().netid;SendVarlist(var);return true;elseif (v73=="buttonClicked|mods_title") then local v409=0 + 0 ;while true do if (v409==(1 + 1)) then var[1 + 0 ]="ph|mods";var[1 + 1 ]=0;var[3]=11029 -5073 ;var.netid=GetLocal().netid;v409=1914 -(340 + 1571) ;end if (1==v409) then GetLocal().name=GetLocal().name:gsub("Dr.","");GetLocal().name="`#@"   .. GetLocal().name ;var={};var[0 + 0 ]="OnGuildDataChanged";v409=1774 -(1733 + 39) ;end if (v409==(0 -0)) then titlexd="mods";OnConsoleMessage("`0[ `3YoshiGT  `0] `9title effect `2MODERATOR `9enabled !");GetLocal().name=GetLocal().name:removeColors();GetLocal().name=GetLocal().name:gsub(" of Legend","");v409=1035 -(125 + 909) ;end if (3==v409) then SendVarlist(var);return true;end end elseif v73:find("buttonClicked|reset_title") then local v416=0;while true do if (v416==(1948 -(1096 + 852))) then OnConsoleMessage("`0[ `3YoshiGT  `0] `9 removing all titles");GetLocal().name=GetLocal().name:removeColors();v416=1 + 0 ;end if (v416==2) then var={};var[0 -0 ]="OnCountryState";v416=3;end if (v416==3) then var[1]="jo|";var.netid=GetLocal().netid;v416=4 + 0 ;end if (v416==(516 -(409 + 103))) then SendVarlist(var);return true;end if (1==v416) then GetLocal().name=GetLocal().name:gsub(" of Legend","");GetLocal().name=GetLocal().name:gsub("Dr.","");v416=238 -(46 + 190) ;end end end end AddCallback("title_mode","OnPacket",title_mode);function Ut_commands(v74,v75)if (v75=="action|input\n|text|/ut") then if ut_adder_mode then ut_mode_69="`3Fast Add";elseif ut_emptier_mode then ut_mode_69="`3Fast Empty";elseif ( not ut_emptier_mode and  not ut_adder_mode) then ut_mode_69="`4Disabled";end if (ut_of_or_no and ut_adder_mode) then local v221=95 -(51 + 44) ;while true do if (v221==(1 + 0)) then varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`!Unstable Tesseract Commands|left|6948|
+add_spacer|small
+add_textbox|`9Currently UT Mode is `2Enabled `9And is Set To : `3]]   .. ut_mode_69   .. [[|left|
+add_spacer|small
+add_button|UT_add|`2Fast Adder|noflags|0|0|
+add_button|UT_empty|`9Fast Emptier|noflags|0|0|
+add_spacer|small
+add_button|UT_off|`@Turn off UT mode|noflags|0|0|
+add_quick_exit|
+end_dialog|ut_mode_xd|`0Cancel|`0Back|
+]] ;varlist.netid= -(1318 -(1114 + 203));v221=728 -(228 + 498) ;end if ((0 + 0)==v221) then varlist={};varlist[0]="OnDialogRequest";v221=1 + 0 ;end if (v221==(665 -(174 + 489))) then SendVarlist(varlist);break;end end elseif (ut_of_or_no and ut_emptier_mode) then varlist={};varlist[0 -0 ]="OnDialogRequest";varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`!Unstable Tesseract Commands|left|6948|
+add_spacer|small
+add_textbox|`9Currently UT Mode is `2Enabled `9And is Set To : `3]]   .. ut_mode_69   .. [[|left|
+add_spacer|small
+add_button|UT_add|`9Fast Adder|noflags|0|0|
+add_button|UT_empty|`2Fast Emptier|noflags|0|0|
+add_spacer|small
+add_button|UT_off|`@Turn off UT mode|noflags|0|0|
+add_quick_exit|
+end_dialog|ut_mode_xd|`0Cancel|`0Back|
+]] ;varlist.netid= -(1906 -(830 + 1075));SendVarlist(varlist);else varlist={};varlist[524 -(303 + 221) ]="OnDialogRequest";varlist[1270 -(231 + 1038) ]=[[set_default_color|`o
+add_label_with_icon|big|`!Unstable Tesseract Commands|left|6948|
+add_spacer|small
+add_textbox|`9Currently UT Mode is `4Disabled|left|
+add_spacer|small
+add_button|UT_add|`9Fast Adder|noflags|0|0|
+add_button|UT_empty|`9Fast Emptier|noflags|0|0|
+add_spacer|small
+add_button|UT_off|`@Turn off UT mode|noflags|0|0|
+add_quick_exit|
+end_dialog|ut_mode_xd|`0Cancel|`0Back|
+]];varlist.netid= -(1 + 0);SendVarlist(varlist);end return true;end end AddCallback("Ut_commands","OnPacket",Ut_commands);function UT_modes12(v76,v77)if v77:find("buttonClicked|UT_add") then ut_of_or_no=true;if ut_emptier_mode then ut_emptier_mode=false;RemoveCallback("UT_mode3");RemoveCallback("UT_mode4");end ut_adder_mode=true;OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast UT adder `3enabled");RemoveCallback("UT_mode3");RemoveCallback("UT_mode4");AddCallback("UT_mode1","OnVarlist",UT_mode1);AddCallback("UT_mode2","OnVarlist",UT_mode2);return true;elseif v77:find("buttonClicked|UT_empty") then ut_of_or_no=true;if ut_adder_mode then local v289=1162 -(171 + 991) ;while true do if (v289==(0 -0)) then ut_adder_mode=false;RemoveCallback("UT_mode1");v289=1;end if (v289==1) then RemoveCallback("UT_mode2");break;end end end ut_emptier_mode=true;OnConsoleMessage("`0[ `3YoshiGT  `0] `9fast UT emptier `3enabled");AddCallback("UT_mode3","OnVarlist",UT_mode3);AddCallback("UT_mode4","OnVarlist",UT_mode4);return true;elseif v77:find("buttonClicked|UT_off") then local v290=0;while true do if (v290==(5 -3)) then return true;end if (v290==(2 -1)) then if ut_adder_mode then local v395=0 + 0 ;while true do if (v395==1) then ut_adder_mode=false;break;end if (v395==0) then RemoveCallback("UT_mode1");RemoveCallback("UT_mode2");v395=3 -2 ;end end end if ut_emptier_mode then local v396=0 -0 ;while true do if (v396==(0 -0)) then RemoveCallback("UT_mode3");RemoveCallback("UT_mode4");v396=3 -2 ;end if (v396==(1249 -(111 + 1137))) then ut_emptier_mode=false;break;end end end v290=160 -(91 + 67) ;end if (v290==(0 -0)) then ut_of_or_no=false;OnConsoleMessage("`0[ `3YoshiGT  `0] `9UT mode is now `3off");v290=1;end end end end AddCallback("UT_modes12","OnPacket",UT_modes12);function gs_xd(v78,v79)if ((v79=="action|input\n|text|/gs") or (v79=="action|input\n|text|/growscan")) then local v139=0 + 0 ;while true do if (v139==(523 -(423 + 100))) then var={};var[0 + 0 ]="OnDialogRequest";v139=2 -1 ;end if (v139==(1 + 0)) then var[772 -(326 + 445) ]=[[
+add_label_with_icon|big|`wWorld Stats``|left|6016|
+add_spacer|small|
+add_textbox|`wThis amazing block can show the stats for the whole world!|left
+add_spacer|small|
+add_textbox|`wWhich stats would you like to view?|left
+add_button|placed_gs|World Blocks|noflags|0|0|
+add_button|float_gs|Floating Items|noflags|0|0|
+add_quick_exit|
+end_dialog|grow_scaxn|`0Cancel|`0Back|
+]];var.netid= -1;v139=8 -6 ;end if (v139==(4 -2)) then SendVarlist(var);return true;end end end end AddCallback("gs_xd","OnPacket",gs_xd);function growscan_mode(v80,v81)if v81:find("buttonClicked|placed_gs") then OnConsoleMessage("`0[ `3YoshiGT  `0] `9Scaning placed blocks");function round(v179)return (((v179%1)>=(0.5 -0)) and math.ceil(v179)) or math.floor(v179) ;end store1={};for v180,v181 in pairs(GetTiles()) do id=v181.fg;if (store1[v181.fg]==nil) then store1[v181.fg]={id=v181.fg,qty=712 -(530 + 181) };else store1[v181.fg].qty=store1[v181.fg].qty + (882 -(614 + 267)) ;end if (store1[v181.bg]==nil) then store1[v181.bg]={id=v181.bg,qty=33 -(19 + 13) };else store1[v181.bg].qty=store1[v181.bg].qty + (1 -0) ;end end placedshit="add_spacer|small|";for v183,v184 in pairs(store1) do count=round(v184.qty);idplaced=math.floor(v184.id);placedshit=placedshit   .. "\nadd_label_with_icon|small|`0"   .. GetIteminfo(idplaced).name   .. " `0: "   .. count   .. "``|left|"   .. tostring(v184.id) ;end varlist={};varlist[0 -0 ]="OnDialogRequest";varlist[2 -1 ]=[[
+set_default_color|`o
+add_label_with_icon|big|`0Placed Items``|left|6016
+]]   .. placedshit   .. [[
+add_quick_exit|
+end_dialog|grow_scan|`0Back|`4Back|
+]] ;varlist.netid= -(1 + 0);SendVarlist(varlist);return true;elseif v81:find("buttonClicked|float_gs") then local v222=0 -0 ;while true do if (v222==(1 -0)) then for v334,v335 in pairs(GetObjects()) do local v336=0;while true do if (v336==(1812 -(1293 + 519))) then id=v335.id;if (store1[v335.id]==nil) then store1[v335.id]={id=v335.id,qty=v335.count};else store1[v335.id].qty=store1[v335.id].qty + v335.count ;end break;end end end droppedshit="add_spacer|small|";for v337,v338 in pairs(store1) do local v339=0;while true do if (v339==(1 -0)) then droppedshit=droppedshit   .. "\nadd_label_with_icon|small|`0"   .. GetIteminfo(xx).name   .. " `0: "   .. count   .. "``|left|"   .. tostring(v338.id) ;break;end if (0==v339) then count=round(v338.qty);xx=math.floor(v338.id);v339=1;end end end v222=4 -2 ;end if ((3 -1)==v222) then varlist={};varlist[0 -0 ]="OnDialogRequest";varlist[2 -1 ]=[[
+set_default_color|`o
+add_label_with_icon|big|`0Floating Items `0``|left|6016
+]]   .. droppedshit   .. [[
+add_quick_exit|
+end_dialog|grow_scan|`0Back|`4Back|
+]] ;v222=2 + 1 ;end if (v222==(1 + 2)) then varlist.netid= -(2 -1);SendVarlist(varlist);return true;end if (v222==(0 + 0)) then OnConsoleMessage("`0[ `3YoshiGT  `0] `9Scaning dropped items");function round(v340)return (((v340%(1 + 0))>=(0.5 + 0)) and math.ceil(v340)) or math.floor(v340) ;end store1={};v222=1;end end end end AddCallback("growscan_mode","OnPacket",growscan_mode);function gs_back(v82,v83)if v83:find("dialog_name|grow_scan") then local v143=1096 -(709 + 387) ;while true do if (1==v143) then var[1]=[[
+add_label_with_icon|big|`wWorld Stats``|left|6016|
+add_spacer|small|
+add_textbox|`wThis amazing block can show the stats for the whole world!|left
+add_spacer|small|
+add_textbox|`wWhich stats would you like to view?|left
+add_button|placed_gs|World Blocks|noflags|0|0|
+add_button|float_gs|Floating Items|noflags|0|0|
+add_quick_exit|
+end_dialog|grow_scaxn|`0Cancel|`0Back|
+]];var.netid= -(1859 -(673 + 1185));v143=5 -3 ;end if (0==v143) then var={};var[0]="OnDialogRequest";v143=3 -2 ;end if (v143==2) then SendVarlist(var);return true;end end end end AddCallback("gs_back","OnPacket",gs_back);function gs1(v84,v85)if ((v85=="action|input\n|text|/gs 1") or (v85=="action|input\n|text|/growscan 1")) then OnConsoleMessage("`0[ `3YoshiGT  `0] `9Scaning placed blocks");function round(v185)return (((v185%1)>=0.5) and math.ceil(v185)) or math.floor(v185) ;end store1={};for v186,v187 in pairs(GetTiles()) do id=v187.fg;if (store1[v187.fg]==nil) then store1[v187.fg]={id=v187.fg,qty=1 -0 };else store1[v187.fg].qty=store1[v187.fg].qty + 1 + 0 ;end if (store1[v187.bg]==nil) then store1[v187.bg]={id=v187.bg,qty=1};else store1[v187.bg].qty=store1[v187.bg].qty + 1 ;end end placedshit="add_spacer|small|";for v189,v190 in pairs(store1) do local v191=0 + 0 ;while true do if (v191==(0 -0)) then count=round(v190.qty);idplaced=math.floor(v190.id);v191=1 + 0 ;end if (v191==(1 -0)) then placedshit=placedshit   .. "\nadd_label_with_icon|small|`0"   .. GetIteminfo(idplaced).name   .. " `0: "   .. count   .. "``|left|"   .. tostring(v190.id) ;break;end end end varlist={};varlist[0]="OnDialogRequest";varlist[1 -0 ]="set_default_color|`o\nadd_label_with_icon|big|`0Placed Items `0``|left|6016\n"   .. placedshit   .. "\nadd_quick_exit" ;varlist.netid= -(1881 -(446 + 1434));SendVarlist(varlist);return true;end end AddCallback("gs_1","OnPacket",gs1);function gs2(v86,v87)if ((v87=="action|input\n|text|/gs 2") or (v87=="action|input\n|text|/growscan 2")) then OnConsoleMessage("`0[ `3YoshiGT  `0] `9Scaning dropped items");function round(v192)return (((v192%1)>=(1283.5 -(1040 + 243))) and math.ceil(v192)) or math.floor(v192) ;end store1={};for v193,v194 in pairs(GetObjects()) do id=v194.id;if (store1[v194.id]==nil) then store1[v194.id]={id=v194.id,qty=v194.count};else store1[v194.id].qty=store1[v194.id].qty + v194.count ;end end droppedshit="add_spacer|small|";for v196,v197 in pairs(store1) do count=round(v197.qty);xx=math.floor(v197.id);droppedshit=droppedshit   .. "\nadd_label_with_icon|small|`0"   .. GetIteminfo(xx).name   .. " `0: "   .. count   .. "``|left|"   .. tostring(v197.id) ;end varlist={};varlist[0]="OnDialogRequest";varlist[2 -1 ]="set_default_color|`o\nadd_label_with_icon|big|`0Floating items `0``|left|6016\n"   .. droppedshit   .. "\nadd_quick_exit" ;varlist.netid= -(1848 -(559 + 1288));SendVarlist(varlist);return true;end end AddCallback("gs_2","OnPacket",gs2);function itemidlegend()local v88=0;while true do if (v88==(1933 -(609 + 1322))) then SendVarlist(varlist);return true;end if (0==v88) then varlist={};varlist[0]="OnDialogRequest";v88=1;end if (v88==(455 -(13 + 441))) then varlist[3 -2 ]=[[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Legend `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wLegendary Katana - `9ItemID: `e2592|left|2592|
+add_label_with_icon|small|`wLegendary Wing - `9ItemID: `e1784|left|1784|
+add_label_with_icon|small|`wLegendBot-009 - `9ItemID: `e1780|left|1780|
+add_label_with_icon|small|`wDragon of Legend- `9ItemId: `e1782|left|1782|
+add_label_with_icon|small|`wLegendary Dragon Knight's Wings - `9ItemID: `e7734|left|7734|
+add_label_with_icon|small|`wLegendary Comet Hair - `9ItemID: `e8306|left|8306|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]];varlist.netid= -1;v88=2;end end end function legends(v89,v90)if (v90=="action|input\n|text|/fleg") then local v150=0 -0 ;while true do if (v150==0) then itemidlegend();return true;end end end end AddCallback("Lgiditem_commandsx","OnPacket",legends);function itemidhand()local v91=0 -0 ;while true do if (v91==(1 + 0)) then varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Hands `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wLegendary Katana - `9ItemID: `e2592|left|2592|
+add_label_with_icon|small|`wPoseidon's Trident - `9ItemID: `e2802|left|2802|
+add_label_with_icon|small|`wPoseidon's Digger's Trident - `9ItemID: `e7434|left|7434|
+add_label_with_icon|small|`wNeptune's Trident - `9ItemID: `e9758|left|9758|
+add_label_with_icon|small|`wCursed Katana - `9ItemID: `e9058|left|9058|
+add_label_with_icon|small|`wGolden Heartstaff - `9ItemID: `e7828|left|7828|
+add_label_with_icon|small|`wHeatbow - `9ItemID: `e4136|left|4136|
+add_label_with_icon|small|`wSilverstar Bow - `9ItemID: `e5456|left|5456|
+add_label_with_icon|small|`wEldritch Crossbow - `9ItemID: `e10052|left|10052|
+add_label_with_icon|small|`wHeartbow - `9ItemID: `e366|left|366|
+add_label_with_icon|small|`wHeartsword - `9ItemID: `e7830|left|7830|
+add_label_with_icon|small|`wElvish Longbow - `9ItemID: `e594|left|594|
+add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
+add_label_with_icon|small|`wCarrot Sword - `9ItemID: `e2908|left|2908|
+add_label_with_icon|small|`wSonic Buster Sword - `9ItemID: `e7586|left|7586|
+add_label_with_icon|small|`wSonic Buster Katana - `9ItemID: `e11118|left|7586|
+add_label_with_icon|small|`wElectric Bow - `9ItemID: `e2720|left|2720|
+add_label_with_icon|small|`wWinter Frost Bow - `9ItemID: `e5424|left|5424|
+add_label_with_icon|small|`wEthereal Rainbow Dragon - `9ItemID: `e7136|left|7136|
+add_label_with_icon|small|`wRayman's Fist - `9ItemID: `e5840|left|5840|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]];varlist.netid= -(3 -2);v91=1 + 1 ;end if (v91==(0 + 0)) then varlist={};varlist[0 -0 ]="OnDialogRequest";v91=1 + 0 ;end if (v91==(3 -1)) then SendVarlist(varlist);return true;end end end function hand(v92,v93)if (v93=="action|input\n|text|/fhand") then itemidhand();return true;end end AddCallback("trident_commandsx","OnPacket",hand);function itemidwings()varlist={};varlist[0 + 0 ]="OnDialogRequest";varlist[1 + 0 ]=[[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Wings `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wFairy Wings - `9ItemID: `e156|left|156|
+add_label_with_icon|small|`wAngel Wings - `9ItemID: `e362|left|362|
+add_label_with_icon|small|`wCrimson Eagle Wings - `9ItemID: `e678|left|678|
+add_label_with_icon|small|`wPlay Wings - `9ItemID: `e736|left|736|
+add_label_with_icon|small|`wRipper Wings - `9ItemID: `e818|left|818|
+add_label_with_icon|small|`wDevil Wings - `9ItemID: `e1206|left|1206|
+add_label_with_icon|small|`wGolden Angel Wings - `9ItemID: `e1460|left|1460|
+add_label_with_icon|small|`wBubble Wings - `9ItemID: `e1550|left|1550|
+add_label_with_icon|small|`wParrot Wings - `9ItemID: `e1574|left|1574|
+add_label_with_icon|small|`wWater Wings - `9ItemID: `e1668|left|1668|
+add_label_with_icon|small|`wRainbow Wings - `9ItemID: `e1672|left|1672|
+add_label_with_icon|small|`wPhoenix Wings - `9ItemID: `e1674|left|1674|
+add_label_with_icon|small|`wLegendary Wings - `9ItemID: `e1784|left|1784|
+add_label_with_icon|small|`wAutumn Wings - `9ItemID: `e1824|left|1824|
+add_label_with_icon|small|`wBlazing Electro Wings - `9ItemID: `e1936|left|1936|
+add_label_with_icon|small|`wDiamond Wings - `9ItemID: `e1938|left|1938|
+add_label_with_icon|small|`wNightmare Devil Wings - `9ItemID: `e1970|left|1970|
+add_label_with_icon|small|`wRed Crystal Wings - `9ItemID: `e2254|left|2254|
+add_label_with_icon|small|`wBlue Crystal Wings - `9ItemID: `e2256|left|2256|
+add_label_with_icon|small|`wGreen Crystal Wings - `9ItemID: `e2258|left|2258|
+add_label_with_icon|small|`wPurple Crystal Wings - `9ItemID: `e2260|left|2260|
+add_label_with_icon|small|`wGolden Crystal Wings - `9ItemID: `e2262|left|2262|
+add_label_with_icon|small|`wAqua Crystal Wings - `9ItemID: `e2264|left|2264|
+add_label_with_icon|small|`wTeeny Angel Wings - `9ItemID: `e2390|left|2390|
+add_label_with_icon|small|`wTeeny Golden Wings - `9ItemID: `e2392|left|2392|
+add_label_with_icon|small|`wTeeny Devil Wings - `9ItemID: `e3120|left|3120|
+add_label_with_icon|small|`wSaturday Wings - `9ItemID: `e3512|left|3512|
+add_label_with_icon|small|`wGolden Razor Wings - `9ItemID: `e4534|left|4534|
+add_label_with_icon|small|`wInside-Out Devil Wings - `9ItemID: `e4986|left|4986|
+add_label_with_icon|small|`wDraconic Wings - `9ItemID: `e5754|left|5754|
+add_label_with_icon|small|`wAurora Wings - `9ItemID: `e6144|left|6144|
+add_label_with_icon|small|`wDanieldd's Chimera Wings - `9ItemID: `e6334|left|6334|
+add_label_with_icon|small|`wSuper Utility Wings - `9ItemID: `e6694|left|6694|
+add_label_with_icon|small|`wNightwings - `9ItemID: `e6818|left|6818|
+add_label_with_icon|small|`wRaven Wings - `9ItemID: `e6842|left|6842|
+add_label_with_icon|small|`wDark Aurora Wings - `9ItemID: `e7104|left|7104|
+add_label_with_icon|small|`wStone Gargoyle Wings - `9ItemID: `e7150|left|7150|
+add_label_with_icon|small|`wMonarch Butterfly Wings - `9ItemID: `e7196|left|7196|
+add_label_with_icon|small|`wTurkey Wings - `9ItemID: `e7350|left|7350|
+add_label_with_icon|small|`wSnowflake Wings of Winter - `9ItemID: `e7412|left|7412|
+add_label_with_icon|small|`wOVEROLL's Wings - `9ItemID: `e7502|left|7502|
+add_label_with_icon|small|`wRobotic MK.IV Wings - `9ItemID: `e7582|left|7582|
+add_label_with_icon|small|`wLegendary Dragon Knight's Wings - `9ItemID: `e7734|left|7734|
+add_label_with_icon|small|`wStained Glass Heartwings - `9ItemID: `e7834|left|7834|
+add_label_with_icon|small|`wCondor Wings - `9ItemID: `e7914|left|7914|
+add_label_with_icon|small|`wAirplane Wings - `9ItemID: `e7916|left|7916|
+add_label_with_icon|small|`wDa Vinci Wings - `9ItemID: `e8286|left|8286|
+add_label_with_icon|small|`wSteampunk Wings - `9ItemID: `e8302|left|8302|
+add_label_with_icon|small|`wReg4shi's Archangel Wings - `9ItemID: `e8308|left|8308|
+add_label_with_icon|small|`wAngel of Mercy's Wings - `9ItemID: `e8552|left|8552|
+add_label_with_icon|small|`wMunnin's Unity Wings - `9ItemID: `e8620|left|8620|
+add_label_with_icon|small|`wValkyrie's Wings - `9ItemID: `e8862|left|8862|
+add_label_with_icon|small|`wMosquito King's Wings - `9ItemID: `e8914|left|8914|
+add_label_with_icon|small|`wNightmare Teeny Devil Wings - `9ItemID: `e9114|left|9114|
+add_label_with_icon|small|`wFrosty Wings - `9ItemID: `e9182|left|9182|
+add_label_with_icon|small|`wPink Teeny Angel Wings - `9ItemID: `e9352|left|9352|
+add_label_with_icon|small|`wBalrog Wings - `9ItemID: `e9394|left|9394|
+add_label_with_icon|small|`wShamrock Wings - `9ItemID: `e9422|left|9422|
+add_label_with_icon|small|`wFlamingo Wings - `9ItemID: `e9742|left|9742|
+add_label_with_icon|small|`wPegasus Wings - `9ItemID: `e9760|left|9760|
+add_label_with_icon|small|`wZodiac Wings - `9ItemID: `e10054|left|10054|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]];varlist.netid= -(1 + 0);SendVarlist(varlist);return true;end function wing(v97,v98)if (v98=="action|input\n|text|/fwing") then itemidwings();return true;end end AddCallback("wings_commandsx","OnPacket",wing);function itemidances()varlist={};varlist[0 + 0 ]="OnDialogRequest";varlist[1 + 0 ]=[[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Ances `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wAncestral Totem of Wisdom - `9ItemID: `e5078|left|5078|
+add_label_with_icon|small|`wAncestral Tesseract of Dimensions - `9ItemID: `e5080|left|5080|
+add_label_with_icon|small|`wAncestral Seed of Life - `9ItemID: `e5082|left|5082|
+add_label_with_icon|small|`wAncestral Lens of Riches - `9ItemID: `e5084|left|5084|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]];varlist.netid= -1;SendVarlist(varlist);return true;end function ances(v102,v103)if (v103=="action|input\n|text|/fances") then itemidances();return true;end end AddCallback("ancesiditem_commandsx","OnPacket",ances);function itemidcrown()local v104=433 -(153 + 280) ;while true do if (v104==0) then varlist={};varlist[0 -0 ]="OnDialogRequest";v104=1 + 0 ;end if (v104==2) then SendVarlist(varlist);return true;end if ((1 + 0)==v104) then varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Crown `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wFairy Crown - `9ItemID: `e136|left|136|
+add_label_with_icon|small|`wOceanic Crown - `9ItemID: `e2874|left|2874|
+add_label_with_icon|small|`wDried Leaf Crown - `9ItemID: `e3086|left|3086|
+add_label_with_icon|small|`wSuper Logo - Crown - `9ItemID: `e3132|left|3132|
+add_label_with_icon|small|`wChallenge Crown - `9ItemID: `e3138|left|3138|
+add_label_with_icon|small|`wSpring Crown - `9ItemID: `e3444|left|3444|
+add_label_with_icon|small|`wTXMom's Crown - `9ItemID: `e4626|left|4626|
+add_label_with_icon|small|`wPhoenix Crown - `9ItemID: `e4820|left|4820|
+add_label_with_icon|small|`wDancemaster's Crown - `9ItemID: `e6300|left|6300|
+add_label_with_icon|small|`wHeartking's Crown - `9ItemID: `e7818|left|7818|
+add_label_with_icon|small|`wHeartqueen's Crown - `9ItemID: `e7822|left|7822|
+add_label_with_icon|small|`wHowling Pineapple Crown - `9ItemID: `e8516|left|8516|
+add_label_with_icon|small|`wGuild Challenge Crown - `9ItemID: `e9100|left|9100|
+add_label_with_icon|small|`wMedusa's Crown - `9ItemID: `e9348|left|9348|
+add_label_with_icon|small|`wFloatie Crown - `9ItemID: `e9736|left|9736|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]];varlist.netid= -(1 + 0);v104=2 + 0 ;end end end function Crown(v105,v106)if (v106=="action|input\n|text|/fcrown") then itemidcrown();return true;end end AddCallback("legend_commandsx","OnPacket",Crown);function itemidaura()local v107=0 + 0 ;while true do if (v107==(2 -0)) then SendVarlist(varlist);return true;end if (v107==(1 + 0)) then varlist[668 -(89 + 578) ]=[[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Aura `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wGolden Aura - `9ItemID: `e2722|left|2722|
+add_label_with_icon|small|`wBlack Aura - `9ItemID: `e3114|left|3114|
+add_label_with_icon|small|`wPink Aura - `9ItemID: `e4970|left|4970|
+add_label_with_icon|small|`wBlue Aura - `9ItemID: `e4972|left|4972|
+add_label_with_icon|small|`wPrismatic Aura - `9ItemID: `e5020|left|5020|
+add_label_with_icon|small|`wFlaming Aura - `9ItemID: `e6284|left|6284|
+add_label_with_icon|small|`wPurple Aura - `9ItemID: `e8024|left|8024aea|
+add_label_with_icon|small|`wGreen Aura - `9ItemID: `e8026|left|8026|
+add_label_with_icon|small|`wWinter Radiance Aura - `9ItemID: `e9210|left|9210|
+add_label_with_icon|small|`wMoney Aura - `9ItemID: `e9428|left|9428|
+add_label_with_icon|small|`wCrystal Aura - `9ItemID: `e9712|left|9712|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]];varlist.netid= -1;v107=2 + 0 ;end if (v107==(0 -0)) then varlist={};varlist[1049 -(572 + 477) ]="OnDialogRequest";v107=1;end end end function aura(v108,v109)if (v109=="action|input\n|text|/faura") then itemidaura();return true;end end AddCallback("hairs_commandsx","OnPacket",aura);function itemidbow()varlist={};varlist[0]="OnDialogRequest";varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Bows `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wHeatbow - `9ItemID: `e4136|left|4136|
+add_label_with_icon|small|`wSilverstar Bow - `9ItemID: `e5456|left|5456|
+add_label_with_icon|small|`wEldritch Crossbow - `9ItemID: `e10052|left|10052|
+add_label_with_icon|small|`wHeartbow - `9ItemID: `e366|left|366|
+add_label_with_icon|small|`wElvish Longbow - `9ItemID: `e594|left|594|
+add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
+add_label_with_icon|small|`wElectric Bow - `9ItemID: `e2720|left|2720|
+add_label_with_icon|small|`wWinter Frost Bow - `9ItemID: `e5424|left|5424|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]];varlist.netid= -(1 + 0);SendVarlist(varlist);return true;end function bow(v113,v114)if (v114=="action|input\n|text|/fbow") then itemidbow();return true;end end AddCallback("bowsiditem_commandsx","OnPacket",bow);function itemidgolden()varlist={};varlist[0]="OnDialogRequest";varlist[1 + 0 ]=[[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Golden `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wGolden Halo - `9ItemID: `e128|left|128|
+add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
+add_label_with_icon|small|`wGolden Diamond Necklace - `9ItemID: `e1466|left|1466|
+add_label_with_icon|small|`wGolden Diaper - `9ItemID: `e1462|left|1462|
+add_label_with_icon|small|`wGolden Angel Wings - `9ItemID: `e1460|left|1460|
+add_label_with_icon|small|`wGolden Air Robinsons - `9ItemID: `e1822|left|1822|
+add_label_with_icon|small|`wGolden Crystal Wings - `9ItemID: `e2262|left|2262|
+add_label_with_icon|small|`wTeeny Golden Wings - `9ItemID: `e2392|left|2392|
+add_label_with_icon|small|`wGolden Aura - `9ItemID: `e2722|left|2722|
+add_label_with_icon|small|`wGolden Crystal Skirt - `9ItemID: `e2942|left|2942|
+add_label_with_icon|small|`wGolden Razor Wings - `9ItemID: `e4534|left|4534|
+add_label_with_icon|small|`wGolden Heart Shirt - `9ItemID: `e5646|left|5646|
+add_label_with_icon|small|`wGolden Talaria - `9ItemID: `e5650|left|5650|
+add_label_with_icon|small|`wKnight's Great Helm Golden - `9ItemID: `e7276|left|7276|
+add_label_with_icon|small|`wGolden Heartthrob Helm - `9ItemID: `e9326|left|9326|
+add_label_with_icon|small|`wGolden Sword - `9ItemID: `e604|left|604|
+add_label_with_icon|small|`wGolden Heartstaff - `9ItemID: `e7828|left|7828|
+add_label_with_icon|small|`wGolden Midas Masterpants - `9ItemID: `e7302|left|7302|
+add_label_with_icon|small|`wGolden Jet Ski - `9ItemID: `e7530|left|7530|
+add_label_with_icon|small|`wHovernator Drone - Golden - `9ItemID: `e7574|left|7574|
+add_label_with_icon|small|`wGolden Heartsword - `9ItemID: `e7832|left|7832|
+add_label_with_icon|small|`wGolden Sunset Cape - `9ItemID: `e9322|left|9322|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`wOkay|
+]];varlist.netid= -(1 + 0);SendVarlist(varlist);return true;end function golden(v118,v119)if (v119=="action|input\n|text|/fgold") then local v151=0;while true do if (v151==(86 -(84 + 2))) then itemidgolden();return true;end end end end AddCallback("goldensiditem_commandsx","OnPacket",golden);function finditem(v120,v121)if (v121=="action|input\n|text|/find") then local v152=0;while true do if (v152==(2 -0)) then SendVarlist(varlist);return true;end if (v152==(1 + 0)) then varlist[843 -(497 + 345) ]=[[set_default_color|`o
+add_label_with_icon|big|`e>>> `9Result In Legend `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wLegendary Katana - `9ItemID: `e2592|left|2592|
+add_label_with_icon|small|`wLegendary Wing - `9ItemID: `e1784|left|1784|
+add_label_with_icon|small|`wLegendBot-009 - `9ItemID: `e1780|left|1780|
+add_label_with_icon|small|`wLegendary Dragon Knight's Wings - `9ItemID: `e7734|left|7734|
+add_label_with_icon|small|`wLegendary Comet Hair - `9ItemID: `e8306|left|8306|
+add_label_with_icon|small|`wLegendary Dragon - `9ItemID: `e1784|left|1782|
+add_spacer|small|
+add_label_with_icon|big|`e>>> `9Result In Hands `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wLegendary Katana - `9ItemID: `e2592|left|2592|
+add_label_with_icon|small|`wPoseidon's Trident - `9ItemID: `e2802|left|2802|
+add_label_with_icon|small|`wPoseidon's Digger's Trident - `9ItemID: `e7434|left|7434|
+add_label_with_icon|small|`wNeptune's Trident - `9ItemID: `e9758|left|9758|
+add_label_with_icon|small|`wCursed Katana - `9ItemID: `e9058|left|9058|
+add_label_with_icon|small|`wGolden Heartstaff - `9ItemID: `e7828|left|7828|
+add_label_with_icon|small|`wHeatbow - `9ItemID: `e4136|left|4136|
+add_label_with_icon|small|`wSilverstar Bow - `9ItemID: `e5456|left|5456|
+add_label_with_icon|small|`wEldritch Crossbow - `9ItemID: `e10052|left|10052|
+add_label_with_icon|small|`wHeartbow - `9ItemID: `e366|left|366|
+add_label_with_icon|small|`wHeartsword - `9ItemID: `e7830|left|7830|
+add_label_with_icon|small|`wElvish Longbow - `9ItemID: `e594|left|594|
+add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
+add_label_with_icon|small|`wCarrot Sword - `9ItemID: `e2908|left|2908|
+add_label_with_icon|small|`wSonic Buster Sword - `9ItemID: `e7586|left|7586|
+add_label_with_icon|small|`wSonic Buster Katana - `9ItemID: `e11118|left|7586|
+add_label_with_icon|small|`wElectric Bow - `9ItemID: `e2720|left|2720|
+add_label_with_icon|small|`wWinter Frost Bow - `9ItemID: `e5424|left|5424|
+add_label_with_icon|small|`wEthereal Rainbow Dragon - `9ItemID: `e7136|left|7136|
+add_spacer|small|
+add_label_with_icon|big|`e>>> `9Result In Wings `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wFairy Wings - `9ItemID: `e156|left|156|
+add_label_with_icon|small|`wAngel Wings - `9ItemID: `e362|left|362|
+add_label_with_icon|small|`wCrimson Eagle Wings - `9ItemID: `e678|left|678|
+add_label_with_icon|small|`wPlay Wings - `9ItemID: `e736|left|736|
+add_label_with_icon|small|`wRipper Wings - `9ItemID: `e818|left|818|
+add_label_with_icon|small|`wDevil Wings - `9ItemID: `e1206|left|1206|
+add_label_with_icon|small|`wGolden Angel Wings - `9ItemID: `e1460|left|1460|
+add_label_with_icon|small|`wBubble Wings - `9ItemID: `e1550|left|1550|
+add_label_with_icon|small|`wParrot Wings - `9ItemID: `e1574|left|1574|
+add_label_with_icon|small|`wWater Wings - `9ItemID: `e1668|left|1668|
+add_label_with_icon|small|`wRainbow Wings - `9ItemID: `e1672|left|1672|
+add_label_with_icon|small|`wPhoenix Wings - `9ItemID: `e1674|left|1674|
+add_label_with_icon|small|`wLegendary Wings - `9ItemID: `e1784|left|1784|
+add_label_with_icon|small|`wAutumn Wings - `9ItemID: `e1824|left|1824|
+add_label_with_icon|small|`wBlazing Electro Wings - `9ItemID: `e1936|left|1936|
+add_label_with_icon|small|`wDiamond Wings - `9ItemID: `e1938|left|1938|
+add_label_with_icon|small|`wNightmare Devil Wings - `9ItemID: `e1970|left|1970|
+add_label_with_icon|small|`wRed Crystal Wings - `9ItemID: `e2254|left|2254|
+add_label_with_icon|small|`wBlue Crystal Wings - `9ItemID: `e2256|left|2256|
+add_label_with_icon|small|`wGreen Crystal Wings - `9ItemID: `e2258|left|2258|
+add_label_with_icon|small|`wPurple Crystal Wings - `9ItemID: `e2260|left|2260|
+add_label_with_icon|small|`wGolden Crystal Wings - `9ItemID: `e2262|left|2262|
+add_label_with_icon|small|`wAqua Crystal Wings - `9ItemID: `e2264|left|2264|
+add_label_with_icon|small|`wTeeny Angel Wings - `9ItemID: `e2390|left|2390|
+add_label_with_icon|small|`wTeeny Golden Wings - `9ItemID: `e2392|left|2392|
+add_label_with_icon|small|`wTeeny Devil Wings - `9ItemID: `e3120|left|3120|
+add_label_with_icon|small|`wSaturday Wings - `9ItemID: `e3512|left|3512|
+add_label_with_icon|small|`wGolden Razor Wings - `9ItemID: `e4534|left|4534|
+add_label_with_icon|small|`wInside-Out Devil Wings - `9ItemID: `e4986|left|4986|
+add_label_with_icon|small|`wDraconic Wings - `9ItemID: `e5754|left|5754|
+add_label_with_icon|small|`wAurora Wings - `9ItemID: `e6144|left|6144|
+add_label_with_icon|small|`wDanieldd's Chimera Wings - `9ItemID: `e6334|left|6334|
+add_label_with_icon|small|`wSuper Utility Wings - `9ItemID: `e6694|left|6694|
+add_label_with_icon|small|`wNightwings - `9ItemID: `e6818|left|6818|
+add_label_with_icon|small|`wRaven Wings - `9ItemID: `e6842|left|6842|
+add_label_with_icon|small|`wDark Aurora Wings - `9ItemID: `e7104|left|7104|
+add_label_with_icon|small|`wStone Gargoyle Wings - `9ItemID: `e7150|left|7150|
+add_label_with_icon|small|`wMonarch Butterfly Wings - `9ItemID: `e7196|left|7196|
+add_label_with_icon|small|`wTurkey Wings - `9ItemID: `e7350|left|7350|
+add_label_with_icon|small|`wSnowflake Wings of Winter - `9ItemID: `e7412|left|7412|
+add_label_with_icon|small|`wOVEROLL's Wings - `9ItemID: `e7502|left|7502|
+add_label_with_icon|small|`wRobotic MK.IV Wings - `9ItemID: `e7582|left|7582|
+add_label_with_icon|small|`wLegendary Dragon Knight's Wings - `9ItemID: `e7734|left|7734|
+add_label_with_icon|small|`wStained Glass Heartwings - `9ItemID: `e7834|left|7834|
+add_label_with_icon|small|`wCondor Wings - `9ItemID: `e7914|left|7914|
+add_label_with_icon|small|`wAirplane Wings - `9ItemID: `e7916|left|7916|
+add_label_with_icon|small|`wDa Vinci Wings - `9ItemID: `e8286|left|8286|
+add_label_with_icon|small|`wSteampunk Wings - `9ItemID: `e8302|left|8302|
+add_label_with_icon|small|`wReg4shi's Archangel Wings - `9ItemID: `e8308|left|8308|
+add_label_with_icon|small|`wAngel of Mercy's Wings - `9ItemID: `e8552|left|8552|
+add_label_with_icon|small|`wMunnin's Unity Wings - `9ItemID: `e8620|left|8620|
+add_label_with_icon|small|`wValkyrie's Wings - `9ItemID: `e8862|left|8862|
+add_label_with_icon|small|`wMosquito King's Wings - `9ItemID: `e8914|left|8914|
+add_label_with_icon|small|`wNightmare Teeny Devil Wings - `9ItemID: `e9114|left|9114|
+add_label_with_icon|small|`wFrosty Wings - `9ItemID: `e9182|left|9182|
+add_label_with_icon|small|`wPink Teeny Angel Wings - `9ItemID: `e9352|left|9352|
+add_label_with_icon|small|`wBalrog Wings - `9ItemID: `e9394|left|9394|
+add_label_with_icon|small|`wShamrock Wings - `9ItemID: `e9422|left|9422|
+add_label_with_icon|small|`wFlamingo Wings - `9ItemID: `e9742|left|9742|
+add_label_with_icon|small|`wPegasus Wings - `9ItemID: `e9760|left|9760|
+add_label_with_icon|small|`wZodiac Wings - `9ItemID: `e10054|left|10054|
+add_spacer|small|
+add_label_with_icon|big|`e>>> `9Result In Ances `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wAncestral Totem of Wisdom - `9ItemID: `e5078|left|5078|
+add_label_with_icon|small|`wAncestral Tesseract of Dimensions - `9ItemID: `e5080|left|5080|
+add_label_with_icon|small|`wAncestral Seed of Life - `9ItemID: `e5082|left|5082|
+add_label_with_icon|small|`wAncestral Lens of Riches - `9ItemID: `e5084|left|5084|
+add_spacer|small|
+add_label_with_icon|big|`e>>> `9Result In Crown `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wFairy Crown - `9ItemID: `e136|left|136|
+add_label_with_icon|small|`wOceanic Crown - `9ItemID: `e2874|left|2874|
+add_label_with_icon|small|`wDried Leaf Crown - `9ItemID: `e3086|left|3086|
+add_label_with_icon|small|`wSuper Logo - Crown - `9ItemID: `e3132|left|3132|
+add_label_with_icon|small|`wChallenge Crown - `9ItemID: `e3138|left|3138|
+add_label_with_icon|small|`wSpring Crown - `9ItemID: `e3444|left|3444|
+add_label_with_icon|small|`wTXMom's Crown - `9ItemID: `e4626|left|4626|
+add_label_with_icon|small|`wPhoenix Crown - `9ItemID: `e4820|left|4820|
+add_label_with_icon|small|`wDancemaster's Crown - `9ItemID: `e6300|left|6300|
+add_label_with_icon|small|`wHeartking's Crown - `9ItemID: `e7818|left|7818|
+add_label_with_icon|small|`wHeartqueen's Crown - `9ItemID: `e7822|left|7822|
+add_label_with_icon|small|`wHowling Pineapple Crown - `9ItemID: `e8516|left|8516|
+add_label_with_icon|small|`wGuild Challenge Crown - `9ItemID: `e9100|left|9100|
+add_label_with_icon|small|`wMedusa's Crown - `9ItemID: `e9348|left|9348|
+add_label_with_icon|small|`wFloatie Crown - `9ItemID: `e9736|left|9736|
+add_spacer|small|
+add_label_with_icon|big|`e>>> `9Result In Aura `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wGolden Aura - `9ItemID: `e2722|left|2722|
+add_label_with_icon|small|`wBlack Aura - `9ItemID: `e3114|left|3114|
+add_label_with_icon|small|`wPink Aura - `9ItemID: `e4970|left|4970|
+add_label_with_icon|small|`wBlue Aura - `9ItemID: `e4972|left|4972|
+add_label_with_icon|small|`wPrismatic Aura - `9ItemID: `e5020|left|5020|
+add_label_with_icon|small|`wFlaming Aura - `9ItemID: `e6284|left|6284|
+add_label_with_icon|small|`wPurple Aura - `9ItemID: `e8024|left|8024aea|
+add_label_with_icon|small|`wGreen Aura - `9ItemID: `e8026|left|8026|
+add_label_with_icon|small|`wWinter Radiance Aura - `9ItemID: `e9210|left|9210|
+add_label_with_icon|small|`wMoney Aura - `9ItemID: `e9428|left|9428|
+add_label_with_icon|small|`wCrystal Aura - `9ItemID: `e9712|left|9712|
+add_spacer|small|
+add_label_with_icon|big|`e>>> `9Result In Bows `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wHeatbow - `9ItemID: `e4136|left|4136|
+add_label_with_icon|small|`wSilverstar Bow - `9ItemID: `e5456|left|5456|
+add_label_with_icon|small|`wEldritch Crossbow - `9ItemID: `e10052|left|10052|
+add_label_with_icon|small|`wHeartbow - `9ItemID: `e366|left|366|
+add_label_with_icon|small|`wElvish Longbow - `9ItemID: `e594|left|594|
+add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
+add_label_with_icon|small|`wElectric Bow - `9ItemID: `e2720|left|2720|
+add_label_with_icon|small|`wWinter Frost Bow - `9ItemID: `e5424|left|5424|
+add_spacer|small|
+add_label_with_icon|big|`e>>> `9Result In Golden `e<<<|left|8|
+add_spacer|small|
+add_label_with_icon|small|`wGolden Halo - `9ItemID: `e128|left|128|
+add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e1464|left|1464|
+add_label_with_icon|small|`wGolden Diamond Necklace - `9ItemID: `e1466|left|1466|
+add_label_with_icon|small|`wGolden Diaper - `9ItemID: `e1462|left|1462|
+add_label_with_icon|small|`wGolden Angel Wings - `9ItemID: `e1460|left|1460|
+add_label_with_icon|small|`wGolden Air Robinsons - `9ItemID: `e1822|left|1822|
+add_label_with_icon|small|`wGolden Crystal Wings - `9ItemID: `e2262|left|2262|
+add_label_with_icon|small|`wTeeny Golden Wings - `9ItemID: `e2392|left|2392|
+add_label_with_icon|small|`wGolden Aura - `9ItemID: `e2722|left|2722|
+add_label_with_icon|small|`wGolden Crystal Skirt - `9ItemID: `e2942|left|2942|
+add_label_with_icon|small|`wGolden Razor Wings - `9ItemID: `e4534|left|4534|
+add_label_with_icon|small|`wGolden Heart Shirt - `9ItemID: `e5646|left|5646|
+add_label_with_icon|small|`wGolden Talaria - `9ItemID: `e5650|left|5650|
+add_label_with_icon|small|`wKnight's Great Helm Golden - `9ItemID: `e7276|left|7276|
+add_label_with_icon|small|`wGolden Heartthrob Helm - `9ItemID: `e9326|left|9326|
+add_label_with_icon|small|`wGolden Sword - `9ItemID: `e604|left|604|
+add_label_with_icon|small|`wGolden Heartstaff - `9ItemID: `e7828|left|7828|
+add_label_with_icon|small|`wGolden Midas Masterpants - `9ItemID: `e7302|left|7302|
+add_label_with_icon|small|`wGolden Jet Ski - `9ItemID: `e7530|left|7530|
+add_label_with_icon|small|`wHovernator Drone - Golden - `9ItemID: `e7574|left|7574|
+add_label_with_icon|small|`wGolden Heartsword - `9ItemID: `e7832|left|7832|
+add_label_with_icon|small|`wGolden Sunset Cape - `9ItemID: `e9322|left|9322|
+add_spacer|small|
+add_quick_exit|
+end_dialog|find_shortcut2|`0Cancel|`0Back|
+]];varlist.netid= -(1 + 0);v152=1 + 1 ;end if (v152==(1333 -(605 + 728))) then varlist={};varlist[0]="OnDialogRequest";v152=1 + 0 ;end end end end AddCallback("finditem","OnPacket",finditem);function punch_ids(v122,v123)if (v123=="action|input\n|text|/pid") then local v153=0;while true do if (v153==(0 -0)) then varlist={};varlist[0]="OnDialogRequest";v153=1;end if (v153==2) then SendVarlist(varlist);return true;end if (v153==1) then varlist[1]=[[set_default_color|`o
+add_label_with_icon|big|`9Punch Ids|left|18|
+add_spacer|small|
+add_label_with_icon|small|`wEldritch Crossbow - `9PunchId: `e44|left|10052|
+add_label_with_icon|small|`wHeartbow - `9PunchId: `e2|left|366|
+add_label_with_icon|small|`wHeatbow - `9PunchId: `e4|left|4136|
+add_label_with_icon|small|`wSilverstar Bow - `9PunchId: `e4|left|5456|
+add_label_with_icon|small|`wEldritch Crossbow - `9ItemID: `e4|left|10052|
+add_label_with_icon|small|`wGolden Heartbow - `9ItemID: `e2|left|1464|
+add_label_with_icon|small|`wElectric Bow - `9ItemID: `e44|left|2720|
+add_label_with_icon|small|`wWinter Frost Bow - `9ItemID: `e4|left|5424|
+add_label_with_icon|small|`wLegendBot-009 - `9PunchId: `e20|left|1780|
+add_label_with_icon|small|`wDragon of Legend- `9PunchId: `e21|left|1782|
+add_label_with_icon|small|`wLegendary Katana - `9PunchId: `e43|left|2592|
+add_label_with_icon|small|`wSonic Buster Sword - `9PunchId: `e104|left|7586|
+add_label_with_icon|small|`wCursed Katana - `9PunchId: `e136|left|9058|
+add_label_with_icon|small|`wRayman's Fist - `9PunchId: `e12|left|5840|
+add_quick_exit|
+end_dialog|find_shortcut2|`0Cancel|`0Back|
+]];varlist.netid= -1;v153=1 + 1 ;end end end end AddCallback("punch_ids","OnPacket",punch_ids);
