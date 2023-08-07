@@ -1,9 +1,0 @@
-function OnTextOverlay(text)
-  var = {}
-  var[0] = "OnTextOverlay"
-  var[1] = text
-  var.netid = -1
-  SendVarlist(var)
-end
-
-OntextOverlay("`4Please Update to New Version")
